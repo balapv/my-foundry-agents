@@ -137,6 +137,14 @@ def describe_error(exc: BaseException) -> str:
 # --------------------------------------------------------------------------- 1. local
 
 
+def is_installed(name: str) -> bool:
+    # find_spec raises (rather than returning None) for a dotted name whose parent package is missing.
+    try:
+        return importlib.util.find_spec(name) is not None
+    except ModuleNotFoundError:
+        return False
+
+
 def check_local(report: Report) -> None:
     report.start("1. Local prerequisites")
     version = ".".join(map(str, sys.version_info[:3]))
@@ -150,7 +158,7 @@ def check_local(report: Report) -> None:
                     "Activate .venv (.venv\\Scripts\\Activate.ps1 or source .venv/bin/activate).")
     else:
         report.ok("Virtual environment", "active")
-    missing = [name for name in REQUIRED_PACKAGES if importlib.util.find_spec(name) is None]
+    missing = [name for name in REQUIRED_PACKAGES if not is_installed(name)]
     if missing:
         report.fail("Python packages", f"missing {', '.join(missing)}", "Run: python -m pip install -r requirements.txt")
     else:

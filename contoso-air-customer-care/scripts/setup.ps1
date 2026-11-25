@@ -173,7 +173,8 @@ if ($Hero) { $validateArgs += '--hero' }
 & $venvPython @validateArgs
 $code = $LASTEXITCODE
 if ($code -eq 0) {
-    Write-Host "`nSETUP COMPLETE. Start the web app with:" -ForegroundColor Green
-    Write-Host '  .\.venv\Scripts\python.exe -m uvicorn server:app --app-dir webapp/backend --port 8080'
+    Write-Host "`nSETUP COMPLETE. Activate the virtual environment in this terminal, then start the web app:" -ForegroundColor Green
+    Write-Host '  .\.venv\Scripts\Activate.ps1'
+    Write-Host '  python -m uvicorn server:app --app-dir webapp/backend --port 8080'
 }
 exit $code

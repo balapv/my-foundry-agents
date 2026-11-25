@@ -1,7 +1,8 @@
 # Setup checklist
 
-Use this 15–30 minutes before presenting. Commands are PowerShell, run from the `contoso-air-customer-care` folder.
-On macOS/Linux, use `./scripts/setup.sh` and `.venv/bin/python`.
+Use this 15–30 minutes before presenting. Commands are PowerShell, run from the `contoso-air-customer-care` folder
+with the virtual environment active (`.\.venv\Scripts\Activate.ps1`). The `python` commands below fail with
+missing packages otherwise. On macOS/Linux, use `./scripts/setup.sh` and `source .venv/bin/activate`.
 
 ## Environment
 

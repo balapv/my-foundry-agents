@@ -133,7 +133,8 @@ printf '\n4. Validation (python scripts/validate_demo.py)\n'
 if [ "$HERO" -eq 1 ]; then "$VENV_PY" scripts/validate_demo.py --hero; else "$VENV_PY" scripts/validate_demo.py; fi
 CODE=$?
 if [ "$CODE" -eq 0 ]; then
-  printf '\nSETUP COMPLETE. Start the web app with:\n'
-  echo "  .venv/bin/python -m uvicorn server:app --app-dir webapp/backend --port 8080"
+  printf '\nSETUP COMPLETE. Activate the virtual environment in this terminal, then start the web app:\n'
+  echo "  source .venv/bin/activate"
+  echo "  python -m uvicorn server:app --app-dir webapp/backend --port 8080"
 fi
 exit "$CODE"
