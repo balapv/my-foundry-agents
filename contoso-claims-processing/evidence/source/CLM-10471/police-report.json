@@ -1,0 +1,312 @@
+{
+  "documentId": "DOC-10471-06",
+  "claimId": "CLM-10471",
+  "fileName": "police-report.pdf",
+  "issuer": "Brightwater Police Department",
+  "title": "Traffic Collision Report",
+  "subtitle": "Non-injury collision - rear-end at signalized intersection",
+  "header": [
+    [
+      "Report number",
+      "BPD-26-004117"
+    ],
+    [
+      "Date of collision",
+      "11/06/2026"
+    ],
+    [
+      "Time of collision",
+      "Approx. 1200 hrs"
+    ],
+    [
+      "Reporting officer",
+      "Ofc. J. Nakamura #2276"
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Incident",
+      "fields": [
+        [
+          "Location",
+          "Intersection of Cedar Ave and Summit St, Brightwater, OR"
+        ],
+        [
+          "Property type",
+          "Public roadway - signalized intersection"
+        ],
+        [
+          "Dispatched / arrived / cleared",
+          "1203 hrs / 1214 hrs / 1251 hrs"
+        ],
+        [
+          "Collision type",
+          "Rear-end - stopped vehicle struck from behind"
+        ],
+        [
+          "Vehicles involved",
+          "2"
+        ],
+        [
+          "Injuries",
+          "None reported"
+        ],
+        [
+          "Lighting / weather / surface",
+          "Daylight / light rain / wet asphalt"
+        ],
+        [
+          "Hit and run",
+          "No"
+        ]
+      ]
+    }
+  ],
+  "units": [
+    {
+      "unit": "Unit 1",
+      "fields": [
+        [
+          "Vehicle",
+          "2018 Contoso Aria sedan, white"
+        ],
+        [
+          "VIN",
+          "0CTAR2SA0JM806050"
+        ],
+        [
+          "Driver / owner",
+          "Alex Mendez, Brightwater, OR"
+        ],
+        [
+          "Insurance",
+          "Contoso Insurance, policy PAP-4230367"
+        ],
+        [
+          "Movement",
+          "Stopped northbound on Summit St at red signal"
+        ],
+        [
+          "Area of impact",
+          "Rear center (clock position 6)"
+        ],
+        [
+          "Damage observed",
+          "Rear bumper cover pushed in and split; trunk lid buckled and not latching; both tail lamp assemblies broken; rear body panel deformed"
+        ],
+        [
+          "Damage extent",
+          "Moderate"
+        ],
+        [
+          "Removed from scene",
+          "Driven"
+        ]
+      ]
+    },
+    {
+      "unit": "Unit 2",
+      "fields": [
+        [
+          "Vehicle",
+          "2024 Fabrikam Coastal minivan, silver"
+        ],
+        [
+          "Driver / owner",
+          "Toni Keane, Brightwater, OR"
+        ],
+        [
+          "Insurance",
+          "Tailspin Casualty Company"
+        ],
+        [
+          "Movement",
+          "Northbound on Summit St, failed to stop behind Unit 1"
+        ],
+        [
+          "Area of impact",
+          "Front center (clock position 12)"
+        ],
+        [
+          "Damage observed",
+          "Front bumper cover and grille pushed in; hood edge buckled; white paint transfer on bumper"
+        ],
+        [
+          "Damage extent",
+          "Moderate"
+        ],
+        [
+          "Removed from scene",
+          "Driven"
+        ]
+      ]
+    }
+  ],
+  "diagram": {
+    "caption": "Scene diagram - not to scale. Unit 1 stopped northbound at the signal; Unit 2 northbound behind Unit 1. X marks area of impact.",
+    "width": 460,
+    "height": 190,
+    "shapes": [
+      {
+        "kind": "line",
+        "x1": 190,
+        "y1": 10,
+        "x2": 190,
+        "y2": 120
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 10,
+        "x2": 290,
+        "y2": 120
+      },
+      {
+        "kind": "line",
+        "x1": 190,
+        "y1": 170,
+        "x2": 190,
+        "y2": 182
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 170,
+        "x2": 290,
+        "y2": 182
+      },
+      {
+        "kind": "line",
+        "x1": 10,
+        "y1": 120,
+        "x2": 190,
+        "y2": 120
+      },
+      {
+        "kind": "line",
+        "x1": 10,
+        "y1": 170,
+        "x2": 190,
+        "y2": 170
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 120,
+        "x2": 380,
+        "y2": 120
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 170,
+        "x2": 380,
+        "y2": 170
+      },
+      {
+        "kind": "line",
+        "x1": 240,
+        "y1": 10,
+        "x2": 240,
+        "y2": 120,
+        "dash": true
+      },
+      {
+        "kind": "line",
+        "x1": 244,
+        "y1": 116,
+        "x2": 286,
+        "y2": 116
+      },
+      {
+        "kind": "text",
+        "x": 296,
+        "y": 90,
+        "text": "Summit St"
+      },
+      {
+        "kind": "text",
+        "x": 20,
+        "y": 140,
+        "text": "Cedar Ave"
+      },
+      {
+        "kind": "rect",
+        "x": 252,
+        "y": 72,
+        "w": 30,
+        "h": 40,
+        "label": "1"
+      },
+      {
+        "kind": "rect",
+        "x": 252,
+        "y": 22,
+        "w": 30,
+        "h": 40,
+        "label": "2"
+      },
+      {
+        "kind": "arrow",
+        "x1": 300,
+        "y1": 20,
+        "x2": 300,
+        "y2": 56
+      },
+      {
+        "kind": "marker",
+        "x": 267,
+        "y": 68
+      },
+      {
+        "kind": "north",
+        "x": 425,
+        "y": 115
+      }
+    ]
+  },
+  "statements": [
+    [
+      "Driver 1 (Mendez)",
+      "Stated they were stopped at the red light when they were struck from behind."
+    ],
+    [
+      "Driver 2 (Keane)",
+      "Stated the road was wet and their vehicle slid when they braked for the stopped vehicle ahead."
+    ]
+  ],
+  "narrative": [
+    "On 11/06/2026 at approximately 1203 hrs I was dispatched to a reported non-injury rear-end collision at the intersection of Cedar Ave and Summit St. I arrived at 1214 hrs. Both vehicles had been moved to the curb on the east side of Summit St, north of the intersection, and both drivers were present. Neither driver reported any injury.",
+    "Statements from both drivers indicate that Unit 1 was stopped northbound on Summit St for a red signal at Cedar Ave and that Unit 2, also northbound, did not stop in time and struck the rear of Unit 1 with its front. Light rain was falling and the roadway was wet.",
+    "I observed fresh damage to the rear of Unit 1. The rear bumper cover was pushed in and split near the center, the trunk lid was buckled and would not latch, both tail lamp assemblies were broken and the rear body panel was deformed. I observed fresh damage to the front of Unit 2, including the front bumper cover and grille, with white paint transfer on its bumper cover. Lamp debris from Unit 1 was in the northbound lane.",
+    "Both vehicles were driven from the scene. Driver 2 was cited for following too closely. Both drivers exchanged information in my presence and were provided with this report number."
+  ],
+  "findings": [
+    [
+      "Primary collision factor (officer's opinion)",
+      "Unit 2 - following too closely"
+    ],
+    [
+      "Citations issued",
+      "Driver 2 - following too closely"
+    ],
+    [
+      "Witnesses",
+      "None identified"
+    ]
+  ],
+  "signature": [
+    [
+      "Reporting officer",
+      "Ofc. J. Nakamura #2276"
+    ],
+    [
+      "Report date",
+      "11/06/2026"
+    ],
+    [
+      "Approved by",
+      "Sgt. P. Oyelaran #1904, 11/09/2026"
+    ]
+  ]
+}

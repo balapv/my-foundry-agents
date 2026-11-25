@@ -1,0 +1,114 @@
+{
+  "documentId": "DOC-10439-01",
+  "claimId": "CLM-10439",
+  "fileName": "claim-form.pdf",
+  "issuer": "Contoso Insurance",
+  "title": "Auto Claim - First Notice of Loss",
+  "subtitle": "Mobile app claim submission",
+  "header": [
+    ["Claim number", "CLM-10439"],
+    ["Submitted", "10/19/2026 12:18 PM PDT"],
+    ["Channel", "Mobile app"],
+    ["Policy number", "PAP-4278298"]
+  ],
+  "sections": [
+    {
+      "heading": "Policyholder",
+      "fields": [
+        ["Name", "Peyton Novak"],
+        ["Mailing address", "6020 Tamarack St, Maple Harbor, OR 97451"],
+        ["Phone", "(541) 555-0163"],
+        ["Email", "peyton.novak@example.com"],
+        ["Preferred contact", "Email"]
+      ]
+    },
+    {
+      "heading": "Vehicle",
+      "fields": [
+        ["Year / make / model", "2018 Fabrikam Coastal Touring FWD"],
+        ["VIN", "0FBCS2MA4JF653975"],
+        ["Color", "Evergreen Pearl"],
+        ["Approximate mileage", "71,400"],
+        ["Lienholder / lessor", "Proseware Financial"]
+      ]
+    },
+    {
+      "heading": "Driver at time of loss",
+      "fields": [
+        ["Driver", "Peyton Novak (policyholder)"],
+        ["Purpose of trip", "Personal - driving home from work"]
+      ]
+    },
+    {
+      "heading": "Loss details",
+      "fields": [
+        ["Date of loss", "10/18/2026"],
+        ["Time of loss", "Approximately 5:25 PM"],
+        ["Location", "Intersection of Aspen Dr and Cascade Ln, Maple Harbor, OR"],
+        ["Type of loss", "Collision with another vehicle"],
+        ["Weather / road", "Clear, dry"]
+      ]
+    },
+    {
+      "heading": "What happened (in your own words)",
+      "paragraph": "I was heading north on Aspen Dr and turning left onto Cascade Ln on a green arrow. A small dark hatchback coming south on Aspen Dr went through the red light and hit the right front corner of my minivan. The front bumper is crushed on the right side, the right headlight is smashed, the right front fender is pushed in and the hood is bent up at the right corner. Something behind the grille is bent too. Nobody was hurt. The police came and gave the other driver a ticket."
+    },
+    {
+      "heading": "Damage to your vehicle",
+      "fields": [
+        ["Damaged areas selected", "Front bumper; Right front fender; Right headlamp"],
+        ["Damage description", "Front bumper crushed at the right corner and grille broken; right headlight smashed; right front fender pushed in; hood bent up at the right front corner."],
+        ["Is the vehicle drivable?", "Yes"],
+        ["Did any airbags deploy?", "No"],
+        ["Did the vehicle have damage before this incident that has not been repaired?", "No"]
+      ]
+    },
+    {
+      "heading": "Other vehicle and driver",
+      "fields": [
+        ["Driver name", "Kai Pruitt"],
+        ["Vehicle", "2022 Litware Pulse hatchback, midnight"],
+        ["Insurance company", "Lamna Insurance Group"]
+      ]
+    },
+    {
+      "heading": "Injuries",
+      "fields": [
+        ["Was anyone injured?", "No"]
+      ]
+    },
+    {
+      "heading": "Police",
+      "fields": [
+        ["Were the police contacted?", "Yes"],
+        ["Police agency", "Maple Harbor Police Department"],
+        ["Report number", "MHPD-26-039369"],
+        ["Officer", "Ofc. R. Delgado"]
+      ]
+    },
+    {
+      "heading": "Witnesses",
+      "fields": [
+        ["Were there any witnesses?", "Yes - a driver stopped on Cascade Ln spoke with the officer"]
+      ]
+    },
+    {
+      "heading": "Photos",
+      "fields": [
+        ["Photos uploaded with this report", "5"]
+      ]
+    },
+    {
+      "heading": "Repair and rental",
+      "fields": [
+        ["Preferred repair shop", "Riverton Falls Collision Center, Riverton Falls, OR"],
+        ["Rental vehicle needed?", "No"]
+      ]
+    }
+  ],
+  "declaration": "I confirm that the information in this report is true and complete to the best of my knowledge. I understand that Contoso Insurance will review this claim under the terms of my policy.",
+  "signature": [
+    ["Electronically signed by", "Peyton Novak"],
+    ["Date and time", "10/19/2026 12:18 PM PDT"]
+  ]
+}

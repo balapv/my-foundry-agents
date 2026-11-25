@@ -1,0 +1,35 @@
+{
+  "description": "Validated Claims Processing demo baseline (claims-processing-v1). scripts/validate_demo.py and scripts/reset_demo.py compare the local repository and the Foundry agent against these values. Do not edit to make a check pass; a mismatch means the validated baseline changed.",
+  "agentName": "contoso-claims-review-agent",
+  "agentVersion": "3",
+  "model": "gpt-6.1-sol",
+  "openApiToolName": "claims_operations",
+  "knowledgeVectorStoreName": "contoso-insurance-claims-guidance",
+  "heroClaimId": "CLM-10482",
+  "heroEvidenceCount": 8,
+  "sha256": {
+    "evidence/CLM-10482/evidence-manifest.json": "59cd197ece8df6e87537ec48df1cec48c13899458f63e583376563fe2b02e7b4",
+    "agent/instructions.md": "fc68aee5c3bfc1d84469d6973ba0fd7ca7e331b58beed3a353d90885d3d2764e",
+    "tools/openapi.json": "05483415c5d8322c26bee68be2565997b44f6f7432ed1019a0acee6b3fb03e29",
+    "knowledge/claims-handling-guidelines.pdf": "5ca143ac2a85ef5a827029b5c8b1f88407ce86d6f0401198af08f8d7fa652016",
+    "knowledge/auto-coverage-guidance.pdf": "f9a2fc98f094ddbc058a0c72ae5a6fbe937ed3545b9080664c1b09b9b3b11643",
+    "knowledge/repair-estimate-review.pdf": "f435f02c3cc8c8367cb7d0b5fb7294486c8a38d44efc27ee712845f810fe1a13",
+    "knowledge/claims-escalation-guidance.pdf": "120a5a79b3f1ed8bb02894acca11fd93625cd15fba13b785128414a0aeaab29a"
+  },
+  "demoDocuments": [
+    "demo/demo-script.md",
+    "demo/setup-checklist.md",
+    "demo/troubleshooting.md",
+    "demo/fallback-transcript.md",
+    "demo/cleanup.md"
+  ],
+  "fallbackAssets": [
+    "demo/assets/01-claim-workspace.png",
+    "demo/assets/02-evidence-workspace.png",
+    "demo/assets/03-review-in-progress.png",
+    "demo/assets/04-hero-recommendation.png",
+    "demo/assets/05-headlamp-evidence-comparison.png",
+    "demo/assets/architecture.svg",
+    "demo/assets/architecture.png"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "claimId": "CLM-10439",
+  "synthetic": true,
+  "notice": "All photographs are AI-generated synthetic images of a fictional, unbadged vehicle. They do not depict a real vehicle, person, location, license plate or incident.",
+  "generation": {
+    "method": "AI image generation (GitHub Copilot image_generation tool)",
+    "generatedOn": "2026-11-25",
+    "outputSize": "1536x1024 PNG",
+    "promptRecord": "The prompt fields below are faithful summaries of the prompts supplied to the image tool; the verbatim prompt text was not retained for this claim. Source hashes are exact.",
+    "consistencyApproach": "Photograph 1 was generated from text only; photographs 2-5 were generated with photograph 1 supplied as a visual reference so the same vehicle, paint, wheels, damage and setting carry across the set.",
+    "importProcess": "build_evidence.py --import-photos converts each source PNG to a baseline JPEG (quality 88, 4:2:0 subsampling) with no EXIF or other embedded metadata. Pixels and dimensions are unchanged.",
+    "rejectedCandidates": [],
+    "manualReview": "Each image was inspected visually before import: the same green unbadged minivan in a residential driveway on an overcast autumn day, with the same right front collision damage in every view that shows that corner; no people, no readable text, blank plates, no annotations or overlays."
+  },
+  "photos": [
+    {
+      "documentId": "DOC-10439-02",
+      "fileName": "photos/photo-01.jpg",
+      "title": "Photograph 1 of 5",
+      "sourceSha256": "f82de4fab72bad0f3702364e9b06f40162a13f9b7bb959a84c9f384612f2f87e",
+      "referenceImages": [],
+      "prompt": "Photorealistic smartphone insurance claim photo of an older dark green minivan parked in a residential driveway on an overcast autumn day, viewed from the right front three-quarter about 3 meters away. Fresh collision damage at the right front corner: the right headlamp is smashed, the right side of the front bumper cover is torn and pushed in, and the right front fender is buckled. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10439-03",
+      "fileName": "photos/photo-02.jpg",
+      "title": "Photograph 2 of 5",
+      "sourceSha256": "2ba57cac5ed6d3102925d150d523cadf0dae5b285085f3c922c2c2691e6e6ddd",
+      "referenceImages": [
+        "f82de4fab72bad0f3702364e9b06f40162a13f9b7bb959a84c9f384612f2f87e"
+      ],
+      "prompt": "Using the reference photo, a close-up of the same minivan's damaged right front corner from about 1 meter: the smashed right headlamp, the torn right side of the front bumper cover and the buckled right front fender. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10439-04",
+      "fileName": "photos/photo-03.jpg",
+      "title": "Photograph 3 of 5",
+      "sourceSha256": "3b35fad68ff491fa22a736a1cad9134eba10c5f614a77a172e39dd807b43b451",
+      "referenceImages": [
+        "f82de4fab72bad0f3702364e9b06f40162a13f9b7bb959a84c9f384612f2f87e"
+      ],
+      "prompt": "Using the reference photo, a straight-on view of the front of the same minivan from about 4 meters, showing the damage on the vehicle's right side of the front end, the grille broken open with the condenser and radiator area visible behind it, and the left headlamp in place. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10439-05",
+      "fileName": "photos/photo-04.jpg",
+      "title": "Photograph 4 of 5",
+      "sourceSha256": "b0eecce18b014580a9ee732b285df4abdf2b45ea32e77a807d6427c5e103ff65",
+      "referenceImages": [
+        "f82de4fab72bad0f3702364e9b06f40162a13f9b7bb959a84c9f384612f2f87e"
+      ],
+      "prompt": "Using the reference photo, a full right-side profile of the same minivan in the same driveway, with the front of the vehicle at the right of the frame so the right front damage appears at the front. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10439-06",
+      "fileName": "photos/photo-05.jpg",
+      "title": "Photograph 5 of 5",
+      "sourceSha256": "33436dececd795609db1529416997d5465ca60bd6fc3bb682b0df28618c514a7",
+      "referenceImages": [
+        "f82de4fab72bad0f3702364e9b06f40162a13f9b7bb959a84c9f384612f2f87e"
+      ],
+      "prompt": "Using the reference photo, a view from above and slightly to the right of the same minivan's hood, showing the right front corner of the hood bent upward and the widened gap between the hood and the right front fender. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    }
+  ]
+}

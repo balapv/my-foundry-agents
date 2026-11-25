@@ -1,0 +1,95 @@
+{
+  "claimId": "CLM-10471",
+  "synthetic": true,
+  "notice": "Synthetic demonstration evidence. Contoso Insurance is fictional; the documents and photographs in this folder are invented and do not describe a real person, vehicle or incident.",
+  "documents": [
+    {
+      "documentId": "DOC-10471-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (online submission)",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-06T22:50:00Z",
+      "fileName": "claim-form.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 5565,
+      "sha256": "f58d8965121c9ac7920abd5040c4ada7208e1dabd81bab6b2ee8ec9923f14008"
+    },
+    {
+      "documentId": "DOC-10471-02",
+      "documentType": "Photograph",
+      "title": "Photograph 1 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-06T22:50:00Z",
+      "fileName": "photos/photo-01.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 338501,
+      "sha256": "e4813d680a353ba0bddf3dccc7fa1d32893c5131a741e8f78bc5a65858514b02"
+    },
+    {
+      "documentId": "DOC-10471-03",
+      "documentType": "Photograph",
+      "title": "Photograph 2 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-06T22:50:00Z",
+      "fileName": "photos/photo-02.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 339735,
+      "sha256": "ca7ff4ff6dcfae520344335cf3eb7951b08b8080252a7bd961683c525ccc0ee5"
+    },
+    {
+      "documentId": "DOC-10471-04",
+      "documentType": "Photograph",
+      "title": "Photograph 3 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-06T22:50:00Z",
+      "fileName": "photos/photo-03.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 261701,
+      "sha256": "41b774b7d3011463442142fc01042aee21d1510412eae7fb84c1c2ae47ee8892"
+    },
+    {
+      "documentId": "DOC-10471-05",
+      "documentType": "Photograph",
+      "title": "Photograph 4 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-06T22:50:00Z",
+      "fileName": "photos/photo-04.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 363844,
+      "sha256": "a28ff1bb8067ba9ce43046a93a47f62729a5b6f8224cba17bec9de5c4960fc99"
+    },
+    {
+      "documentId": "DOC-10471-06",
+      "documentType": "Police report",
+      "title": "Brightwater Police Department report BPD-26-004117",
+      "source": "Police agency",
+      "receivedAt": "2026-11-10T03:50:00Z",
+      "fileName": "police-report.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 6418,
+      "sha256": "d2ab6cf9782464ab303992f99c4907919d4d228f172029c803a2aebb740bd73f"
+    },
+    {
+      "documentId": "DOC-10471-07",
+      "documentType": "Repair estimate",
+      "title": "Repair estimate EST-RF-26-1846",
+      "source": "Repair facility",
+      "receivedAt": "2026-11-11T00:50:00Z",
+      "fileName": "repair-estimate.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 9878,
+      "sha256": "69c763ea2959ec8bd9aea44cf84b43dd88ec1125e24ba94fb6648dffab219f23"
+    }
+  ]
+}

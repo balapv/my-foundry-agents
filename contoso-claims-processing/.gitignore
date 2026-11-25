@@ -1,0 +1,25 @@
+# Local configuration and secrets — never commit
+.env
+.env.*
+!.env.example
+agent/config.json
+.foundry-state.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Generated at runtime
+evaluation/results/
+.deploy/
+webapp/.logs/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

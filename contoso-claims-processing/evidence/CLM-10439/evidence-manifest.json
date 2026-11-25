@@ -1,0 +1,108 @@
+{
+  "claimId": "CLM-10439",
+  "synthetic": true,
+  "notice": "Synthetic demonstration evidence. Contoso Insurance is fictional; the documents and photographs in this folder are invented and do not describe a real person, vehicle or incident.",
+  "documents": [
+    {
+      "documentId": "DOC-10439-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (mobile app)",
+      "source": "Policyholder",
+      "receivedAt": "2026-10-19T19:18:00Z",
+      "fileName": "claim-form.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 5664,
+      "sha256": "a2ecd45418b403ef5c2a100f2ff10188349717509f7535f2e772a1ebe4594493"
+    },
+    {
+      "documentId": "DOC-10439-02",
+      "documentType": "Photograph",
+      "title": "Photograph 1 of 5",
+      "source": "Policyholder",
+      "receivedAt": "2026-10-19T19:18:00Z",
+      "fileName": "photos/photo-01.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 358085,
+      "sha256": "21fcc18a789a662d396ee1de5fc2267aefdfcc8c1dc9d92ff16b65e8225d0d81"
+    },
+    {
+      "documentId": "DOC-10439-03",
+      "documentType": "Photograph",
+      "title": "Photograph 2 of 5",
+      "source": "Policyholder",
+      "receivedAt": "2026-10-19T19:18:00Z",
+      "fileName": "photos/photo-02.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 385855,
+      "sha256": "a776e7c90d7446963bddf23611c1b605201a746ef688d7e6ec5c32f62661a87e"
+    },
+    {
+      "documentId": "DOC-10439-04",
+      "documentType": "Photograph",
+      "title": "Photograph 3 of 5",
+      "source": "Policyholder",
+      "receivedAt": "2026-10-19T19:18:00Z",
+      "fileName": "photos/photo-03.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 384374,
+      "sha256": "e8c702dac7bc67507c666516e29c8186dde0eefe4e5aaa8e39c3cc71bd5f9fc3"
+    },
+    {
+      "documentId": "DOC-10439-05",
+      "documentType": "Photograph",
+      "title": "Photograph 4 of 5",
+      "source": "Policyholder",
+      "receivedAt": "2026-10-19T19:18:00Z",
+      "fileName": "photos/photo-04.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 390206,
+      "sha256": "6945390cd9eac7b5598a961cd68b5331dc33a4d058fbcf0e5a8d72bf240d96a7"
+    },
+    {
+      "documentId": "DOC-10439-06",
+      "documentType": "Photograph",
+      "title": "Photograph 5 of 5",
+      "source": "Policyholder",
+      "receivedAt": "2026-10-19T19:18:00Z",
+      "fileName": "photos/photo-05.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 337772,
+      "sha256": "b4cc7bba0839e09e2d3691cf4579decdce6d7db03a7aeeea0d9d593a36d78804"
+    },
+    {
+      "documentId": "DOC-10439-07",
+      "documentType": "Repair estimate",
+      "title": "Repair estimate EST-RF-26-5381",
+      "source": "Repair facility",
+      "receivedAt": "2026-10-23T01:18:00Z",
+      "fileName": "repair-estimate.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 9162,
+      "sha256": "e2926c350ea2b7fbd6251b40f058c468bcc31f438366ebb00796cf7ac0c98042"
+    },
+    {
+      "documentId": "DOC-10439-08",
+      "documentType": "Police report",
+      "title": "Maple Harbor Police Department report MHPD-26-039369",
+      "source": "Police agency",
+      "receivedAt": "2026-10-25T22:18:00Z",
+      "fileName": "police-report.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 6907,
+      "sha256": "d48a9f66e09d8dd5400a1d8cdc082ba13291dc514fe50dc72d689e713122ee67"
+    }
+  ]
+}

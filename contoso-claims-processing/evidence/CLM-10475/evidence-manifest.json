@@ -1,0 +1,121 @@
+{
+  "claimId": "CLM-10475",
+  "synthetic": true,
+  "notice": "Synthetic demonstration evidence. Contoso Insurance is fictional; the documents and photographs in this folder are invented and do not describe a real person, vehicle or incident.",
+  "documents": [
+    {
+      "documentId": "DOC-10475-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (mobile app)",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-09T18:01:00Z",
+      "fileName": "claim-form.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 5545,
+      "sha256": "d17d5d53736b391fb132c898021a1a068e0d9f84986c9b79c97bbbffd9dfba01"
+    },
+    {
+      "documentId": "DOC-10475-02",
+      "documentType": "Photograph",
+      "title": "Photograph 1 of 6",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-09T18:01:00Z",
+      "fileName": "photos/photo-01.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 413509,
+      "sha256": "0873cd8de54ce0f676d7392458ad6f5448bfd0c8aeef54c6ed2955ce973febca"
+    },
+    {
+      "documentId": "DOC-10475-03",
+      "documentType": "Photograph",
+      "title": "Photograph 2 of 6",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-09T18:01:00Z",
+      "fileName": "photos/photo-02.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 370560,
+      "sha256": "d613ea7e300cfd791cf243b161384b57dbc0db49369416414e59399c6628652a"
+    },
+    {
+      "documentId": "DOC-10475-04",
+      "documentType": "Photograph",
+      "title": "Photograph 3 of 6",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-09T18:01:00Z",
+      "fileName": "photos/photo-03.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 313408,
+      "sha256": "f5a02d23d22342c4ef8d827ae36022a9f4ee406eb365eecab53c651dc36b18d8"
+    },
+    {
+      "documentId": "DOC-10475-05",
+      "documentType": "Photograph",
+      "title": "Photograph 4 of 6",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-09T18:01:00Z",
+      "fileName": "photos/photo-04.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 460683,
+      "sha256": "db4d91ff053b8ac100d2d758a75fde195e289318fc452d80ffd0183b7f869cb7"
+    },
+    {
+      "documentId": "DOC-10475-06",
+      "documentType": "Photograph",
+      "title": "Photograph 5 of 6",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-09T18:01:00Z",
+      "fileName": "photos/photo-05.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 457190,
+      "sha256": "2f82693c25d1b8c55f37ea30b3e40216b5445cc56ec613b218f0af8cabc75413"
+    },
+    {
+      "documentId": "DOC-10475-07",
+      "documentType": "Photograph",
+      "title": "Photograph 6 of 6",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-09T18:01:00Z",
+      "fileName": "photos/photo-06.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 408387,
+      "sha256": "ba01dd35b5727f2edccb4e1bb8235607263eecbb44cf8896eccb1fd1aa25c343"
+    },
+    {
+      "documentId": "DOC-10475-08",
+      "documentType": "Police report",
+      "title": "Willow Crossing Police Department report WCPD-26-035809",
+      "source": "Police agency",
+      "receivedAt": "2026-11-15T20:01:00Z",
+      "fileName": "police-report.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 6491,
+      "sha256": "f797bf04dada851eb76c49da2ac530abcd52ae0127ce444ae89da3ca20c7f02a"
+    },
+    {
+      "documentId": "DOC-10475-09",
+      "documentType": "Repair estimate",
+      "title": "Repair estimate EST-WC-26-6391",
+      "source": "Repair facility",
+      "receivedAt": "2026-11-16T01:01:00Z",
+      "fileName": "repair-estimate.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 6736,
+      "sha256": "41685cf36e27d9fc4beddc4f1294404d24c447618a9215d0c01d7c83a20e57d5"
+    }
+  ]
+}

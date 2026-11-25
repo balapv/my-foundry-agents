@@ -1,0 +1,4869 @@
+{
+  "dataset": "Contoso Insurance synthetic claims data",
+  "synthetic": true,
+  "notice": "Synthetic demonstration data. Contoso Insurance is fictional; every customer, policy, vehicle, VIN, claim and address in this file is invented.",
+  "recordsAsOf": "2026-11-20T08:00:00Z",
+  "source": "Claims system (losses on or after 2023-01-01)",
+  "claims": [
+    {
+      "claimId": "CLM-10208",
+      "customerId": "CUST-28678",
+      "policyId": "PAP-4970609",
+      "vehicleId": "VEH-56463",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2023-02-25",
+      "lossTime": "20:30",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "County Road 47 near Copper Mesa",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2023-02-26T19:32:00Z",
+      "reportChannel": "Online",
+      "description": "Another vehicle merged into my lane on County Road 47 and scraped along the left side of my vehicle.",
+      "reportedDamage": {
+        "summary": "Left front door; Left rear door; Left side mirror.",
+        "areas": [
+          "Left front door",
+          "Left rear door",
+          "Left side mirror"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Lou Keane",
+          "vehicleDescription": "2018 Fabrikam Ridgeback pickup, silver",
+          "insurer": "Lamna Insurance Group"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-23-3922",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2023-03-05",
+        "grossAmount": 9630.65
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10208-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-26T19:32:00Z"
+        },
+        {
+          "documentId": "DOC-10208-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-26T19:32:00Z"
+        },
+        {
+          "documentId": "DOC-10208-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-26T19:32:00Z"
+        },
+        {
+          "documentId": "DOC-10208-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-26T19:32:00Z"
+        },
+        {
+          "documentId": "DOC-10208-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-26T19:32:00Z"
+        },
+        {
+          "documentId": "DOC-10208-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-26T19:32:00Z"
+        },
+        {
+          "documentId": "DOC-10208-07",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-23-3922",
+          "source": "Repair facility",
+          "receivedAt": "2023-03-06T02:32:00Z"
+        },
+        {
+          "documentId": "DOC-10208-08",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2023-04-05T20:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 10424.83,
+        "deductibleApplied": 1500.0,
+        "totalPaid": 8924.83
+      },
+      "closedDate": "2023-04-07",
+      "closureReason": "Payment issued",
+      "createdAt": "2023-02-26T19:32:00Z",
+      "lastUpdatedAt": "2023-04-07T17:06:00Z"
+    },
+    {
+      "claimId": "CLM-10215",
+      "customerId": "CUST-14176",
+      "policyId": "PAP-3768340",
+      "vehicleId": "VEH-53375",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Hail",
+      "status": "Closed - Denied",
+      "lossDate": "2023-02-22",
+      "lossTime": "06:15",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2023-02-27T16:28:00Z",
+      "reportChannel": "Mobile app",
+      "description": "A hailstorm passed through Brightwater while my vehicle was parked outside. The hood, roof and liftgate have many small dents.",
+      "reportedDamage": {
+        "summary": "Hood; Roof; Liftgate.",
+        "areas": [
+          "Hood",
+          "Roof",
+          "Liftgate"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-23-4881",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2023-03-05",
+        "grossAmount": 315.8
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10215-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-27T16:28:00Z"
+        },
+        {
+          "documentId": "DOC-10215-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-27T16:28:00Z"
+        },
+        {
+          "documentId": "DOC-10215-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-27T16:28:00Z"
+        },
+        {
+          "documentId": "DOC-10215-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-27T16:28:00Z"
+        },
+        {
+          "documentId": "DOC-10215-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-02-27T16:28:00Z"
+        },
+        {
+          "documentId": "DOC-10215-06",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-23-4881",
+          "source": "Repair facility",
+          "receivedAt": "2023-03-05T21:28:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": "2023-04-01",
+      "closureReason": "Repair cost below deductible",
+      "createdAt": "2023-02-27T16:28:00Z",
+      "lastUpdatedAt": "2023-04-01T17:02:00Z"
+    },
+    {
+      "claimId": "CLM-10224",
+      "customerId": "CUST-18120",
+      "policyId": "PAP-4546497",
+      "vehicleId": "VEH-55767",
+      "claimType": "Property Damage Liability",
+      "causeOfLoss": "Property damage to another vehicle",
+      "status": "Closed - Paid",
+      "lossDate": "2023-03-22",
+      "lossTime": "10:40",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "County Road 31 near Willow Crossing",
+        "street": null,
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "reportedAt": "2023-03-24T15:42:00Z",
+      "reportChannel": "Agent",
+      "description": "Traffic stopped suddenly on County Road 31 and I rear-ended the vehicle in front of me.",
+      "reportedDamage": {
+        "summary": "Other party's vehicle: rear bumper; Other party's vehicle: trunk lid.",
+        "areas": [
+          "Other party's vehicle: rear bumper",
+          "Other party's vehicle: trunk lid"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Shawn Abbott",
+          "vehicleDescription": "2024 Litware Pulse hatchback, sandstone",
+          "insurer": "Northwind Mutual Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Willow Crossing Police Department",
+        "reportNumber": "WCPD-23-013894"
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10224-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (agent)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2023-03-24T15:42:00Z"
+        },
+        {
+          "documentId": "DOC-10224-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-03-25T05:42:00Z"
+        },
+        {
+          "documentId": "DOC-10224-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-03-25T05:42:00Z"
+        },
+        {
+          "documentId": "DOC-10224-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-03-25T05:42:00Z"
+        },
+        {
+          "documentId": "DOC-10224-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-03-25T05:42:00Z"
+        },
+        {
+          "documentId": "DOC-10224-06",
+          "documentType": "Police report",
+          "title": "Willow Crossing Police Department report WCPD-23-013894",
+          "source": "Police agency",
+          "receivedAt": "2023-03-30T18:42:00Z"
+        },
+        {
+          "documentId": "DOC-10224-07",
+          "documentType": "Repair invoice",
+          "title": "Other party's repair invoice",
+          "source": "Other party",
+          "receivedAt": "2023-04-08T13:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 3442.25,
+        "deductibleApplied": 0.0,
+        "totalPaid": 3442.25
+      },
+      "closedDate": "2023-04-09",
+      "closureReason": "Payment issued",
+      "createdAt": "2023-03-24T15:42:00Z",
+      "lastUpdatedAt": "2023-04-09T17:56:00Z"
+    },
+    {
+      "claimId": "CLM-10233",
+      "customerId": "CUST-36247",
+      "policyId": "PAP-3864006",
+      "vehicleId": "VEH-58623",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "Closed - Paid",
+      "lossDate": "2023-05-29",
+      "lossTime": "11:20",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "reportedAt": "2023-05-30T00:43:00Z",
+      "reportChannel": "Phone",
+      "description": "My car was parked overnight on the street outside my home. In the morning the rear bumper was cracked and scuffed.",
+      "reportedDamage": {
+        "summary": "Rear bumper.",
+        "areas": [
+          "Rear bumper"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Sunvale Police Department",
+        "reportNumber": "SPD-23-015341"
+      },
+      "repairFacilityId": "RF-106",
+      "estimate": {
+        "estimateId": "EST-SV-23-3421",
+        "repairFacilityId": "RF-106",
+        "estimateDate": "2023-06-05",
+        "grossAmount": 3288.05
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10233-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2023-05-30T00:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2023-05-31T02:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2023-05-31T02:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2023-05-31T02:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2023-05-31T02:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2023-05-31T02:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-07",
+          "documentType": "Photograph",
+          "title": "Photograph 6 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2023-05-31T02:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-08",
+          "documentType": "Police report",
+          "title": "Sunvale Police Department report SPD-23-015341",
+          "source": "Police agency",
+          "receivedAt": "2023-06-05T06:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-09",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-SV-23-3421",
+          "source": "Repair facility",
+          "receivedAt": "2023-06-06T02:43:00Z"
+        },
+        {
+          "documentId": "DOC-10233-10",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2023-07-26T10:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 3327.61,
+        "deductibleApplied": 500.0,
+        "totalPaid": 2827.61
+      },
+      "closedDate": "2023-07-27",
+      "closureReason": "Payment issued",
+      "createdAt": "2023-05-30T00:43:00Z",
+      "lastUpdatedAt": "2023-07-27T17:36:00Z"
+    },
+    {
+      "claimId": "CLM-10240",
+      "customerId": "CUST-24557",
+      "policyId": "PAP-4657033",
+      "vehicleId": "VEH-59821",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Animal strike",
+      "status": "Closed - Withdrawn",
+      "lossDate": "2023-06-02",
+      "lossTime": "11:00",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "County Road 22 near Willow Crossing",
+        "street": null,
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "reportedAt": "2023-06-03T13:22:00Z",
+      "reportChannel": "Online",
+      "description": "A deer ran onto County Road 22 at dusk and I could not avoid it.",
+      "reportedDamage": {
+        "summary": "Front bumper; Grille; Hood; Left headlamp.",
+        "areas": [
+          "Front bumper",
+          "Grille",
+          "Hood",
+          "Left headlamp"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10240-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2023-06-03T13:22:00Z"
+        },
+        {
+          "documentId": "DOC-10240-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2023-06-03T13:22:00Z"
+        },
+        {
+          "documentId": "DOC-10240-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2023-06-03T13:22:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": "2023-07-26",
+      "closureReason": "Withdrawn by policyholder",
+      "createdAt": "2023-06-03T13:22:00Z",
+      "lastUpdatedAt": "2023-07-26T17:27:00Z"
+    },
+    {
+      "claimId": "CLM-10247",
+      "customerId": "CUST-21658",
+      "policyId": "PAP-4363836",
+      "vehicleId": "VEH-56773",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Hail",
+      "status": "Closed - Paid",
+      "lossDate": "2023-06-14",
+      "lossTime": "11:15",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2023-06-15T21:44:00Z",
+      "reportChannel": "Online",
+      "description": "A hailstorm passed through Copper Mesa while my vehicle was parked outside. The hood, roof and liftgate have many small dents.",
+      "reportedDamage": {
+        "summary": "Hood; Roof; Liftgate.",
+        "areas": [
+          "Hood",
+          "Roof",
+          "Liftgate"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-110",
+      "estimate": {
+        "estimateId": "EST-WC-23-3493",
+        "repairFacilityId": "RF-110",
+        "estimateDate": "2023-06-20",
+        "grossAmount": 5200.54
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10247-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2023-06-15T21:44:00Z"
+        },
+        {
+          "documentId": "DOC-10247-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2023-06-15T21:44:00Z"
+        },
+        {
+          "documentId": "DOC-10247-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2023-06-15T21:44:00Z"
+        },
+        {
+          "documentId": "DOC-10247-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2023-06-15T21:44:00Z"
+        },
+        {
+          "documentId": "DOC-10247-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-WC-23-3493",
+          "source": "Repair facility",
+          "receivedAt": "2023-06-21T01:44:00Z"
+        },
+        {
+          "documentId": "DOC-10247-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2023-08-04T21:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 5752.77,
+        "deductibleApplied": 250.0,
+        "totalPaid": 5502.77
+      },
+      "closedDate": "2023-08-06",
+      "closureReason": "Payment issued",
+      "createdAt": "2023-06-15T21:44:00Z",
+      "lastUpdatedAt": "2023-08-06T17:46:00Z"
+    },
+    {
+      "claimId": "CLM-10255",
+      "customerId": "CUST-21888",
+      "policyId": "PAP-4254837",
+      "vehicleId": "VEH-54630",
+      "claimType": "Collision",
+      "causeOfLoss": "Single-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2023-08-06",
+      "lossTime": "06:55",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 31 near Riverton Falls",
+        "street": null,
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "reportedAt": "2023-08-11T14:24:00Z",
+      "reportChannel": "Online",
+      "description": "I hit a deep pothole on County Road 31. The left front wheel is bent and the tire went flat.",
+      "reportedDamage": {
+        "summary": "Left front wheel; Left front tire.",
+        "areas": [
+          "Left front wheel",
+          "Left front tire"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-23-6554",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2023-08-17",
+        "grossAmount": 1839.28
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10255-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2023-08-11T14:24:00Z"
+        },
+        {
+          "documentId": "DOC-10255-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-08-11T14:24:00Z"
+        },
+        {
+          "documentId": "DOC-10255-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-08-11T14:24:00Z"
+        },
+        {
+          "documentId": "DOC-10255-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-08-11T14:24:00Z"
+        },
+        {
+          "documentId": "DOC-10255-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2023-08-11T14:24:00Z"
+        },
+        {
+          "documentId": "DOC-10255-06",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-23-6554",
+          "source": "Repair facility",
+          "receivedAt": "2023-08-17T22:24:00Z"
+        },
+        {
+          "documentId": "DOC-10255-07",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2023-09-26T18:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 1886.23,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 886.23
+      },
+      "closedDate": "2023-09-27",
+      "closureReason": "Payment issued",
+      "createdAt": "2023-08-11T14:24:00Z",
+      "lastUpdatedAt": "2023-09-27T17:29:00Z"
+    },
+    {
+      "claimId": "CLM-10261",
+      "customerId": "CUST-36645",
+      "policyId": "PAP-3071091",
+      "vehicleId": "VEH-58904",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "Closed - Paid",
+      "lossDate": "2023-11-15",
+      "lossTime": "06:55",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Riverton Falls Station park-and-ride lot",
+        "street": null,
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "reportedAt": "2023-11-15T17:03:00Z",
+      "reportChannel": "Phone",
+      "description": "My vehicle was parked at the Riverton Falls Station park-and-ride lot. When I came back, the left rear door was dented and scraped. No note was left.",
+      "reportedDamage": {
+        "summary": "Left rear door; Left rear quarter panel.",
+        "areas": [
+          "Left rear door",
+          "Left rear quarter panel"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-104",
+      "estimate": {
+        "estimateId": "EST-HL-23-7978",
+        "repairFacilityId": "RF-104",
+        "estimateDate": "2023-11-22",
+        "grossAmount": 3380.44
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10261-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2023-11-15T17:03:00Z"
+        },
+        {
+          "documentId": "DOC-10261-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2023-11-16T22:03:00Z"
+        },
+        {
+          "documentId": "DOC-10261-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2023-11-16T22:03:00Z"
+        },
+        {
+          "documentId": "DOC-10261-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2023-11-16T22:03:00Z"
+        },
+        {
+          "documentId": "DOC-10261-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-HL-23-7978",
+          "source": "Repair facility",
+          "receivedAt": "2023-11-22T23:03:00Z"
+        },
+        {
+          "documentId": "DOC-10261-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2023-12-11T10:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 3471.14,
+        "deductibleApplied": 1500.0,
+        "totalPaid": 1971.14
+      },
+      "closedDate": "2023-12-12",
+      "closureReason": "Payment issued",
+      "createdAt": "2023-11-15T17:03:00Z",
+      "lastUpdatedAt": "2023-12-12T17:08:00Z"
+    },
+    {
+      "claimId": "CLM-10264",
+      "customerId": "CUST-36247",
+      "policyId": "PAP-3864006",
+      "vehicleId": "VEH-58623",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Hail",
+      "status": "Closed - Paid",
+      "lossDate": "2024-01-17",
+      "lossTime": "19:30",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "reportedAt": "2024-01-19T19:37:00Z",
+      "reportChannel": "Phone",
+      "description": "A hailstorm passed through Sunvale while my vehicle was parked outside. The hood, roof and tailgate have many small dents.",
+      "reportedDamage": {
+        "summary": "Hood; Roof; Tailgate.",
+        "areas": [
+          "Hood",
+          "Roof",
+          "Tailgate"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-106",
+      "estimate": {
+        "estimateId": "EST-SV-24-9883",
+        "repairFacilityId": "RF-106",
+        "estimateDate": "2024-01-23",
+        "grossAmount": 6545.55
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10264-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2024-01-19T19:37:00Z"
+        },
+        {
+          "documentId": "DOC-10264-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-01-20T21:37:00Z"
+        },
+        {
+          "documentId": "DOC-10264-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-01-20T21:37:00Z"
+        },
+        {
+          "documentId": "DOC-10264-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-01-20T21:37:00Z"
+        },
+        {
+          "documentId": "DOC-10264-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-SV-24-9883",
+          "source": "Repair facility",
+          "receivedAt": "2024-01-23T22:37:00Z"
+        },
+        {
+          "documentId": "DOC-10264-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-02-24T18:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 6908.06,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 5908.06
+      },
+      "closedDate": "2024-02-26",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-01-19T19:37:00Z",
+      "lastUpdatedAt": "2024-02-26T17:40:00Z"
+    },
+    {
+      "claimId": "CLM-10270",
+      "customerId": "CUST-29098",
+      "policyId": "PAP-4709651",
+      "vehicleId": "VEH-52406",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2024-01-24",
+      "lossTime": "10:25",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Intersection of Willow Ave and Aspen Pl",
+        "street": null,
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "reportedAt": "2024-01-25T00:41:00Z",
+      "reportChannel": "Mobile app",
+      "description": "I was turning left on a green arrow when another driver went through the red light and hit the left front of my vehicle.",
+      "reportedDamage": {
+        "summary": "Front bumper; Left front fender; Left headlamp.",
+        "areas": [
+          "Front bumper",
+          "Left front fender",
+          "Left headlamp"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Jesse Holt",
+          "vehicleDescription": "2025 Litware Solace sedan, harbor",
+          "insurer": "Tailspin Casualty Company"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Sunvale Police Department",
+        "reportNumber": "SPD-24-001783"
+      },
+      "repairFacilityId": "RF-106",
+      "estimate": {
+        "estimateId": "EST-SV-24-6987",
+        "repairFacilityId": "RF-106",
+        "estimateDate": "2024-01-28",
+        "grossAmount": 8867.11
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10270-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2024-01-25T00:41:00Z"
+        },
+        {
+          "documentId": "DOC-10270-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2024-01-25T00:41:00Z"
+        },
+        {
+          "documentId": "DOC-10270-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2024-01-25T00:41:00Z"
+        },
+        {
+          "documentId": "DOC-10270-04",
+          "documentType": "Police report",
+          "title": "Sunvale Police Department report SPD-24-001783",
+          "source": "Police agency",
+          "receivedAt": "2024-01-27T07:41:00Z"
+        },
+        {
+          "documentId": "DOC-10270-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-SV-24-6987",
+          "source": "Repair facility",
+          "receivedAt": "2024-01-28T08:41:00Z"
+        },
+        {
+          "documentId": "DOC-10270-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-03-07T21:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 9410.38,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 8410.38
+      },
+      "closedDate": "2024-03-09",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-01-25T00:41:00Z",
+      "lastUpdatedAt": "2024-03-09T17:08:00Z"
+    },
+    {
+      "claimId": "CLM-10278",
+      "customerId": "CUST-21658",
+      "policyId": "PAP-4363836",
+      "vehicleId": "VEH-56773",
+      "claimType": "Collision",
+      "causeOfLoss": "Single-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2024-02-08",
+      "lossTime": "08:25",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "County Road 22 near Copper Mesa",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2024-02-09T16:00:00Z",
+      "reportChannel": "Phone",
+      "description": "The road was icy on County Road 22 and my vehicle slid into the guardrail on the right side.",
+      "reportedDamage": {
+        "summary": "Front bumper; Right front fender; Right headlamp.",
+        "areas": [
+          "Front bumper",
+          "Right front fender",
+          "Right headlamp"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-110",
+      "estimate": {
+        "estimateId": "EST-WC-24-6880",
+        "repairFacilityId": "RF-110",
+        "estimateDate": "2024-02-15",
+        "grossAmount": 4108.68
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10278-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2024-02-09T16:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-02-10T04:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-02-10T04:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-02-10T04:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-02-10T04:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-02-10T04:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-07",
+          "documentType": "Photograph",
+          "title": "Photograph 6 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-02-10T04:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-08",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-WC-24-6880",
+          "source": "Repair facility",
+          "receivedAt": "2024-02-15T18:00:00Z"
+        },
+        {
+          "documentId": "DOC-10278-09",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-04-10T08:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 4447.81,
+        "deductibleApplied": 500.0,
+        "totalPaid": 3947.81
+      },
+      "closedDate": "2024-04-11",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-02-09T16:00:00Z",
+      "lastUpdatedAt": "2024-04-11T17:41:00Z"
+    },
+    {
+      "claimId": "CLM-10282",
+      "customerId": "CUST-36247",
+      "policyId": "PAP-3864006",
+      "vehicleId": "VEH-58623",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Theft",
+      "status": "Closed - Paid",
+      "lossDate": "2024-04-09",
+      "lossTime": "07:40",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Sunvale Station park-and-ride lot",
+        "street": null,
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "reportedAt": "2024-04-14T17:30:00Z",
+      "reportChannel": "Online",
+      "description": "My vehicle was stolen from the Sunvale Station park-and-ride lot. Police recovered it two days later with the steering column and ignition damaged.",
+      "reportedDamage": {
+        "summary": "Steering column; Ignition; Driver door lock.",
+        "areas": [
+          "Steering column",
+          "Ignition",
+          "Driver door lock"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Sunvale Police Department",
+        "reportNumber": "SPD-24-030744"
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10282-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2024-04-14T17:30:00Z"
+        },
+        {
+          "documentId": "DOC-10282-02",
+          "documentType": "Police report",
+          "title": "Sunvale Police Department report SPD-24-030744",
+          "source": "Police agency",
+          "receivedAt": "2024-04-18T20:30:00Z"
+        },
+        {
+          "documentId": "DOC-10282-03",
+          "documentType": "Total loss valuation",
+          "title": "Vehicle valuation report",
+          "source": "Contoso Insurance",
+          "receivedAt": "2024-04-25T01:30:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 28679.45,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 27679.45
+      },
+      "closedDate": "2024-06-12",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-04-14T17:30:00Z",
+      "lastUpdatedAt": "2024-06-12T17:20:00Z"
+    },
+    {
+      "claimId": "CLM-10285",
+      "customerId": "CUST-35138",
+      "policyId": "PAP-4818268",
+      "vehicleId": "VEH-59231",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2024-05-02",
+      "lossTime": "12:35",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Intersection of Juniper Ln and Harbor St",
+        "street": null,
+        "city": "Granite Bend",
+        "state": "NV"
+      },
+      "reportedAt": "2024-05-04T15:39:00Z",
+      "reportChannel": "Phone",
+      "description": "I was turning left on a green arrow when another driver went through the red light and hit the left front of my vehicle.",
+      "reportedDamage": {
+        "summary": "Front bumper; Left front fender; Left headlamp.",
+        "areas": [
+          "Front bumper",
+          "Left front fender",
+          "Left headlamp"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Remy Soto",
+          "vehicleDescription": "2018 Adatum Strider pickup, midnight",
+          "insurer": "Proseware Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Granite Bend Police Department",
+        "reportNumber": "GBPD-24-004458"
+      },
+      "repairFacilityId": "RF-109",
+      "estimate": {
+        "estimateId": "EST-GB-24-7702",
+        "repairFacilityId": "RF-109",
+        "estimateDate": "2024-05-11",
+        "grossAmount": 4729.79
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10285-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2024-05-04T15:39:00Z"
+        },
+        {
+          "documentId": "DOC-10285-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2024-05-05T09:39:00Z"
+        },
+        {
+          "documentId": "DOC-10285-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2024-05-05T09:39:00Z"
+        },
+        {
+          "documentId": "DOC-10285-04",
+          "documentType": "Police report",
+          "title": "Granite Bend Police Department report GBPD-24-004458",
+          "source": "Police agency",
+          "receivedAt": "2024-05-06T19:39:00Z"
+        },
+        {
+          "documentId": "DOC-10285-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-GB-24-7702",
+          "source": "Repair facility",
+          "receivedAt": "2024-05-11T17:39:00Z"
+        },
+        {
+          "documentId": "DOC-10285-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-06-05T05:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 5210.85,
+        "deductibleApplied": 250.0,
+        "totalPaid": 4960.85
+      },
+      "closedDate": "2024-06-06",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-05-04T15:39:00Z",
+      "lastUpdatedAt": "2024-06-06T17:17:00Z"
+    },
+    {
+      "claimId": "CLM-10291",
+      "customerId": "CUST-39296",
+      "policyId": "PAP-3022868",
+      "vehicleId": "VEH-59467",
+      "claimType": "Collision",
+      "causeOfLoss": "Single-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2024-07-20",
+      "lossTime": "06:10",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Copper Mesa Medical Center parking garage",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2024-07-23T20:34:00Z",
+      "reportChannel": "Phone",
+      "description": "I was backing out of a parking space and hit a concrete post.",
+      "reportedDamage": {
+        "summary": "Rear bumper; Liftgate.",
+        "areas": [
+          "Rear bumper",
+          "Liftgate"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-24-1506",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2024-07-26",
+        "grossAmount": 3883.7
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10291-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2024-07-23T20:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-24T07:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-24T07:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-24T07:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-24T07:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-24T07:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-07",
+          "documentType": "Photograph",
+          "title": "Photograph 6 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-24T07:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-08",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-24-1506",
+          "source": "Repair facility",
+          "receivedAt": "2024-07-26T21:34:00Z"
+        },
+        {
+          "documentId": "DOC-10291-09",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-08-23T15:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 4084.89,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 3084.89
+      },
+      "closedDate": "2024-08-24",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-07-23T20:34:00Z",
+      "lastUpdatedAt": "2024-08-24T17:36:00Z"
+    },
+    {
+      "claimId": "CLM-10299",
+      "customerId": "CUST-16223",
+      "policyId": "PAP-4700525",
+      "vehicleId": "VEH-51433",
+      "claimType": "Property Damage Liability",
+      "causeOfLoss": "Property damage to another vehicle",
+      "status": "Closed - Paid",
+      "lossDate": "2024-07-23",
+      "lossTime": "19:05",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Brightwater Community College parking lot",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2024-07-25T17:29:00Z",
+      "reportChannel": "Agent",
+      "description": "I misjudged the distance while parking at the Brightwater Community College parking lot and hit the rear bumper of a parked vehicle.",
+      "reportedDamage": {
+        "summary": "Other party's vehicle: rear bumper.",
+        "areas": [
+          "Other party's vehicle: rear bumper"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Robin Delgado",
+          "vehicleDescription": "2024 Fabrikam Ridgeback pickup, midnight",
+          "insurer": "Northwind Mutual Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Brightwater Police Department",
+        "reportNumber": "BPD-24-023555"
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10299-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (agent)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2024-07-25T17:29:00Z"
+        },
+        {
+          "documentId": "DOC-10299-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-26T01:29:00Z"
+        },
+        {
+          "documentId": "DOC-10299-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-26T01:29:00Z"
+        },
+        {
+          "documentId": "DOC-10299-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-26T01:29:00Z"
+        },
+        {
+          "documentId": "DOC-10299-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-26T01:29:00Z"
+        },
+        {
+          "documentId": "DOC-10299-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2024-07-26T01:29:00Z"
+        },
+        {
+          "documentId": "DOC-10299-07",
+          "documentType": "Police report",
+          "title": "Brightwater Police Department report BPD-24-023555",
+          "source": "Police agency",
+          "receivedAt": "2024-08-03T00:29:00Z"
+        },
+        {
+          "documentId": "DOC-10299-08",
+          "documentType": "Repair invoice",
+          "title": "Other party's repair invoice",
+          "source": "Other party",
+          "receivedAt": "2024-09-25T02:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 3532.38,
+        "deductibleApplied": 0.0,
+        "totalPaid": 3532.38
+      },
+      "closedDate": "2024-09-26",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-07-25T17:29:00Z",
+      "lastUpdatedAt": "2024-09-26T17:30:00Z"
+    },
+    {
+      "claimId": "CLM-10304",
+      "customerId": "CUST-21888",
+      "policyId": "PAP-4254837",
+      "vehicleId": "VEH-54630",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2024-09-25",
+      "lossTime": "15:55",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 7 near Riverton Falls",
+        "street": null,
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "reportedAt": "2024-09-26T22:44:00Z",
+      "reportChannel": "Agent",
+      "description": "Another vehicle merged into my lane on County Road 7 and scraped along the right side of my vehicle.",
+      "reportedDamage": {
+        "summary": "Right front door; Right rear door; Right side mirror.",
+        "areas": [
+          "Right front door",
+          "Right rear door",
+          "Right side mirror"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": true,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Lou Ferris",
+          "vehicleDescription": "2023 Northwind Breeze sedan, harbor",
+          "insurer": "Tailspin Casualty Company"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-24-8502",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2024-10-01",
+        "grossAmount": 8134.12
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10304-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (agent)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2024-09-26T22:44:00Z"
+        },
+        {
+          "documentId": "DOC-10304-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-09-27T17:44:00Z"
+        },
+        {
+          "documentId": "DOC-10304-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-09-27T17:44:00Z"
+        },
+        {
+          "documentId": "DOC-10304-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-09-27T17:44:00Z"
+        },
+        {
+          "documentId": "DOC-10304-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-24-8502",
+          "source": "Repair facility",
+          "receivedAt": "2024-10-01T06:44:00Z"
+        },
+        {
+          "documentId": "DOC-10304-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-10-09T10:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 8150.74,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 7150.74
+      },
+      "closedDate": "2024-10-10",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-09-26T22:44:00Z",
+      "lastUpdatedAt": "2024-10-10T17:55:00Z"
+    },
+    {
+      "claimId": "CLM-10311",
+      "customerId": "CUST-30305",
+      "policyId": "PAP-4848444",
+      "vehicleId": "VEH-51346",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2024-10-13",
+      "lossTime": "14:35",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "Intersection of Juniper Pl and Hawthorne Dr",
+        "street": null,
+        "city": "Lakeshore Bluffs",
+        "state": "CO"
+      },
+      "reportedAt": "2024-10-15T02:14:00Z",
+      "reportChannel": "Mobile app",
+      "description": "I was stopped at a red light when the vehicle behind me did not stop in time and hit the back of my car.",
+      "reportedDamage": {
+        "summary": "Rear bumper; Trunk lid.",
+        "areas": [
+          "Rear bumper",
+          "Trunk lid"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Toni Ferris",
+          "vehicleDescription": "2025 Northwind Breeze sedan, midnight",
+          "insurer": "Relecloud Auto Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Lakeshore Bluffs Police Department",
+        "reportNumber": "LBPD-24-001714"
+      },
+      "repairFacilityId": "RF-108",
+      "estimate": {
+        "estimateId": "EST-LB-24-1644",
+        "repairFacilityId": "RF-108",
+        "estimateDate": "2024-10-17",
+        "grossAmount": 6198.81
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10311-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2024-10-15T02:14:00Z"
+        },
+        {
+          "documentId": "DOC-10311-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2024-10-15T02:14:00Z"
+        },
+        {
+          "documentId": "DOC-10311-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2024-10-15T02:14:00Z"
+        },
+        {
+          "documentId": "DOC-10311-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-LB-24-1644",
+          "source": "Repair facility",
+          "receivedAt": "2024-10-17T06:14:00Z"
+        },
+        {
+          "documentId": "DOC-10311-05",
+          "documentType": "Police report",
+          "title": "Lakeshore Bluffs Police Department report LBPD-24-001714",
+          "source": "Police agency",
+          "receivedAt": "2024-10-20T03:14:00Z"
+        },
+        {
+          "documentId": "DOC-10311-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-11-20T23:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 6485.86,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 5485.86
+      },
+      "closedDate": "2024-11-22",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-10-15T02:14:00Z",
+      "lastUpdatedAt": "2024-11-22T17:53:00Z"
+    },
+    {
+      "claimId": "CLM-10320",
+      "customerId": "CUST-36645",
+      "policyId": "PAP-3071091",
+      "vehicleId": "VEH-58904",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Animal strike",
+      "status": "Closed - Paid",
+      "lossDate": "2024-12-16",
+      "lossTime": "18:40",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 18 near Riverton Falls",
+        "street": null,
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "reportedAt": "2024-12-17T05:55:00Z",
+      "reportChannel": "Online",
+      "description": "A deer ran onto County Road 18 at dusk and I could not avoid it.",
+      "reportedDamage": {
+        "summary": "Front bumper; Grille; Hood; Left headlamp.",
+        "areas": [
+          "Front bumper",
+          "Grille",
+          "Hood",
+          "Left headlamp"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Riverton Falls Police Department",
+        "reportNumber": "RFPD-24-005285"
+      },
+      "repairFacilityId": "RF-103",
+      "estimate": {
+        "estimateId": "EST-RF-24-6355",
+        "repairFacilityId": "RF-103",
+        "estimateDate": "2024-12-20",
+        "grossAmount": 4755.26
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10320-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2024-12-17T05:55:00Z"
+        },
+        {
+          "documentId": "DOC-10320-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-12-17T05:55:00Z"
+        },
+        {
+          "documentId": "DOC-10320-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-12-17T05:55:00Z"
+        },
+        {
+          "documentId": "DOC-10320-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2024-12-17T05:55:00Z"
+        },
+        {
+          "documentId": "DOC-10320-05",
+          "documentType": "Police report",
+          "title": "Riverton Falls Police Department report RFPD-24-005285",
+          "source": "Police agency",
+          "receivedAt": "2024-12-19T10:55:00Z"
+        },
+        {
+          "documentId": "DOC-10320-06",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-RF-24-6355",
+          "source": "Repair facility",
+          "receivedAt": "2024-12-20T07:55:00Z"
+        },
+        {
+          "documentId": "DOC-10320-07",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2024-12-31T19:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 5047.16,
+        "deductibleApplied": 100.0,
+        "totalPaid": 4947.16
+      },
+      "closedDate": "2025-01-02",
+      "closureReason": "Payment issued",
+      "createdAt": "2024-12-17T05:55:00Z",
+      "lastUpdatedAt": "2025-01-02T17:37:00Z"
+    },
+    {
+      "claimId": "CLM-10329",
+      "customerId": "CUST-24817",
+      "policyId": "PAP-4471920",
+      "vehicleId": "VEH-58213",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Glass breakage",
+      "status": "Closed - Paid",
+      "lossDate": "2025-03-04",
+      "lossTime": "08:40",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Coast Highway northbound near Brightwater",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2025-03-05T01:20:00Z",
+      "reportChannel": "Phone",
+      "description": "A rock thrown up by a truck on Coast Highway hit the windshield. There is a crack on the passenger side that is spreading.",
+      "reportedDamage": {
+        "summary": "Cracked windshield.",
+        "areas": [
+          "Windshield"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-25-0418",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2025-03-06",
+        "grossAmount": 1180.0
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10329-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2025-03-05T01:20:00Z"
+        },
+        {
+          "documentId": "DOC-10329-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2025-03-05T16:02:00Z"
+        },
+        {
+          "documentId": "DOC-10329-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2025-03-05T16:02:00Z"
+        },
+        {
+          "documentId": "DOC-10329-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-25-0418",
+          "source": "Repair facility",
+          "receivedAt": "2025-03-06T21:15:00Z"
+        },
+        {
+          "documentId": "DOC-10329-05",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2025-03-13T19:30:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 1180.0,
+        "deductibleApplied": 500.0,
+        "totalPaid": 680.0
+      },
+      "closedDate": "2025-03-14",
+      "closureReason": "Payment issued",
+      "createdAt": "2025-03-05T01:20:00Z",
+      "lastUpdatedAt": "2025-03-14T17:45:00Z"
+    },
+    {
+      "claimId": "CLM-10333",
+      "customerId": "CUST-18120",
+      "policyId": "PAP-4546497",
+      "vehicleId": "VEH-54523",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Closed - Withdrawn",
+      "lossDate": "2025-05-20",
+      "lossTime": "20:30",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "Intersection of Madrona Ln and Tamarack Way",
+        "street": null,
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "reportedAt": "2025-05-21T22:23:00Z",
+      "reportChannel": "Mobile app",
+      "description": "I was stopped at a red light when the vehicle behind me did not stop in time and hit the back of my car.",
+      "reportedDamage": {
+        "summary": "Rear bumper; Liftgate.",
+        "areas": [
+          "Rear bumper",
+          "Liftgate"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Lou Holt",
+          "vehicleDescription": "2018 Litware Pulse hatchback, silver",
+          "insurer": "Tailspin Casualty Company"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Willow Crossing Police Department",
+        "reportNumber": "WCPD-25-001222"
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10333-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2025-05-21T22:23:00Z"
+        },
+        {
+          "documentId": "DOC-10333-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2025-05-21T22:23:00Z"
+        },
+        {
+          "documentId": "DOC-10333-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2025-05-21T22:23:00Z"
+        },
+        {
+          "documentId": "DOC-10333-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2025-05-21T22:23:00Z"
+        },
+        {
+          "documentId": "DOC-10333-05",
+          "documentType": "Police report",
+          "title": "Willow Crossing Police Department report WCPD-25-001222",
+          "source": "Police agency",
+          "receivedAt": "2025-05-27T06:23:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": "2025-05-31",
+      "closureReason": "Withdrawn by policyholder",
+      "createdAt": "2025-05-21T22:23:00Z",
+      "lastUpdatedAt": "2025-05-31T17:01:00Z"
+    },
+    {
+      "claimId": "CLM-10337",
+      "customerId": "CUST-13114",
+      "policyId": "PAP-3527859",
+      "vehicleId": "VEH-52669",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Hail",
+      "status": "Closed - Paid",
+      "lossDate": "2025-07-02",
+      "lossTime": "21:35",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "reportedAt": "2025-07-07T23:24:00Z",
+      "reportChannel": "Mobile app",
+      "description": "A hailstorm passed through Riverton Falls while my vehicle was parked outside. The hood, roof and liftgate have many small dents.",
+      "reportedDamage": {
+        "summary": "Hood; Roof; Liftgate.",
+        "areas": [
+          "Hood",
+          "Roof",
+          "Liftgate"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-25-6524",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2025-07-14",
+        "grossAmount": 5788.01
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10337-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-07T23:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-07T23:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-07T23:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-07T23:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-07T23:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-07T23:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-07",
+          "documentType": "Photograph",
+          "title": "Photograph 6 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-07T23:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-08",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-25-6524",
+          "source": "Repair facility",
+          "receivedAt": "2025-07-14T06:24:00Z"
+        },
+        {
+          "documentId": "DOC-10337-09",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2025-08-31T20:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 5925.52,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 4925.52
+      },
+      "closedDate": "2025-09-02",
+      "closureReason": "Payment issued",
+      "createdAt": "2025-07-07T23:24:00Z",
+      "lastUpdatedAt": "2025-09-02T17:15:00Z"
+    },
+    {
+      "claimId": "CLM-10340",
+      "customerId": "CUST-21658",
+      "policyId": "PAP-4363836",
+      "vehicleId": "VEH-56773",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Vandalism",
+      "status": "Closed - Withdrawn",
+      "lossDate": "2025-07-22",
+      "lossTime": "16:25",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Copper Mesa Station park-and-ride lot",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2025-07-27T23:28:00Z",
+      "reportChannel": "Online",
+      "description": "Someone scratched deep lines into the paint on the right side while my vehicle was parked at the Copper Mesa Station park-and-ride lot.",
+      "reportedDamage": {
+        "summary": "Right front door; Right rear door.",
+        "areas": [
+          "Right front door",
+          "Right rear door"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Copper Mesa Police Department",
+        "reportNumber": "CMPD-25-022234"
+      },
+      "repairFacilityId": "RF-103",
+      "estimate": {
+        "estimateId": "EST-RF-25-3731",
+        "repairFacilityId": "RF-103",
+        "estimateDate": "2025-07-29",
+        "grossAmount": 1069.22
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10340-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-27T23:28:00Z"
+        },
+        {
+          "documentId": "DOC-10340-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-27T23:28:00Z"
+        },
+        {
+          "documentId": "DOC-10340-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-27T23:28:00Z"
+        },
+        {
+          "documentId": "DOC-10340-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2025-07-27T23:28:00Z"
+        },
+        {
+          "documentId": "DOC-10340-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-RF-25-3731",
+          "source": "Repair facility",
+          "receivedAt": "2025-07-30T05:28:00Z"
+        },
+        {
+          "documentId": "DOC-10340-06",
+          "documentType": "Police report",
+          "title": "Copper Mesa Police Department report CMPD-25-022234",
+          "source": "Police agency",
+          "receivedAt": "2025-08-01T07:28:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": "2025-10-08",
+      "closureReason": "Withdrawn by policyholder",
+      "createdAt": "2025-07-27T23:28:00Z",
+      "lastUpdatedAt": "2025-10-08T17:38:00Z"
+    },
+    {
+      "claimId": "CLM-10347",
+      "customerId": "CUST-28678",
+      "policyId": "PAP-4970609",
+      "vehicleId": "VEH-56463",
+      "claimType": "Collision",
+      "causeOfLoss": "Single-vehicle collision",
+      "status": "Closed - Paid",
+      "lossDate": "2025-09-09",
+      "lossTime": "10:10",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Copper Mesa Community College parking lot",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2025-09-12T23:43:00Z",
+      "reportChannel": "Phone",
+      "description": "I was backing out of a parking space and hit a concrete post.",
+      "reportedDamage": {
+        "summary": "Rear bumper; Trunk lid.",
+        "areas": [
+          "Rear bumper",
+          "Trunk lid"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-106",
+      "estimate": {
+        "estimateId": "EST-SV-25-7686",
+        "repairFacilityId": "RF-106",
+        "estimateDate": "2025-09-15",
+        "grossAmount": 8300.44
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10347-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2025-09-12T23:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-09-13T16:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-09-13T16:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-09-13T16:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-09-13T16:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-09-13T16:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-07",
+          "documentType": "Photograph",
+          "title": "Photograph 6 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2025-09-13T16:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-08",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-SV-25-7686",
+          "source": "Repair facility",
+          "receivedAt": "2025-09-15T07:43:00Z"
+        },
+        {
+          "documentId": "DOC-10347-09",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2025-11-11T04:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 8369.69,
+        "deductibleApplied": 1500.0,
+        "totalPaid": 6869.69
+      },
+      "closedDate": "2025-11-12",
+      "closureReason": "Payment issued",
+      "createdAt": "2025-09-12T23:43:00Z",
+      "lastUpdatedAt": "2025-11-12T17:50:00Z"
+    },
+    {
+      "claimId": "CLM-10354",
+      "customerId": "CUST-16223",
+      "policyId": "PAP-4700525",
+      "vehicleId": "VEH-51433",
+      "claimType": "Property Damage Liability",
+      "causeOfLoss": "Property damage to another vehicle",
+      "status": "Closed - Paid",
+      "lossDate": "2026-02-02",
+      "lossTime": "11:00",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 22 near Brightwater",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2026-02-02T23:27:00Z",
+      "reportChannel": "Mobile app",
+      "description": "Traffic stopped suddenly on County Road 22 and I rear-ended the vehicle in front of me.",
+      "reportedDamage": {
+        "summary": "Other party's vehicle: rear bumper; Other party's vehicle: trunk lid.",
+        "areas": [
+          "Other party's vehicle: rear bumper",
+          "Other party's vehicle: trunk lid"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Lou Abbott",
+          "vehicleDescription": "2025 Contoso Trailstar sport utility vehicle, graphite",
+          "insurer": "Proseware Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Brightwater Police Department",
+        "reportNumber": "BPD-26-028093"
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10354-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-02T23:27:00Z"
+        },
+        {
+          "documentId": "DOC-10354-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-02T23:27:00Z"
+        },
+        {
+          "documentId": "DOC-10354-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-02T23:27:00Z"
+        },
+        {
+          "documentId": "DOC-10354-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-02T23:27:00Z"
+        },
+        {
+          "documentId": "DOC-10354-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-02T23:27:00Z"
+        },
+        {
+          "documentId": "DOC-10354-06",
+          "documentType": "Police report",
+          "title": "Brightwater Police Department report BPD-26-028093",
+          "source": "Police agency",
+          "receivedAt": "2026-02-05T06:27:00Z"
+        },
+        {
+          "documentId": "DOC-10354-07",
+          "documentType": "Repair invoice",
+          "title": "Other party's repair invoice",
+          "source": "Other party",
+          "receivedAt": "2026-03-04T09:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 3584.57,
+        "deductibleApplied": 0.0,
+        "totalPaid": 3584.57
+      },
+      "closedDate": "2026-03-05",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-02-02T23:27:00Z",
+      "lastUpdatedAt": "2026-03-05T17:48:00Z"
+    },
+    {
+      "claimId": "CLM-10358",
+      "customerId": "CUST-35138",
+      "policyId": "PAP-4818268",
+      "vehicleId": "VEH-59231",
+      "claimType": "Property Damage Liability",
+      "causeOfLoss": "Property damage to another vehicle",
+      "status": "Closed - Paid",
+      "lossDate": "2026-02-07",
+      "lossTime": "10:10",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Granite Bend Medical Center parking garage",
+        "street": null,
+        "city": "Granite Bend",
+        "state": "NV"
+      },
+      "reportedAt": "2026-02-08T00:24:00Z",
+      "reportChannel": "Online",
+      "description": "I misjudged the distance while parking at the Granite Bend Medical Center parking garage and hit the rear bumper of a parked vehicle.",
+      "reportedDamage": {
+        "summary": "Other party's vehicle: rear bumper.",
+        "areas": [
+          "Other party's vehicle: rear bumper"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Shawn Holt",
+          "vehicleDescription": "2017 Adatum Strider pickup, ruby",
+          "insurer": "Lamna Insurance Group"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Granite Bend Police Department",
+        "reportNumber": "GBPD-26-026952"
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10358-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-08T00:24:00Z"
+        },
+        {
+          "documentId": "DOC-10358-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-08T00:24:00Z"
+        },
+        {
+          "documentId": "DOC-10358-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-08T00:24:00Z"
+        },
+        {
+          "documentId": "DOC-10358-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-08T00:24:00Z"
+        },
+        {
+          "documentId": "DOC-10358-05",
+          "documentType": "Police report",
+          "title": "Granite Bend Police Department report GBPD-26-026952",
+          "source": "Police agency",
+          "receivedAt": "2026-02-12T07:24:00Z"
+        },
+        {
+          "documentId": "DOC-10358-06",
+          "documentType": "Repair invoice",
+          "title": "Other party's repair invoice",
+          "source": "Other party",
+          "receivedAt": "2026-02-27T00:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 7859.42,
+        "deductibleApplied": 0.0,
+        "totalPaid": 7859.42
+      },
+      "closedDate": "2026-02-28",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-02-08T00:24:00Z",
+      "lastUpdatedAt": "2026-02-28T17:54:00Z"
+    },
+    {
+      "claimId": "CLM-10367",
+      "customerId": "CUST-34111",
+      "policyId": "PAP-4278298",
+      "vehicleId": "VEH-58620",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "Closed - Paid",
+      "lossDate": "2026-02-19",
+      "lossTime": "13:20",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Maple Harbor Station park-and-ride lot",
+        "street": null,
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "reportedAt": "2026-02-20T00:53:00Z",
+      "reportChannel": "Mobile app",
+      "description": "My vehicle was parked at the Maple Harbor Station park-and-ride lot. When I came back, the right rear door was dented and scraped. No note was left.",
+      "reportedDamage": {
+        "summary": "Right rear door; Right rear quarter panel.",
+        "areas": [
+          "Right rear door",
+          "Right rear quarter panel"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-104",
+      "estimate": {
+        "estimateId": "EST-HL-26-8172",
+        "repairFacilityId": "RF-104",
+        "estimateDate": "2026-02-23",
+        "grossAmount": 2338.4
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10367-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-20T00:53:00Z"
+        },
+        {
+          "documentId": "DOC-10367-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-20T00:53:00Z"
+        },
+        {
+          "documentId": "DOC-10367-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-20T00:53:00Z"
+        },
+        {
+          "documentId": "DOC-10367-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-20T00:53:00Z"
+        },
+        {
+          "documentId": "DOC-10367-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-HL-26-8172",
+          "source": "Repair facility",
+          "receivedAt": "2026-02-24T05:53:00Z"
+        },
+        {
+          "documentId": "DOC-10367-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2026-03-23T06:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 2362.7,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 1362.7
+      },
+      "closedDate": "2026-03-24",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-02-20T00:53:00Z",
+      "lastUpdatedAt": "2026-03-24T17:55:00Z"
+    },
+    {
+      "claimId": "CLM-10376",
+      "customerId": "CUST-27693",
+      "policyId": "PAP-4132884",
+      "vehicleId": "VEH-55468",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Animal strike",
+      "status": "Closed - Withdrawn",
+      "lossDate": "2026-02-23",
+      "lossTime": "15:00",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "County Road 47 near Copper Mesa",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-02-26T03:20:00Z",
+      "reportChannel": "Online",
+      "description": "A deer ran onto County Road 47 at dusk and I could not avoid it.",
+      "reportedDamage": {
+        "summary": "Front bumper; Grille; Hood; Right headlamp.",
+        "areas": [
+          "Front bumper",
+          "Grille",
+          "Hood",
+          "Right headlamp"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10376-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-26T03:20:00Z"
+        },
+        {
+          "documentId": "DOC-10376-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-26T03:20:00Z"
+        },
+        {
+          "documentId": "DOC-10376-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-26T03:20:00Z"
+        },
+        {
+          "documentId": "DOC-10376-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-26T03:20:00Z"
+        },
+        {
+          "documentId": "DOC-10376-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-26T03:20:00Z"
+        },
+        {
+          "documentId": "DOC-10376-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-02-26T03:20:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": "2026-04-12",
+      "closureReason": "Withdrawn by policyholder",
+      "createdAt": "2026-02-26T03:20:00Z",
+      "lastUpdatedAt": "2026-04-12T17:40:00Z"
+    },
+    {
+      "claimId": "CLM-10382",
+      "customerId": "CUST-17709",
+      "policyId": "PAP-4607869",
+      "vehicleId": "VEH-50277",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Glass breakage",
+      "status": "Closed - Paid",
+      "lossDate": "2026-04-16",
+      "lossTime": "14:55",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 7 near Maple Harbor",
+        "street": null,
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "reportedAt": "2026-04-20T03:22:00Z",
+      "reportChannel": "Phone",
+      "description": "A rock thrown up by a truck on County Road 7 hit the windshield and cracked it.",
+      "reportedDamage": {
+        "summary": "Windshield.",
+        "areas": [
+          "Windshield"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Maple Harbor Police Department",
+        "reportNumber": "MHPD-26-022776"
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-26-2534",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2026-04-23",
+        "grossAmount": 727.49
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10382-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-04-20T03:22:00Z"
+        },
+        {
+          "documentId": "DOC-10382-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-04-20T13:22:00Z"
+        },
+        {
+          "documentId": "DOC-10382-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-04-20T13:22:00Z"
+        },
+        {
+          "documentId": "DOC-10382-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-26-2534",
+          "source": "Repair facility",
+          "receivedAt": "2026-04-23T09:22:00Z"
+        },
+        {
+          "documentId": "DOC-10382-05",
+          "documentType": "Police report",
+          "title": "Maple Harbor Police Department report MHPD-26-022776",
+          "source": "Police agency",
+          "receivedAt": "2026-04-28T11:22:00Z"
+        },
+        {
+          "documentId": "DOC-10382-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2026-05-12T12:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 788.23,
+        "deductibleApplied": 500.0,
+        "totalPaid": 288.23
+      },
+      "closedDate": "2026-05-13",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-04-20T03:22:00Z",
+      "lastUpdatedAt": "2026-05-13T17:27:00Z"
+    },
+    {
+      "claimId": "CLM-10385",
+      "customerId": "CUST-14176",
+      "policyId": "PAP-3768340",
+      "vehicleId": "VEH-53375",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Glass breakage",
+      "status": "Closed - Denied",
+      "lossDate": "2026-04-17",
+      "lossTime": "10:30",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 22 near Brightwater",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2026-04-22T22:27:00Z",
+      "reportChannel": "Online",
+      "description": "A rock thrown up by a truck on County Road 22 hit the windshield and cracked it.",
+      "reportedDamage": {
+        "summary": "Windshield.",
+        "areas": [
+          "Windshield"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-26-2057",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2026-04-29",
+        "grossAmount": 413.48
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10385-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-04-22T22:27:00Z"
+        },
+        {
+          "documentId": "DOC-10385-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-04-22T22:27:00Z"
+        },
+        {
+          "documentId": "DOC-10385-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-04-22T22:27:00Z"
+        },
+        {
+          "documentId": "DOC-10385-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-26-2057",
+          "source": "Repair facility",
+          "receivedAt": "2026-04-29T06:27:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": "2026-06-04",
+      "closureReason": "Repair cost below deductible",
+      "createdAt": "2026-04-22T22:27:00Z",
+      "lastUpdatedAt": "2026-06-04T17:30:00Z"
+    },
+    {
+      "claimId": "CLM-10387",
+      "customerId": "CUST-29098",
+      "policyId": "PAP-4709651",
+      "vehicleId": "VEH-52406",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Glass breakage",
+      "status": "Closed - Paid",
+      "lossDate": "2026-05-23",
+      "lossTime": "20:20",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 47 near Sunvale",
+        "street": null,
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "reportedAt": "2026-05-26T14:08:00Z",
+      "reportChannel": "Mobile app",
+      "description": "A rock thrown up by a truck on County Road 47 hit the windshield and cracked it.",
+      "reportedDamage": {
+        "summary": "Windshield.",
+        "areas": [
+          "Windshield"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-26-1749",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2026-05-29",
+        "grossAmount": 707.93
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10387-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-05-26T14:08:00Z"
+        },
+        {
+          "documentId": "DOC-10387-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-05-26T14:08:00Z"
+        },
+        {
+          "documentId": "DOC-10387-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-05-26T14:08:00Z"
+        },
+        {
+          "documentId": "DOC-10387-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-26-1749",
+          "source": "Repair facility",
+          "receivedAt": "2026-05-29T19:08:00Z"
+        },
+        {
+          "documentId": "DOC-10387-05",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2026-07-13T13:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 779.42,
+        "deductibleApplied": 100.0,
+        "totalPaid": 679.42
+      },
+      "closedDate": "2026-07-14",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-05-26T14:08:00Z",
+      "lastUpdatedAt": "2026-07-14T17:03:00Z"
+    },
+    {
+      "claimId": "CLM-10390",
+      "customerId": "CUST-30305",
+      "policyId": "PAP-4848444",
+      "vehicleId": "VEH-51346",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "Closed - Paid",
+      "lossDate": "2026-07-25",
+      "lossTime": "20:35",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "Lakeshore Bluffs Marketplace parking lot",
+        "street": null,
+        "city": "Lakeshore Bluffs",
+        "state": "CO"
+      },
+      "reportedAt": "2026-07-26T21:54:00Z",
+      "reportChannel": "Mobile app",
+      "description": "My vehicle was parked at the Lakeshore Bluffs Marketplace parking lot. When I came back, the right rear door was dented and scraped. No note was left.",
+      "reportedDamage": {
+        "summary": "Right rear door; Right rear quarter panel.",
+        "areas": [
+          "Right rear door",
+          "Right rear quarter panel"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-108",
+      "estimate": {
+        "estimateId": "EST-LB-26-4904",
+        "repairFacilityId": "RF-108",
+        "estimateDate": "2026-07-31",
+        "grossAmount": 2718.53
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10390-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-07-26T21:54:00Z"
+        },
+        {
+          "documentId": "DOC-10390-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-07-26T21:54:00Z"
+        },
+        {
+          "documentId": "DOC-10390-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-07-26T21:54:00Z"
+        },
+        {
+          "documentId": "DOC-10390-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-07-26T21:54:00Z"
+        },
+        {
+          "documentId": "DOC-10390-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-LB-26-4904",
+          "source": "Repair facility",
+          "receivedAt": "2026-08-01T01:54:00Z"
+        },
+        {
+          "documentId": "DOC-10390-06",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2026-09-16T06:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 3006.98,
+        "deductibleApplied": 1000.0,
+        "totalPaid": 2006.98
+      },
+      "closedDate": "2026-09-17",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-07-26T21:54:00Z",
+      "lastUpdatedAt": "2026-09-17T17:53:00Z"
+    },
+    {
+      "claimId": "CLM-10398",
+      "customerId": "CUST-27693",
+      "policyId": "PAP-4132884",
+      "vehicleId": "VEH-55468",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Vandalism",
+      "status": "Closed - Paid",
+      "lossDate": "2026-08-13",
+      "lossTime": "19:25",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Copper Mesa Station park-and-ride lot",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-08-14T15:50:00Z",
+      "reportChannel": "Phone",
+      "description": "Someone scratched deep lines into the paint on the left side while my vehicle was parked at the Copper Mesa Station park-and-ride lot.",
+      "reportedDamage": {
+        "summary": "Left front door; Left rear door.",
+        "areas": [
+          "Left front door",
+          "Left rear door"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Copper Mesa Police Department",
+        "reportNumber": "CMPD-26-015769"
+      },
+      "repairFacilityId": "RF-108",
+      "estimate": {
+        "estimateId": "EST-LB-26-2834",
+        "repairFacilityId": "RF-108",
+        "estimateDate": "2026-08-20",
+        "grossAmount": 3025.58
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10398-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-08-14T15:50:00Z"
+        },
+        {
+          "documentId": "DOC-10398-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-08-15T00:50:00Z"
+        },
+        {
+          "documentId": "DOC-10398-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-08-15T00:50:00Z"
+        },
+        {
+          "documentId": "DOC-10398-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-08-15T00:50:00Z"
+        },
+        {
+          "documentId": "DOC-10398-05",
+          "documentType": "Police report",
+          "title": "Copper Mesa Police Department report CMPD-26-015769",
+          "source": "Police agency",
+          "receivedAt": "2026-08-18T19:50:00Z"
+        },
+        {
+          "documentId": "DOC-10398-06",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-LB-26-2834",
+          "source": "Repair facility",
+          "receivedAt": "2026-08-20T22:50:00Z"
+        },
+        {
+          "documentId": "DOC-10398-07",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2026-09-19T20:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 3110.52,
+        "deductibleApplied": 250.0,
+        "totalPaid": 2860.52
+      },
+      "closedDate": "2026-09-21",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-08-14T15:50:00Z",
+      "lastUpdatedAt": "2026-09-21T17:09:00Z"
+    },
+    {
+      "claimId": "CLM-10401",
+      "customerId": "CUST-18120",
+      "policyId": "PAP-4546497",
+      "vehicleId": "VEH-54523",
+      "claimType": "Property Damage Liability",
+      "causeOfLoss": "Property damage to another vehicle",
+      "status": "Closed - Paid",
+      "lossDate": "2026-09-09",
+      "lossTime": "11:55",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "Willow Crossing Community College parking lot",
+        "street": null,
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "reportedAt": "2026-09-10T18:46:00Z",
+      "reportChannel": "Online",
+      "description": "I misjudged the distance while parking at the Willow Crossing Community College parking lot and hit the rear bumper of a parked vehicle.",
+      "reportedDamage": {
+        "summary": "Other party's vehicle: rear bumper.",
+        "areas": [
+          "Other party's vehicle: rear bumper"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Lou Holt",
+          "vehicleDescription": "2024 Contoso Aria sedan, ruby",
+          "insurer": "Tailspin Casualty Company"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Willow Crossing Police Department",
+        "reportNumber": "WCPD-26-002045"
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10401-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-10T18:46:00Z"
+        },
+        {
+          "documentId": "DOC-10401-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-10T18:46:00Z"
+        },
+        {
+          "documentId": "DOC-10401-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-10T18:46:00Z"
+        },
+        {
+          "documentId": "DOC-10401-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-10T18:46:00Z"
+        },
+        {
+          "documentId": "DOC-10401-05",
+          "documentType": "Police report",
+          "title": "Willow Crossing Police Department report WCPD-26-002045",
+          "source": "Police agency",
+          "receivedAt": "2026-09-15T01:46:00Z"
+        },
+        {
+          "documentId": "DOC-10401-06",
+          "documentType": "Repair invoice",
+          "title": "Other party's repair invoice",
+          "source": "Other party",
+          "receivedAt": "2026-10-05T19:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 5881.49,
+        "deductibleApplied": 0.0,
+        "totalPaid": 5881.49
+      },
+      "closedDate": "2026-10-07",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-09-10T18:46:00Z",
+      "lastUpdatedAt": "2026-10-07T17:25:00Z"
+    },
+    {
+      "claimId": "CLM-10409",
+      "customerId": "CUST-17709",
+      "policyId": "PAP-4607869",
+      "vehicleId": "VEH-50277",
+      "claimType": "Property Damage Liability",
+      "causeOfLoss": "Property damage to another vehicle",
+      "status": "Closed - Paid",
+      "lossDate": "2026-09-10",
+      "lossTime": "11:00",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 31 near Maple Harbor",
+        "street": null,
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "reportedAt": "2026-09-10T23:39:00Z",
+      "reportChannel": "Phone",
+      "description": "Traffic stopped suddenly on County Road 31 and I rear-ended the vehicle in front of me.",
+      "reportedDamage": {
+        "summary": "Other party's vehicle: rear bumper; Other party's vehicle: trunk lid.",
+        "areas": [
+          "Other party's vehicle: rear bumper",
+          "Other party's vehicle: trunk lid"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Frankie Soto",
+          "vehicleDescription": "2023 Northwind Breeze sedan, ruby",
+          "insurer": "Proseware Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10409-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-09-10T23:39:00Z"
+        },
+        {
+          "documentId": "DOC-10409-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-12T04:39:00Z"
+        },
+        {
+          "documentId": "DOC-10409-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-12T04:39:00Z"
+        },
+        {
+          "documentId": "DOC-10409-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-12T04:39:00Z"
+        },
+        {
+          "documentId": "DOC-10409-05",
+          "documentType": "Repair invoice",
+          "title": "Other party's repair invoice",
+          "source": "Other party",
+          "receivedAt": "2026-10-14T03:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 5641.5,
+        "deductibleApplied": 0.0,
+        "totalPaid": 5641.5
+      },
+      "closedDate": "2026-10-15",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-09-10T23:39:00Z",
+      "lastUpdatedAt": "2026-10-15T17:44:00Z"
+    },
+    {
+      "claimId": "CLM-10417",
+      "customerId": "CUST-14176",
+      "policyId": "PAP-3768340",
+      "vehicleId": "VEH-53375",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Glass breakage",
+      "status": "Closed - Paid",
+      "lossDate": "2026-09-27",
+      "lossTime": "11:05",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 31 near Brightwater",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2026-09-27T19:49:00Z",
+      "reportChannel": "Phone",
+      "description": "A rock thrown up by a truck on County Road 31 hit the windshield and cracked it.",
+      "reportedDamage": {
+        "summary": "Windshield.",
+        "areas": [
+          "Windshield"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-26-8943",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2026-09-29",
+        "grossAmount": 1008.17
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10417-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-09-27T19:49:00Z"
+        },
+        {
+          "documentId": "DOC-10417-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-28T03:49:00Z"
+        },
+        {
+          "documentId": "DOC-10417-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-09-28T03:49:00Z"
+        },
+        {
+          "documentId": "DOC-10417-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-26-8943",
+          "source": "Repair facility",
+          "receivedAt": "2026-09-29T21:49:00Z"
+        },
+        {
+          "documentId": "DOC-10417-05",
+          "documentType": "Repair invoice",
+          "title": "Final repair invoice",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-15T14:00:00Z"
+        }
+      ],
+      "settlement": {
+        "settledAmount": 1036.25,
+        "deductibleApplied": 500.0,
+        "totalPaid": 536.25
+      },
+      "closedDate": "2026-10-16",
+      "closureReason": "Payment issued",
+      "createdAt": "2026-09-27T19:49:00Z",
+      "lastUpdatedAt": "2026-10-16T17:53:00Z"
+    },
+    {
+      "claimId": "CLM-10419",
+      "customerId": "CUST-25813",
+      "policyId": "PAP-3929408",
+      "vehicleId": "VEH-52819",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "In Review",
+      "lossDate": "2026-10-05",
+      "lossTime": "11:30",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "Intersection of Lakeview Pl and Aspen Pl",
+        "street": null,
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "reportedAt": "2026-10-06T23:05:00Z",
+      "reportChannel": "Online",
+      "description": "I was turning left on a green arrow when another driver went through the red light and hit the right front of my vehicle.",
+      "reportedDamage": {
+        "summary": "Front bumper; Right front fender; Right headlamp.",
+        "areas": [
+          "Front bumper",
+          "Right front fender",
+          "Right headlamp"
+        ]
+      },
+      "vehicleDrivable": false,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Remy Holt",
+          "vehicleDescription": "2023 Contoso Aria sedan, sandstone",
+          "insurer": "Northwind Mutual Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Willow Crossing Police Department",
+        "reportNumber": "WCPD-26-031380"
+      },
+      "repairFacilityId": "RF-110",
+      "estimate": {
+        "estimateId": "EST-WC-26-3330",
+        "repairFacilityId": "RF-110",
+        "estimateDate": "2026-10-10",
+        "grossAmount": 3641.42
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10419-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-06T23:05:00Z"
+        },
+        {
+          "documentId": "DOC-10419-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-06T23:05:00Z"
+        },
+        {
+          "documentId": "DOC-10419-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-06T23:05:00Z"
+        },
+        {
+          "documentId": "DOC-10419-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-06T23:05:00Z"
+        },
+        {
+          "documentId": "DOC-10419-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-06T23:05:00Z"
+        },
+        {
+          "documentId": "DOC-10419-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-06T23:05:00Z"
+        },
+        {
+          "documentId": "DOC-10419-07",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-WC-26-3330",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-11T03:05:00Z"
+        },
+        {
+          "documentId": "DOC-10419-08",
+          "documentType": "Police report",
+          "title": "Willow Crossing Police Department report WCPD-26-031380",
+          "source": "Police agency",
+          "receivedAt": "2026-10-11T06:05:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-06T23:05:00Z",
+      "lastUpdatedAt": "2026-10-11T06:05:00Z"
+    },
+    {
+      "claimId": "CLM-10427",
+      "customerId": "CUST-39798",
+      "policyId": "PAP-3974690",
+      "vehicleId": "VEH-55443",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "Closed - Denied",
+      "lossDate": "2026-10-07",
+      "lossTime": "18:40",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "reportedAt": "2026-10-10T02:37:00Z",
+      "reportChannel": "Phone",
+      "description": "My car was parked overnight on the street outside my home. In the morning the rear bumper was cracked and scuffed.",
+      "reportedDamage": {
+        "summary": "Rear bumper.",
+        "areas": [
+          "Rear bumper"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-26-8909",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2026-10-17",
+        "grossAmount": 1163.31
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10427-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-10-10T02:37:00Z"
+        },
+        {
+          "documentId": "DOC-10427-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-10T23:37:00Z"
+        },
+        {
+          "documentId": "DOC-10427-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-10T23:37:00Z"
+        },
+        {
+          "documentId": "DOC-10427-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-10T23:37:00Z"
+        },
+        {
+          "documentId": "DOC-10427-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-10T23:37:00Z"
+        },
+        {
+          "documentId": "DOC-10427-06",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-26-8909",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-17T10:37:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": "2026-11-15",
+      "closureReason": "Repair cost below deductible",
+      "createdAt": "2026-10-10T02:37:00Z",
+      "lastUpdatedAt": "2026-11-15T17:06:00Z"
+    },
+    {
+      "claimId": "CLM-10436",
+      "customerId": "CUST-21658",
+      "policyId": "PAP-4363836",
+      "vehicleId": "VEH-56773",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "In Review",
+      "lossDate": "2026-10-09",
+      "lossTime": "13:50",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-10-11T00:02:00Z",
+      "reportChannel": "Agent",
+      "description": "My car was parked overnight on the street outside my home. In the morning the rear bumper was cracked and scuffed.",
+      "reportedDamage": {
+        "summary": "Rear bumper.",
+        "areas": [
+          "Rear bumper"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Copper Mesa Police Department",
+        "reportNumber": "CMPD-26-016959"
+      },
+      "repairFacilityId": "RF-103",
+      "estimate": {
+        "estimateId": "EST-RF-26-2912",
+        "repairFacilityId": "RF-103",
+        "estimateDate": "2026-10-13",
+        "grossAmount": 1340.64
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10436-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (agent)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-10-11T00:02:00Z"
+        },
+        {
+          "documentId": "DOC-10436-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-11T04:02:00Z"
+        },
+        {
+          "documentId": "DOC-10436-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-11T04:02:00Z"
+        },
+        {
+          "documentId": "DOC-10436-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-RF-26-2912",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-13T07:02:00Z"
+        },
+        {
+          "documentId": "DOC-10436-05",
+          "documentType": "Police report",
+          "title": "Copper Mesa Police Department report CMPD-26-016959",
+          "source": "Police agency",
+          "receivedAt": "2026-10-17T05:02:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-11T00:02:00Z",
+      "lastUpdatedAt": "2026-10-21T08:02:00Z"
+    },
+    {
+      "claimId": "CLM-10439",
+      "customerId": "CUST-34111",
+      "policyId": "PAP-4278298",
+      "vehicleId": "VEH-58620",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Pending Documentation",
+      "lossDate": "2026-10-18",
+      "lossTime": "17:25",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Intersection of Aspen Dr and Cascade Ln",
+        "street": null,
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "reportedAt": "2026-10-19T19:18:00Z",
+      "reportChannel": "Mobile app",
+      "description": "I was turning left on a green arrow when another driver went through the red light and hit the right front of my vehicle.",
+      "reportedDamage": {
+        "summary": "Front bumper; Right front fender; Right headlamp.",
+        "areas": [
+          "Front bumper",
+          "Right front fender",
+          "Right headlamp"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Kai Pruitt",
+          "vehicleDescription": "2022 Litware Pulse hatchback, midnight",
+          "insurer": "Lamna Insurance Group"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Maple Harbor Police Department",
+        "reportNumber": "MHPD-26-039369"
+      },
+      "repairFacilityId": "RF-103",
+      "estimate": {
+        "estimateId": "EST-RF-26-5381",
+        "repairFacilityId": "RF-103",
+        "estimateDate": "2026-10-22",
+        "grossAmount": 9342.59
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10439-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-19T19:18:00Z"
+        },
+        {
+          "documentId": "DOC-10439-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-19T19:18:00Z"
+        },
+        {
+          "documentId": "DOC-10439-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-19T19:18:00Z"
+        },
+        {
+          "documentId": "DOC-10439-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-19T19:18:00Z"
+        },
+        {
+          "documentId": "DOC-10439-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-19T19:18:00Z"
+        },
+        {
+          "documentId": "DOC-10439-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 5",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-19T19:18:00Z"
+        },
+        {
+          "documentId": "DOC-10439-07",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-RF-26-5381",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-23T01:18:00Z"
+        },
+        {
+          "documentId": "DOC-10439-08",
+          "documentType": "Police report",
+          "title": "Maple Harbor Police Department report MHPD-26-039369",
+          "source": "Police agency",
+          "receivedAt": "2026-10-25T22:18:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-19T19:18:00Z",
+      "lastUpdatedAt": "2026-10-30T21:18:00Z"
+    },
+    {
+      "claimId": "CLM-10445",
+      "customerId": "CUST-26287",
+      "policyId": "PAP-4095105",
+      "vehicleId": "VEH-55266",
+      "claimType": "Comprehensive",
+      "causeOfLoss": "Vandalism",
+      "status": "In Review",
+      "lossDate": "2026-10-19",
+      "lossTime": "06:30",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Copper Mesa Station park-and-ride lot",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-10-20T15:53:00Z",
+      "reportChannel": "Online",
+      "description": "Someone scratched deep lines into the paint on the right side while my vehicle was parked at the Copper Mesa Station park-and-ride lot.",
+      "reportedDamage": {
+        "summary": "Right front door; Right rear door.",
+        "areas": [
+          "Right front door",
+          "Right rear door"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Copper Mesa Police Department",
+        "reportNumber": "CMPD-26-035662"
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-26-9268",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2026-10-24",
+        "grossAmount": 2312.78
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10445-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-20T15:53:00Z"
+        },
+        {
+          "documentId": "DOC-10445-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-20T15:53:00Z"
+        },
+        {
+          "documentId": "DOC-10445-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-20T15:53:00Z"
+        },
+        {
+          "documentId": "DOC-10445-04",
+          "documentType": "Police report",
+          "title": "Copper Mesa Police Department report CMPD-26-035662",
+          "source": "Police agency",
+          "receivedAt": "2026-10-23T18:53:00Z"
+        },
+        {
+          "documentId": "DOC-10445-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-26-9268",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-24T16:53:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-20T15:53:00Z",
+      "lastUpdatedAt": "2026-10-30T23:53:00Z"
+    },
+    {
+      "claimId": "CLM-10449",
+      "customerId": "CUST-13747",
+      "policyId": "PAP-3153655",
+      "vehicleId": "VEH-59642",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "In Review",
+      "lossDate": "2026-10-18",
+      "lossTime": "19:10",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Intersection of Cedar Ct and Ridgecrest Dr",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-10-21T19:36:00Z",
+      "reportChannel": "Mobile app",
+      "description": "I was turning left on a green arrow when another driver went through the red light and hit the left front of my vehicle.",
+      "reportedDamage": {
+        "summary": "Front bumper; Left front fender; Left headlamp.",
+        "areas": [
+          "Front bumper",
+          "Left front fender",
+          "Left headlamp"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Shawn Soto",
+          "vehicleDescription": "2018 Litware Pulse hatchback, glacier",
+          "insurer": "Relecloud Auto Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-105",
+      "estimate": {
+        "estimateId": "EST-ES-26-2128",
+        "repairFacilityId": "RF-105",
+        "estimateDate": "2026-10-28",
+        "grossAmount": 5899.08
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10449-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-21T19:36:00Z"
+        },
+        {
+          "documentId": "DOC-10449-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-21T19:36:00Z"
+        },
+        {
+          "documentId": "DOC-10449-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-21T19:36:00Z"
+        },
+        {
+          "documentId": "DOC-10449-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-ES-26-2128",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-28T20:36:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-21T19:36:00Z",
+      "lastUpdatedAt": "2026-10-28T20:36:00Z"
+    },
+    {
+      "claimId": "CLM-10455",
+      "customerId": "CUST-27693",
+      "policyId": "PAP-4132884",
+      "vehicleId": "VEH-55468",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "In Review",
+      "lossDate": "2026-10-22",
+      "lossTime": "19:10",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Intersection of Birch Ln and Madrona Ct",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-10-23T03:16:00Z",
+      "reportChannel": "Agent",
+      "description": "I was stopped at a red light when the vehicle behind me did not stop in time and hit the back of my car.",
+      "reportedDamage": {
+        "summary": "Rear bumper; Liftgate.",
+        "areas": [
+          "Rear bumper",
+          "Liftgate"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Sam Abbott",
+          "vehicleDescription": "2022 Contoso Lumen hatchback, midnight",
+          "insurer": "Proseware Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Copper Mesa Police Department",
+        "reportNumber": "CMPD-26-008601"
+      },
+      "repairFacilityId": "RF-105",
+      "estimate": {
+        "estimateId": "EST-ES-26-6588",
+        "repairFacilityId": "RF-105",
+        "estimateDate": "2026-10-26",
+        "grossAmount": 5156.36
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10455-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (agent)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-10-23T03:16:00Z"
+        },
+        {
+          "documentId": "DOC-10455-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-23T05:16:00Z"
+        },
+        {
+          "documentId": "DOC-10455-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-23T05:16:00Z"
+        },
+        {
+          "documentId": "DOC-10455-04",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-ES-26-6588",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-26T11:16:00Z"
+        },
+        {
+          "documentId": "DOC-10455-05",
+          "documentType": "Police report",
+          "title": "Copper Mesa Police Department report CMPD-26-008601",
+          "source": "Police agency",
+          "receivedAt": "2026-10-30T06:16:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-23T03:16:00Z",
+      "lastUpdatedAt": "2026-11-04T10:16:00Z"
+    },
+    {
+      "claimId": "CLM-10459",
+      "customerId": "CUST-16866",
+      "policyId": "PAP-4401742",
+      "vehicleId": "VEH-59131",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "In Review",
+      "lossDate": "2026-10-27",
+      "lossTime": "09:25",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Copper Mesa Marketplace parking lot",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-10-28T20:25:00Z",
+      "reportChannel": "Phone",
+      "description": "My car was parked at the Copper Mesa Marketplace parking lot. When I came back, the left rear door and left rear quarter panel were dented and scraped. No note was left.",
+      "reportedDamage": {
+        "summary": "Left rear door; Left rear quarter panel.",
+        "areas": [
+          "Left rear door",
+          "Left rear quarter panel"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-106",
+      "estimate": {
+        "estimateId": "EST-SV-26-2320",
+        "repairFacilityId": "RF-106",
+        "estimateDate": "2026-10-30",
+        "grossAmount": 1725.68
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10459-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-10-28T20:25:00Z"
+        },
+        {
+          "documentId": "DOC-10459-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-29T15:25:00Z"
+        },
+        {
+          "documentId": "DOC-10459-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-29T15:25:00Z"
+        },
+        {
+          "documentId": "DOC-10459-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-29T15:25:00Z"
+        },
+        {
+          "documentId": "DOC-10459-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-SV-26-2320",
+          "source": "Repair facility",
+          "receivedAt": "2026-10-31T02:25:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-28T20:25:00Z",
+      "lastUpdatedAt": "2026-11-02T23:25:00Z"
+    },
+    {
+      "claimId": "CLM-10464",
+      "customerId": "CUST-16866",
+      "policyId": "PAP-4401742",
+      "vehicleId": "VEH-59131",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "Pending Documentation",
+      "lossDate": "2026-10-28",
+      "lossTime": "07:20",
+      "lossTimeZone": "America/Phoenix",
+      "lossLocation": {
+        "description": "Copper Mesa Marketplace parking lot",
+        "street": null,
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "reportedAt": "2026-10-31T01:35:00Z",
+      "reportChannel": "Mobile app",
+      "description": "While I was shopping at the Copper Mesa Marketplace, someone hit my parked car and drove away. The left rear door is dented and the paint is scraped.",
+      "reportedDamage": {
+        "summary": "Left rear door.",
+        "areas": [
+          "Left rear door"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10464-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-31T01:35:00Z"
+        },
+        {
+          "documentId": "DOC-10464-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-31T01:35:00Z"
+        },
+        {
+          "documentId": "DOC-10464-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-10-31T01:35:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-10-31T01:35:00Z",
+      "lastUpdatedAt": "2026-11-11T08:35:00Z"
+    },
+    {
+      "claimId": "CLM-10467",
+      "customerId": "CUST-21888",
+      "policyId": "PAP-4254837",
+      "vehicleId": "VEH-54630",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "Pending Documentation",
+      "lossDate": "2026-11-03",
+      "lossTime": "08:55",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "County Road 22 near Riverton Falls",
+        "street": null,
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "reportedAt": "2026-11-05T03:16:00Z",
+      "reportChannel": "Phone",
+      "description": "Another vehicle merged into my lane on County Road 22 and scraped along the right side of my vehicle.",
+      "reportedDamage": {
+        "summary": "Right front door; Right rear door; Right side mirror.",
+        "areas": [
+          "Right front door",
+          "Right rear door",
+          "Right side mirror"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Shawn Soto",
+          "vehicleDescription": "2021 Litware Pulse hatchback, ruby",
+          "insurer": "Lamna Insurance Group"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Riverton Falls Police Department",
+        "reportNumber": "RFPD-26-005528"
+      },
+      "repairFacilityId": "RF-101",
+      "estimate": {
+        "estimateId": "EST-BW-26-8514",
+        "repairFacilityId": "RF-101",
+        "estimateDate": "2026-11-10",
+        "grossAmount": 5526.69
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10467-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (phone)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-11-05T03:16:00Z"
+        },
+        {
+          "documentId": "DOC-10467-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-05T18:16:00Z"
+        },
+        {
+          "documentId": "DOC-10467-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-05T18:16:00Z"
+        },
+        {
+          "documentId": "DOC-10467-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-05T18:16:00Z"
+        },
+        {
+          "documentId": "DOC-10467-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-05T18:16:00Z"
+        },
+        {
+          "documentId": "DOC-10467-06",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-BW-26-8514",
+          "source": "Repair facility",
+          "receivedAt": "2026-11-10T06:16:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-11-05T03:16:00Z",
+      "lastUpdatedAt": "2026-11-10T06:16:00Z"
+    },
+    {
+      "claimId": "CLM-10471",
+      "customerId": "CUST-20967",
+      "policyId": "PAP-4230367",
+      "vehicleId": "VEH-57293",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "In Review",
+      "lossDate": "2026-11-06",
+      "lossTime": "12:00",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Intersection of Cedar Ave and Summit St",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2026-11-06T22:50:00Z",
+      "reportChannel": "Online",
+      "description": "I was stopped at a red light when the vehicle behind me did not stop in time and hit the back of my car.",
+      "reportedDamage": {
+        "summary": "Rear bumper; Trunk lid.",
+        "areas": [
+          "Rear bumper",
+          "Trunk lid"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Toni Keane",
+          "vehicleDescription": "2024 Fabrikam Coastal minivan, silver",
+          "insurer": "Tailspin Casualty Company"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Brightwater Police Department",
+        "reportNumber": "BPD-26-004117"
+      },
+      "repairFacilityId": "RF-103",
+      "estimate": {
+        "estimateId": "EST-RF-26-1846",
+        "repairFacilityId": "RF-103",
+        "estimateDate": "2026-11-10",
+        "grossAmount": 10814.88
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10471-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-06T22:50:00Z"
+        },
+        {
+          "documentId": "DOC-10471-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-06T22:50:00Z"
+        },
+        {
+          "documentId": "DOC-10471-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-06T22:50:00Z"
+        },
+        {
+          "documentId": "DOC-10471-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-06T22:50:00Z"
+        },
+        {
+          "documentId": "DOC-10471-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 4",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-06T22:50:00Z"
+        },
+        {
+          "documentId": "DOC-10471-06",
+          "documentType": "Police report",
+          "title": "Brightwater Police Department report BPD-26-004117",
+          "source": "Police agency",
+          "receivedAt": "2026-11-10T03:50:00Z"
+        },
+        {
+          "documentId": "DOC-10471-07",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-RF-26-1846",
+          "source": "Repair facility",
+          "receivedAt": "2026-11-11T00:50:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-11-06T22:50:00Z",
+      "lastUpdatedAt": "2026-11-11T00:50:00Z"
+    },
+    {
+      "claimId": "CLM-10475",
+      "customerId": "CUST-24557",
+      "policyId": "PAP-4657033",
+      "vehicleId": "VEH-59821",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "Pending Documentation",
+      "lossDate": "2026-11-08",
+      "lossTime": "13:40",
+      "lossTimeZone": "America/Denver",
+      "lossLocation": {
+        "description": "Willow Crossing Marketplace parking lot",
+        "street": null,
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "reportedAt": "2026-11-09T18:01:00Z",
+      "reportChannel": "Mobile app",
+      "description": "My vehicle was parked at the Willow Crossing Marketplace parking lot. When I came back, the left rear door was dented and scraped. No note was left.",
+      "reportedDamage": {
+        "summary": "Left rear door; Left rear quarter panel.",
+        "areas": [
+          "Left rear door",
+          "Left rear quarter panel"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Willow Crossing Police Department",
+        "reportNumber": "WCPD-26-035809"
+      },
+      "repairFacilityId": "RF-110",
+      "estimate": {
+        "estimateId": "EST-WC-26-6391",
+        "repairFacilityId": "RF-110",
+        "estimateDate": "2026-11-15",
+        "grossAmount": 2839.48
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10475-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-09T18:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-09T18:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-09T18:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-09T18:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-05",
+          "documentType": "Photograph",
+          "title": "Photograph 4 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-09T18:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-06",
+          "documentType": "Photograph",
+          "title": "Photograph 5 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-09T18:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-07",
+          "documentType": "Photograph",
+          "title": "Photograph 6 of 6",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-09T18:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-08",
+          "documentType": "Police report",
+          "title": "Willow Crossing Police Department report WCPD-26-035809",
+          "source": "Police agency",
+          "receivedAt": "2026-11-15T20:01:00Z"
+        },
+        {
+          "documentId": "DOC-10475-09",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-WC-26-6391",
+          "source": "Repair facility",
+          "receivedAt": "2026-11-16T01:01:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-11-09T18:01:00Z",
+      "lastUpdatedAt": "2026-11-16T01:01:00Z"
+    },
+    {
+      "claimId": "CLM-10482",
+      "customerId": "CUST-24817",
+      "policyId": "PAP-4471920",
+      "vehicleId": "VEH-58213",
+      "claimType": "Collision",
+      "causeOfLoss": "Two-vehicle collision",
+      "status": "In Review",
+      "lossDate": "2026-11-12",
+      "lossTime": "14:25",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Harbor Point Shopping Center parking lot",
+        "street": "2200 block of Harbor Ave",
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "reportedAt": "2026-11-13T03:05:00Z",
+      "reportChannel": "Online",
+      "description": "I was driving slowly through the Harbor Point Shopping Center parking lot looking for a space. A gray pickup truck backed out of a parking space on my right and hit the back right corner of my SUV. The rear bumper is pushed in, the back right side panel is dented and scraped, and the right taillight is broken. Nobody was hurt. The other driver and I exchanged information, and a police officer came and took a report.",
+      "reportedDamage": {
+        "summary": "Rear bumper pushed in at the right corner; right rear quarter panel dented and scraped; right tail lamp broken.",
+        "areas": [
+          "Rear bumper",
+          "Right rear quarter panel",
+          "Right tail lamp"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [
+        {
+          "role": "Other driver",
+          "name": "Casey Morgan",
+          "vehicleDescription": "2021 Fabrikam Ridgeback pickup, gray",
+          "insurer": "Northwind Mutual Insurance"
+        }
+      ],
+      "policeReport": {
+        "reportedToPolice": true,
+        "agency": "Maple Harbor Police Department",
+        "reportNumber": "MHPD-26-018734"
+      },
+      "repairFacilityId": "RF-104",
+      "estimate": {
+        "estimateId": "EST-HL-26-3391",
+        "repairFacilityId": "RF-104",
+        "estimateDate": "2026-11-16",
+        "grossAmount": 7850.0
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10482-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (online submission)",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-13T03:05:00Z"
+        },
+        {
+          "documentId": "DOC-10482-02",
+          "documentType": "Photograph",
+          "title": "Right rear corner, three-quarter view",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-13T03:05:00Z"
+        },
+        {
+          "documentId": "DOC-10482-03",
+          "documentType": "Photograph",
+          "title": "Right rear corner, close view",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-13T03:05:00Z"
+        },
+        {
+          "documentId": "DOC-10482-04",
+          "documentType": "Photograph",
+          "title": "Rear of vehicle",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-13T03:05:00Z"
+        },
+        {
+          "documentId": "DOC-10482-05",
+          "documentType": "Photograph",
+          "title": "Right side of vehicle",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-13T03:05:00Z"
+        },
+        {
+          "documentId": "DOC-10482-06",
+          "documentType": "Photograph",
+          "title": "Front and left side of vehicle",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-13T03:05:00Z"
+        },
+        {
+          "documentId": "DOC-10482-07",
+          "documentType": "Police report",
+          "title": "Maple Harbor Police Department traffic collision report MHPD-26-018734",
+          "source": "Police agency",
+          "receivedAt": "2026-11-17T16:40:00Z"
+        },
+        {
+          "documentId": "DOC-10482-08",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-HL-26-3391",
+          "source": "Repair facility",
+          "receivedAt": "2026-11-17T18:22:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-11-13T03:05:00Z",
+      "lastUpdatedAt": "2026-11-17T18:22:00Z"
+    },
+    {
+      "claimId": "CLM-10485",
+      "customerId": "CUST-16223",
+      "policyId": "PAP-4700525",
+      "vehicleId": "VEH-51433",
+      "claimType": "Collision",
+      "causeOfLoss": "Hit while parked",
+      "status": "In Review",
+      "lossDate": "2026-11-08",
+      "lossTime": "21:40",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Street outside the policyholder's residence",
+        "street": null,
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "reportedAt": "2026-11-13T17:05:00Z",
+      "reportChannel": "Agent",
+      "description": "My car was parked overnight on the street outside my home. In the morning the rear bumper was cracked and scuffed.",
+      "reportedDamage": {
+        "summary": "Rear bumper.",
+        "areas": [
+          "Rear bumper"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": "RF-103",
+      "estimate": {
+        "estimateId": "EST-RF-26-3897",
+        "repairFacilityId": "RF-103",
+        "estimateDate": "2026-11-19",
+        "grossAmount": 4007.28
+      },
+      "documents": [
+        {
+          "documentId": "DOC-10485-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (agent)",
+          "source": "Contoso Insurance",
+          "receivedAt": "2026-11-13T17:05:00Z"
+        },
+        {
+          "documentId": "DOC-10485-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-14T13:05:00Z"
+        },
+        {
+          "documentId": "DOC-10485-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-14T13:05:00Z"
+        },
+        {
+          "documentId": "DOC-10485-04",
+          "documentType": "Photograph",
+          "title": "Photograph 3 of 3",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-14T13:05:00Z"
+        },
+        {
+          "documentId": "DOC-10485-05",
+          "documentType": "Repair estimate",
+          "title": "Repair estimate EST-RF-26-3897",
+          "source": "Repair facility",
+          "receivedAt": "2026-11-19T06:00:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-11-13T17:05:00Z",
+      "lastUpdatedAt": "2026-11-19T06:00:00Z"
+    },
+    {
+      "claimId": "CLM-10487",
+      "customerId": "CUST-17709",
+      "policyId": "PAP-4607869",
+      "vehicleId": "VEH-50277",
+      "claimType": "Collision",
+      "causeOfLoss": "Single-vehicle collision",
+      "status": "Submitted",
+      "lossDate": "2026-11-16",
+      "lossTime": "10:30",
+      "lossTimeZone": "America/Los_Angeles",
+      "lossLocation": {
+        "description": "Maple Harbor Community College parking lot",
+        "street": null,
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "reportedAt": "2026-11-17T16:01:00Z",
+      "reportChannel": "Mobile app",
+      "description": "I was backing out of a parking space and hit a concrete post.",
+      "reportedDamage": {
+        "summary": "Rear bumper; Trunk lid.",
+        "areas": [
+          "Rear bumper",
+          "Trunk lid"
+        ]
+      },
+      "vehicleDrivable": true,
+      "injuriesReported": false,
+      "otherParties": [],
+      "policeReport": {
+        "reportedToPolice": false,
+        "agency": null,
+        "reportNumber": null
+      },
+      "repairFacilityId": null,
+      "estimate": null,
+      "documents": [
+        {
+          "documentId": "DOC-10487-01",
+          "documentType": "Claim form",
+          "title": "Auto claim - first notice of loss (mobile app)",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-17T16:01:00Z"
+        },
+        {
+          "documentId": "DOC-10487-02",
+          "documentType": "Photograph",
+          "title": "Photograph 1 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-17T16:01:00Z"
+        },
+        {
+          "documentId": "DOC-10487-03",
+          "documentType": "Photograph",
+          "title": "Photograph 2 of 2",
+          "source": "Policyholder",
+          "receivedAt": "2026-11-17T16:01:00Z"
+        }
+      ],
+      "settlement": null,
+      "closedDate": null,
+      "closureReason": null,
+      "createdAt": "2026-11-17T16:01:00Z",
+      "lastUpdatedAt": "2026-11-17T16:01:00Z"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "documentId": "DOC-10485-01",
+  "claimId": "CLM-10485",
+  "fileName": "claim-form.pdf",
+  "issuer": "Contoso Insurance",
+  "title": "Auto Claim - First Notice of Loss",
+  "subtitle": "Claim intake recorded by Contoso Insurance agency office",
+  "header": [
+    ["Claim number", "CLM-10485"],
+    ["Submitted", "11/13/2026 9:05 AM PST"],
+    ["Channel", "Agent"],
+    ["Policy number", "PAP-4700525"]
+  ],
+  "sections": [
+    {
+      "heading": "Policyholder",
+      "fields": [
+        ["Name", "Elliot Sullivan"],
+        ["Mailing address", "4651 Birch Dr, Brightwater, OR 97320"],
+        ["Phone", "(503) 555-0124"],
+        ["Email", "elliot.sullivan@example.com"],
+        ["Preferred contact", "Text message"]
+      ]
+    },
+    {
+      "heading": "Vehicle",
+      "fields": [
+        ["Year / make / model", "2018 Adatum Haven Plus minivan FWD"],
+        ["VIN", "0ADHV1MA7JD754715"],
+        ["Color", "Evergreen Pearl"],
+        ["Approximate mileage", "96,500"],
+        ["Lienholder / lessor", "Woodgrove Bank"]
+      ]
+    },
+    {
+      "heading": "Driver at time of loss",
+      "fields": [
+        ["Driver", "Vehicle was parked and unattended"],
+        ["Purpose of trip", "Not applicable - parked overnight at residence"]
+      ]
+    },
+    {
+      "heading": "Loss details",
+      "fields": [
+        ["Date of loss", "11/08/2026"],
+        ["Time of loss", "Unknown - between approximately 9:40 PM on 11/08 and 7:00 AM on 11/09"],
+        ["Location", "On the street outside the policyholder's residence, Brightwater, OR"],
+        ["Type of loss", "Hit while parked"],
+        ["Weather / road", "Rain overnight"]
+      ]
+    },
+    {
+      "heading": "What happened (as stated by the policyholder)",
+      "paragraph": "Policyholder states the minivan was parked on the street in front of the residence at about 9:40 PM on 11/08. When the policyholder went out the next morning, the rear bumper was cracked and scuffed and one corner of the bumper was sitting lower than the other. No note was left and the policyholder does not know who hit the vehicle. Neighbors did not see anything. The policyholder did not report the incident to police. The policyholder came into the agency office to report the claim and will send photos from their phone."
+    },
+    {
+      "heading": "Damage to your vehicle",
+      "fields": [
+        ["Damaged areas selected", "Rear bumper"],
+        ["Damage description", "Rear bumper cracked and scuffed; one corner of the bumper sits lower than the other."],
+        ["Is the vehicle drivable?", "Yes"],
+        ["Did any airbags deploy?", "No"],
+        ["Did the vehicle have damage before this incident that has not been repaired?", "No"]
+      ]
+    },
+    {
+      "heading": "Other vehicle and driver",
+      "fields": [
+        ["Other party", "Unknown - no note left, not witnessed"]
+      ]
+    },
+    {
+      "heading": "Injuries",
+      "fields": [
+        ["Was anyone injured?", "No"]
+      ]
+    },
+    {
+      "heading": "Police",
+      "fields": [
+        ["Were the police contacted?", "No"]
+      ]
+    },
+    {
+      "heading": "Witnesses",
+      "fields": [
+        ["Were there any witnesses?", "No"]
+      ]
+    },
+    {
+      "heading": "Photos",
+      "fields": [
+        ["Photos uploaded with this report", "None at time of report - policyholder will send photos"]
+      ]
+    },
+    {
+      "heading": "Repair and rental",
+      "fields": [
+        ["Preferred repair shop", "Riverton Falls Collision Center, Riverton Falls, OR"],
+        ["Rental vehicle needed?", "Not at this time"]
+      ]
+    }
+  ],
+  "declaration": "Information recorded by Contoso Insurance agency staff from the policyholder's in-person report and reviewed with the policyholder, who confirmed it was accurate. Contoso Insurance will review this claim under the terms of the policy.",
+  "signature": [
+    ["Recorded by", "Contoso Insurance agency office, Brightwater"],
+    ["Confirmed by policyholder", "Elliot Sullivan"],
+    ["Date and time", "11/13/2026 9:05 AM PST"]
+  ]
+}

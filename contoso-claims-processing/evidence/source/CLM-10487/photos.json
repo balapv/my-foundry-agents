@@ -1,0 +1,42 @@
+{
+  "claimId": "CLM-10487",
+  "synthetic": true,
+  "notice": "All photographs are AI-generated synthetic images of a fictional, unbadged vehicle. They do not depict a real vehicle, person, location, license plate or incident.",
+  "generation": {
+    "method": "AI image generation (GitHub Copilot image_generation tool)",
+    "generatedOn": "2026-11-25",
+    "outputSize": "1536x1024 PNG",
+    "promptRecord": "The prompt fields below are the verbatim prompts supplied to the image tool.",
+    "consistencyApproach": "The first candidate was generated from text only and rejected; photograph 1 was regenerated with that candidate as a visual reference, and photograph 2 was generated with photograph 1 as a visual reference so the same paint and parking lot carry across the set.",
+    "importProcess": "build_evidence.py --import-photos converts each source PNG to a baseline JPEG (quality 88, 4:2:0 subsampling) with no EXIF or other embedded metadata. Pixels and dimensions are unchanged.",
+    "rejectedCandidates": [
+      {
+        "sourceSha256": "c71faac89cccb3355c1496a12f1fd1e06a49ee6e6ae5061e584012041bdfbb14",
+        "reason": "Pavement rendered damp with a wet sheen, inconsistent with the reported dry conditions. Regenerated with dry pavement; this candidate is not used."
+      }
+    ],
+    "manualReview": "Each image was inspected visually before import: the same dark green unbadged sedan in a dry college parking lot on an overcast day; photograph 1 shows the front and left side only; photograph 2 is a blurred, tightly cropped close-up of a pushed-in, cracked lower bumper corner next to a concrete post, with no trunk lid in frame; no people, no readable text, blank plates, no annotations or overlays."
+  },
+  "photos": [
+    {
+      "documentId": "DOC-10487-02",
+      "fileName": "photos/photo-01.jpg",
+      "title": "Photograph 1 of 2",
+      "sourceSha256": "6d3838c4bdeff87e255f3c678ac1c3681a416c1c2acc78ac5700827760f76fdf",
+      "referenceImages": [
+        "c71faac89cccb3355c1496a12f1fd1e06a49ee6e6ae5061e584012041bdfbb14"
+      ],
+      "prompt": "Recreate this same photo of the same dark evergreen green pearl sedan, same front LEFT three-quarter view, same parking lot and overcast sky, but the asphalt must be completely DRY: matte light-grey dry pavement with no wet sheen, no reflections and no puddles; the car's paint is dry with no water droplets. The rear of the car, the rear bumper and trunk remain NOT visible. Keep the front license plate plain and blank. No brand badges, no logos, no emblems, no lettering on any vehicle, no people, no readable text or signs, no annotations, no arrows, no text overlay, no watermark. (Reference candidate prompt: photorealistic amateur smartphone photo of a 2022-era mid-size four-door sedan painted dark evergreen green pearl metallic, parked in a community college parking lot on a cloudy November morning in Oregon, front left three-quarter view from about 6 meters, rear bumper and trunk not visible.)"
+    },
+    {
+      "documentId": "DOC-10487-03",
+      "fileName": "photos/photo-02.jpg",
+      "title": "Photograph 2 of 2",
+      "sourceSha256": "f72d2721b4f3a8790edf992162273e652118b79e354a27cffd5191d6535a5cf7",
+      "referenceImages": [
+        "6d3838c4bdeff87e255f3c678ac1c3681a416c1c2acc78ac5700827760f76fdf"
+      ],
+      "prompt": "Using the reference photo for the car's paint color (dark evergreen green pearl metallic) and the same dry parking lot on an overcast day, create a new amateur smartphone photo that is a hasty, poorly framed CLOSE-UP of only the lower RIGHT REAR corner of the sedan's rear bumper, taken from about 40 centimeters away. The photo is noticeably out of focus and has motion blur. The rear bumper corner appears pushed in with a crack in the paint, but the edges of the damage are blurry. The framing is cropped tightly: the trunk lid, the tail lamp, and the rest of the car are NOT in the frame - only the lower bumper corner, part of the rear tire and dry pavement are visible. A grey concrete parking post is partially visible at the very edge of the frame. No brand badges, no logos, no lettering, no license plate visible, no people, no readable text, no annotations, no arrows, no text overlay, no watermark."
+    }
+  ]
+}

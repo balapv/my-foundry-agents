@@ -1,0 +1,58 @@
+{
+  "documentId": "DOC-10467-06",
+  "claimId": "CLM-10467",
+  "estimateId": "EST-BW-26-8514",
+  "fileName": "repair-estimate.pdf",
+  "estimateType": "Estimate of record",
+  "estimateDate": "2026-11-10",
+  "estimator": "Dana Whitfield",
+  "inspection": {
+    "type": "In-shop inspection",
+    "date": "2026-11-10",
+    "location": "Brightwater Collision & Glass, Brightwater, OR"
+  },
+  "vehicle": {
+    "odometer": 29214,
+    "condition": "Drivable",
+    "productionDate": "06/23",
+    "pointOfImpact": "03 Right Side"
+  },
+  "lines": [
+    {"section": "FRONT WHEEL", "operation": "Repl", "description": "Wheel, alloy RT front, 20 x 8", "partNumber": "NW-42611-KS3B0", "partType": "OEM", "quantity": 1, "unitPrice": 786.00, "laborType": "Body", "laborHours": 0.3, "refinishHours": 0.0},
+    {"section": "FRONT WHEEL", "operation": "", "description": "Mount and balance tire RT front", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": "Mech", "laborHours": 0.5, "refinishHours": 0.0},
+    {"section": "FRONT WHEEL", "operation": "", "description": "Transfer tire pressure sensor RT front", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": "Mech", "laborHours": 0.3, "refinishHours": 0.0},
+    {"section": "FENDER", "operation": "Blnd", "description": "Fender RT", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 1.2},
+    {"section": "FRONT DOOR", "operation": "Repl", "description": "Door shell RT front", "partNumber": "NW-67001-KS3A0", "partType": "OEM", "quantity": 1, "unitPrice": 1258.79, "laborType": "Body", "laborHours": 3.2, "refinishHours": 2.6},
+    {"section": "FRONT DOOR", "operation": "Add", "description": "Clear coat, door shell", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 1.0},
+    {"section": "FRONT DOOR", "operation": "Add", "description": "Edge, door shell", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 0.5},
+    {"section": "FRONT DOOR", "operation": "", "description": "Transfer door trim, glass and hardware RT front", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": "Body", "laborHours": 2.0, "refinishHours": 0.0},
+    {"section": "FRONT DOOR", "operation": "Repl", "description": "Belt molding RT front", "partNumber": "NW-75710-KS3A0", "partType": "OEM", "quantity": 1, "unitPrice": 96.00, "laborType": "Body", "laborHours": 0.3, "refinishHours": 0.0},
+    {"section": "FRONT DOOR", "operation": "Repl", "description": "Lower door molding RT front", "partNumber": "NW-75731-KS3A0", "partType": "OEM", "quantity": 1, "unitPrice": 138.00, "laborType": "Body", "laborHours": 0.3, "refinishHours": 0.0},
+    {"section": "FRONT DOOR", "operation": "Repl", "description": "Outside handle RT front", "partNumber": "NW-72141-KS3A0", "partType": "OEM", "quantity": 1, "unitPrice": 64.00, "laborType": "Body", "laborHours": 0.3, "refinishHours": 0.4},
+    {"section": "FRONT DOOR", "operation": "", "description": "Corrosion protection, door shell", "partNumber": null, "partType": "Material", "quantity": 1, "unitPrice": 18.00, "laborType": "Body", "laborHours": 0.3, "refinishHours": 0.0},
+    {"section": "OUTSIDE MIRROR", "operation": "Repl", "description": "Mirror assy RT, power, heated, with blind spot indicator", "partNumber": "NW-76200-KS3A0", "partType": "OEM", "quantity": 1, "unitPrice": 612.00, "laborType": "Body", "laborHours": 0.6, "refinishHours": 0.0},
+    {"section": "OUTSIDE MIRROR", "operation": "", "description": "Refinish mirror cover RT", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 0.5},
+    {"section": "REAR DOOR", "operation": "Rpr", "description": "Rear door RT", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": "Body", "laborHours": 3.0, "refinishHours": 2.6},
+    {"section": "REAR DOOR", "operation": "Add", "description": "Clear coat, rear door", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 0.9},
+    {"section": "REAR DOOR", "operation": "Repl", "description": "Belt molding RT rear", "partNumber": "NW-75730-KS3A0", "partType": "OEM", "quantity": 1, "unitPrice": 88.00, "laborType": "Body", "laborHours": 0.3, "refinishHours": 0.0},
+    {"section": "REAR DOOR", "operation": "Repl", "description": "Lower door molding RT rear", "partNumber": "NW-75751-KS3A0", "partType": "OEM", "quantity": 1, "unitPrice": 126.00, "laborType": "Body", "laborHours": 0.3, "refinishHours": 0.0},
+    {"section": "QUARTER PANEL", "operation": "Blnd", "description": "Quarter panel RT", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 1.4},
+    {"section": "ELECTRICAL", "operation": "", "description": "Pre-repair diagnostic scan", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": "Mech", "laborHours": 0.5, "refinishHours": 0.0},
+    {"section": "ELECTRICAL", "operation": "", "description": "Post-repair diagnostic scan", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": "Mech", "laborHours": 0.5, "refinishHours": 0.0},
+    {"section": "MISCELLANEOUS OPERATIONS", "operation": "", "description": "Cover car for overspray", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 0.3},
+    {"section": "MISCELLANEOUS OPERATIONS", "operation": "", "description": "Color sand and polish", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 0.8},
+    {"section": "MISCELLANEOUS OPERATIONS", "operation": "", "description": "Tint color", "partNumber": null, "partType": null, "quantity": 0, "unitPrice": 0.00, "laborType": null, "laborHours": 0.0, "refinishHours": 0.5},
+    {"section": "MISCELLANEOUS OPERATIONS", "operation": "", "description": "Hazardous waste disposal", "partNumber": null, "partType": "Material", "quantity": 1, "unitPrice": 7.50, "laborType": null, "laborHours": 0.0, "refinishHours": 0.0}
+  ],
+  "salesTax": {
+    "jurisdiction": "Oregon",
+    "rate": 0.0
+  },
+  "statedGrandTotal": 5526.69,
+  "notes": [
+    "Estimate is based on a visual inspection of the vehicle on the date shown. Additional damage found during disassembly may require a supplement.",
+    "OEM parts specified. Parts prices are current list prices on the estimate date.",
+    "Labor rates are the facility's posted rates. Paint materials are calculated per refinish hour.",
+    "Repairs begin after the vehicle owner and insurer authorize this estimate."
+  ]
+}

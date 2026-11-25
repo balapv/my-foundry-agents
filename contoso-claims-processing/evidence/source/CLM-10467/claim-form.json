@@ -1,0 +1,115 @@
+{
+  "documentId": "DOC-10467-01",
+  "claimId": "CLM-10467",
+  "fileName": "claim-form.pdf",
+  "issuer": "Contoso Insurance",
+  "title": "Auto Claim - First Notice of Loss",
+  "subtitle": "Phone claim intake recorded by Contoso Insurance claims representative",
+  "header": [
+    ["Claim number", "CLM-10467"],
+    ["Submitted", "11/04/2026 7:16 PM PST"],
+    ["Channel", "Phone"],
+    ["Policy number", "PAP-4254837"]
+  ],
+  "sections": [
+    {
+      "heading": "Policyholder",
+      "fields": [
+        ["Name", "Reese Hart"],
+        ["Mailing address", "7884 Juniper Dr, Riverton Falls, OR 97541"],
+        ["Phone", "(541) 555-0100"],
+        ["Email", "reese.hart@example.com"],
+        ["Preferred contact", "Text message"]
+      ]
+    },
+    {
+      "heading": "Vehicle",
+      "fields": [
+        ["Year / make / model", "2023 Northwind Kestrel Limited AWD"],
+        ["VIN", "0NWKS2UA9PN387214"],
+        ["Color", "Midnight Black"],
+        ["Approximate mileage", "28,900"],
+        ["Lienholder / lessor", "Woodgrove Bank"]
+      ]
+    },
+    {
+      "heading": "Driver at time of loss",
+      "fields": [
+        ["Driver", "Reese Hart (policyholder)"],
+        ["Purpose of trip", "Commuting to work"]
+      ]
+    },
+    {
+      "heading": "Loss details",
+      "fields": [
+        ["Date of loss", "11/03/2026"],
+        ["Time of loss", "Approximately 8:55 AM"],
+        ["Location", "County Road 22 near Riverton Falls, OR"],
+        ["Type of loss", "Collision with another vehicle"],
+        ["Weather / road", "Overcast, damp"]
+      ]
+    },
+    {
+      "heading": "What happened (as stated by the caller)",
+      "paragraph": "Caller states they were driving east in the left lane of County Road 22 when a red hatchback in the right lane moved into their lane without signaling. The hatchback scraped along the right side of the caller's SUV from the front wheel back across both right doors before both drivers pulled over. The right mirror was knocked loose and is hanging by its wires. Caller reports a loud grinding sound against the front wheel at the moment of contact. No one was injured. A Riverton Falls police officer came to the scene and gave both drivers a report number."
+    },
+    {
+      "heading": "Damage to your vehicle",
+      "fields": [
+        ["Damaged areas selected", "Right front door; Right rear door; Right side mirror"],
+        ["Damage description", "Caller describes scrapes and dents along the right side starting at the front wheel and running back across both right doors, with the lower door trim scraped; right mirror knocked loose."],
+        ["Is the vehicle drivable?", "Yes"],
+        ["Did any airbags deploy?", "No"],
+        ["Did the vehicle have damage before this incident that has not been repaired?", "No"]
+      ]
+    },
+    {
+      "heading": "Other vehicle and driver",
+      "fields": [
+        ["Driver name", "Shawn Soto"],
+        ["Vehicle", "2021 Litware Pulse hatchback, ruby"],
+        ["Insurance company", "Lamna Insurance Group"]
+      ]
+    },
+    {
+      "heading": "Injuries",
+      "fields": [
+        ["Was anyone injured?", "No"]
+      ]
+    },
+    {
+      "heading": "Police",
+      "fields": [
+        ["Were the police contacted?", "Yes"],
+        ["Police agency", "Riverton Falls Police Department"],
+        ["Report number", "RFPD-26-005528"],
+        ["Officer", "Caller did not recall the officer's name"]
+      ]
+    },
+    {
+      "heading": "Witnesses",
+      "fields": [
+        ["Were there any witnesses?", "Caller is not aware of any"]
+      ]
+    },
+    {
+      "heading": "Photos",
+      "fields": [
+        ["Photos uploaded with this report", "None at time of call - caller will upload photos through the mobile app"]
+      ]
+    },
+    {
+      "heading": "Repair and rental",
+      "fields": [
+        ["Preferred repair shop", "Brightwater Collision & Glass, Brightwater, OR"],
+        ["Rental vehicle needed?", "Not at this time"]
+      ]
+    }
+  ],
+  "declaration": "Information recorded by a Contoso Insurance claims representative from the policyholder's telephone report and read back to the caller, who confirmed it was accurate. Contoso Insurance will review this claim under the terms of the policy.",
+  "signature": [
+    ["Recorded by", "Contoso Insurance claims representative, ext. 4417"],
+    ["Confirmed by caller", "Reese Hart"],
+    ["Date and time", "11/04/2026 7:16 PM PST"]
+  ]
+}

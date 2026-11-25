@@ -1,0 +1,108 @@
+{
+  "claimId": "CLM-10482",
+  "synthetic": true,
+  "notice": "Synthetic demonstration evidence. Contoso Insurance is fictional; the documents and photographs in this folder are invented and do not describe a real person, vehicle or incident.",
+  "documents": [
+    {
+      "documentId": "DOC-10482-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (online submission)",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "fileName": "claim-form.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 5706,
+      "sha256": "b94b4387740a79f767e8c5270c5ae816e17f1608fd5659c0601160f31d724e80"
+    },
+    {
+      "documentId": "DOC-10482-02",
+      "documentType": "Photograph",
+      "title": "Right rear corner, three-quarter view",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "fileName": "photos/rear-right-01.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 336677,
+      "sha256": "f85331cbf4c56e5944f996991663535552e8c289bb15436cf303f34dfe3c00f5"
+    },
+    {
+      "documentId": "DOC-10482-03",
+      "documentType": "Photograph",
+      "title": "Right rear corner, close view",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "fileName": "photos/rear-right-02.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 341266,
+      "sha256": "10b7701f93d7f428851dc5c192f118081f758aa7f2f4fb9d225d8b3f46198bc6"
+    },
+    {
+      "documentId": "DOC-10482-04",
+      "documentType": "Photograph",
+      "title": "Rear of vehicle",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "fileName": "photos/rear-overview.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 297727,
+      "sha256": "f96a0889999b5223690ddbca90023ef8f22f62981b58ea9b0cb4a7a3b6d4381b"
+    },
+    {
+      "documentId": "DOC-10482-05",
+      "documentType": "Photograph",
+      "title": "Right side of vehicle",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "fileName": "photos/side-overview.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 365024,
+      "sha256": "48d11e286acc5b8122eda6e1fb691bdf0e1dd49f6dc39a2a19305fb172082492"
+    },
+    {
+      "documentId": "DOC-10482-06",
+      "documentType": "Photograph",
+      "title": "Front and left side of vehicle",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "fileName": "photos/front-overview.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 355799,
+      "sha256": "fbe8c33e8e3150d9a2d7afc784a52c273a62ff6108ea0a5e734728913573008f"
+    },
+    {
+      "documentId": "DOC-10482-07",
+      "documentType": "Police report",
+      "title": "Maple Harbor Police Department traffic collision report MHPD-26-018734",
+      "source": "Police agency",
+      "receivedAt": "2026-11-17T16:40:00Z",
+      "fileName": "police-report.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 6655,
+      "sha256": "ec62b60bea619a24a498e82ef46565fd39bb68ed3caa4546f0d99a25cf789ffb"
+    },
+    {
+      "documentId": "DOC-10482-08",
+      "documentType": "Repair estimate",
+      "title": "Repair estimate EST-HL-26-3391",
+      "source": "Repair facility",
+      "receivedAt": "2026-11-17T18:22:00Z",
+      "fileName": "repair-estimate.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 8841,
+      "sha256": "0290d15f9dba7a1c172c4167c0c28c08bd23fda290d67633dfce6a9569a931df"
+    }
+  ]
+}

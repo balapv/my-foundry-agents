@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="960" viewBox="0 0 1600 960" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">Contoso Claims Review architecture</title>
+  <desc id="desc">A claims adjuster uses the Contoso Claims Review application, which invokes a Foundry prompt agent. The agent uses the Claims Operations API, company guidance through File Search, and claim evidence (PDFs and photographs) attached by the application, to produce a grounded recommendation. The human adjuster decides.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5b6b7f"/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #c8d1dc; stroke-width: 2; }
+      .app { fill: #eef4fb; stroke: #0f4c81; stroke-width: 2; }
+      .agent { fill: #0f4c81; }
+      .src { fill: #ffffff; stroke: #0f4c81; stroke-width: 2; }
+      .rec { fill: #fff7e8; stroke: #c98a1b; stroke-width: 2; }
+      .human { fill: #14532d; }
+      .note { fill: #f6f8fa; stroke: #8a99ab; stroke-width: 2; stroke-dasharray: 8 6; }
+      .line { stroke: #5b6b7f; stroke-width: 2.5; fill: none; }
+      .dash { stroke: #8a99ab; stroke-width: 2; stroke-dasharray: 8 6; fill: none; }
+      .h { font-size: 26px; font-weight: 600; fill: #12263a; }
+      .hw { font-size: 26px; font-weight: 600; fill: #ffffff; }
+      .s { font-size: 18px; fill: #4a5b6e; }
+      .sw { font-size: 18px; fill: #d8e6f5; }
+      .k { font-size: 15px; font-weight: 700; letter-spacing: 1.5px; fill: #0f4c81; }
+      .title { font-size: 34px; font-weight: 700; fill: #12263a; }
+      .foot { font-size: 17px; fill: #5b6b7f; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="960" fill="#f3f5f8"/>
+  <text x="60" y="68" class="title">Contoso Insurance · Claims Review with a Foundry prompt agent</text>
+
+  <!-- Adjuster -->
+  <rect x="620" y="100" width="360" height="64" rx="14" class="box"/>
+  <text x="800" y="141" text-anchor="middle" class="h">Claims adjuster</text>
+  <line x1="800" y1="164" x2="800" y2="196" class="line" marker-end="url(#arrow)"/>
+
+  <!-- Application -->
+  <rect x="400" y="200" width="800" height="96" rx="14" class="app"/>
+  <text x="800" y="240" text-anchor="middle" class="h">Contoso Claims Review application</text>
+  <text x="800" y="272" text-anchor="middle" class="s">Shows claim facts and evidence · attaches claim PDFs + photographs · no decision logic</text>
+  <line x1="800" y1="296" x2="800" y2="328" class="line" marker-end="url(#arrow)"/>
+
+  <!-- Agent -->
+  <rect x="400" y="332" width="800" height="96" rx="14" class="agent"/>
+  <text x="800" y="372" text-anchor="middle" class="hw">Foundry prompt agent</text>
+  <text x="800" y="404" text-anchor="middle" class="sw">Model · instructions · tools — one managed agent definition</text>
+
+  <!-- Create / configure note -->
+  <line x1="1200" y1="380" x2="1240" y2="380" class="dash"/>
+  <rect x="1240" y="340" width="310" height="80" rx="14" class="note"/>
+  <text x="1395" y="374" text-anchor="middle" class="h" style="font-size:21px">Create / configure through</text>
+  <text x="1395" y="402" text-anchor="middle" class="h" style="font-size:21px">Foundry UI or code</text>
+
+  <!-- Fan out to sources -->
+  <path d="M800 428 V458 M310 458 H1290" class="line"/>
+  <line x1="310" y1="458" x2="310" y2="490" class="line" marker-end="url(#arrow)"/>
+  <line x1="800" y1="458" x2="800" y2="490" class="line" marker-end="url(#arrow)"/>
+  <line x1="1290" y1="458" x2="1290" y2="490" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="100" y="494" width="420" height="134" rx="14" class="src"/>
+  <text x="310" y="526" text-anchor="middle" class="k">BUSINESS RECORDS</text>
+  <text x="310" y="562" text-anchor="middle" class="h">Claims Operations API</text>
+  <text x="310" y="594" text-anchor="middle" class="s">Claim, policy, vehicle and claim history</text>
+  <text x="310" y="616" text-anchor="middle" class="s">OpenAPI tool · facts only</text>
+
+  <rect x="590" y="494" width="420" height="134" rx="14" class="src"/>
+  <text x="800" y="526" text-anchor="middle" class="k">COMPANY KNOWLEDGE</text>
+  <text x="800" y="562" text-anchor="middle" class="h">Company guidance</text>
+  <text x="800" y="594" text-anchor="middle" class="s">File Search over four guidance documents</text>
+  <text x="800" y="616" text-anchor="middle" class="s">Reusable across every claim</text>
+
+  <rect x="1080" y="494" width="420" height="134" rx="14" class="src"/>
+  <text x="1290" y="526" text-anchor="middle" class="k">THIS CLAIM</text>
+  <text x="1290" y="562" text-anchor="middle" class="h">Claim evidence</text>
+  <text x="1290" y="594" text-anchor="middle" class="s">Claim form, police report, estimate + photographs</text>
+  <text x="1290" y="616" text-anchor="middle" class="s">Attached at runtime by the application</text>
+
+  <!-- Converge -->
+  <path d="M310 628 V660 M1290 628 V660 M310 660 H1290 M800 628 V660" class="line"/>
+  <line x1="800" y1="660" x2="800" y2="692" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="520" y="696" width="560" height="84" rx="14" class="rec"/>
+  <text x="800" y="732" text-anchor="middle" class="h">Grounded recommendation</text>
+  <text x="800" y="762" text-anchor="middle" class="s">Cited sources · stated uncertainty · suggested next step</text>
+  <line x1="800" y1="780" x2="800" y2="812" class="line" marker-end="url(#arrow)"/>
+
+  <rect x="520" y="816" width="560" height="84" rx="14" class="human"/>
+  <text x="800" y="853" text-anchor="middle" class="hw">Human adjuster decides</text>
+  <text x="800" y="884" text-anchor="middle" class="sw">Consequential claim decisions stay with authorized staff</text>
+
+  <text x="60" y="940" class="foot">All claim records, documents and photographs are synthetic. The agent recommends; it does not approve, deny, pay or authorize repairs.</text>
+</svg>

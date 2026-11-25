@@ -1,0 +1,5 @@
+# Runtime dependencies of the Claims Operations API (tools/main.py).
+fastapi==0.163.2
+uvicorn==0.54.0
+# IANA time-zone database for zoneinfo (Windows and slim container images have no system copy).
+tzdata==2026.6

@@ -1,0 +1,114 @@
+{
+  "documentId": "DOC-10471-01",
+  "claimId": "CLM-10471",
+  "fileName": "claim-form.pdf",
+  "issuer": "Contoso Insurance",
+  "title": "Auto Claim - First Notice of Loss",
+  "subtitle": "Online claim submission",
+  "header": [
+    ["Claim number", "CLM-10471"],
+    ["Submitted", "11/06/2026 2:50 PM PST"],
+    ["Channel", "Online"],
+    ["Policy number", "PAP-4230367"]
+  ],
+  "sections": [
+    {
+      "heading": "Policyholder",
+      "fields": [
+        ["Name", "Alex Mendez"],
+        ["Mailing address", "2575 Alder Way, Brightwater, OR 97381"],
+        ["Phone", "(503) 555-0139"],
+        ["Email", "alex.mendez@example.com"],
+        ["Preferred contact", "Text message"]
+      ]
+    },
+    {
+      "heading": "Vehicle",
+      "fields": [
+        ["Year / make / model", "2018 Contoso Aria SE FWD"],
+        ["VIN", "0CTAR2SA0JM806050"],
+        ["Color", "Glacier White"],
+        ["Approximate mileage", "64,800"],
+        ["Lienholder / lessor", "Woodgrove Bank"]
+      ]
+    },
+    {
+      "heading": "Driver at time of loss",
+      "fields": [
+        ["Driver", "Alex Mendez (policyholder)"],
+        ["Purpose of trip", "Personal - lunch errand"]
+      ]
+    },
+    {
+      "heading": "Loss details",
+      "fields": [
+        ["Date of loss", "11/06/2026"],
+        ["Time of loss", "Approximately 12:00 PM"],
+        ["Location", "Intersection of Cedar Ave and Summit St, Brightwater, OR"],
+        ["Type of loss", "Collision with another vehicle"],
+        ["Weather / road", "Light rain, wet"]
+      ]
+    },
+    {
+      "heading": "What happened (in your own words)",
+      "paragraph": "I was stopped at the red light on Summit St at Cedar Ave, heading north, when a silver minivan behind me did not stop in time and hit the back of my car. The rear bumper is pushed in, the trunk lid is crumpled and will not close properly and both tail lights are broken. I was able to drive the car home. Nobody was hurt. A Brightwater police officer came and took a report."
+    },
+    {
+      "heading": "Damage to your vehicle",
+      "fields": [
+        ["Damaged areas selected", "Rear bumper; Trunk lid"],
+        ["Damage description", "Rear bumper pushed in; trunk lid crumpled and will not latch; both tail lights broken."],
+        ["Is the vehicle drivable?", "Yes"],
+        ["Did any airbags deploy?", "No"],
+        ["Did the vehicle have damage before this incident that has not been repaired?", "No"]
+      ]
+    },
+    {
+      "heading": "Other vehicle and driver",
+      "fields": [
+        ["Driver name", "Toni Keane"],
+        ["Vehicle", "2024 Fabrikam Coastal minivan, silver"],
+        ["Insurance company", "Tailspin Casualty Company"]
+      ]
+    },
+    {
+      "heading": "Injuries",
+      "fields": [
+        ["Was anyone injured?", "No"]
+      ]
+    },
+    {
+      "heading": "Police",
+      "fields": [
+        ["Were the police contacted?", "Yes"],
+        ["Police agency", "Brightwater Police Department"],
+        ["Report number", "BPD-26-004117"],
+        ["Officer", "Ofc. J. Nakamura"]
+      ]
+    },
+    {
+      "heading": "Witnesses",
+      "fields": [
+        ["Were there any witnesses?", "No"]
+      ]
+    },
+    {
+      "heading": "Photos",
+      "fields": [
+        ["Photos uploaded with this report", "4"]
+      ]
+    },
+    {
+      "heading": "Repair and rental",
+      "fields": [
+        ["Preferred repair shop", "Riverton Falls Collision Center, Riverton Falls, OR"],
+        ["Rental vehicle needed?", "Yes, while the car is being repaired"]
+      ]
+    }
+  ],
+  "declaration": "I confirm that the information in this report is true and complete to the best of my knowledge. I understand that Contoso Insurance will review this claim under the terms of my policy.",
+  "signature": [
+    ["Electronically signed by", "Alex Mendez"],
+    ["Date and time", "11/06/2026 2:50 PM PST"]
+  ]
+}

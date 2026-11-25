@@ -1,0 +1,10 @@
+{
+  "agentName": "contoso-claims-review-agent",
+  "displayName": "Contoso Claims Review Agent",
+  "description": "Assists Contoso Insurance claims adjusters by reconciling claims records, submitted evidence, photographs and company guidance. Decision support only.",
+  "openApiToolName": "claims_operations",
+  "openApiToolDescription": "Contoso Insurance Claims Operations API: factual claim, policy, claim-history and vehicle records.",
+  "knowledgeVectorStoreName": "contoso-insurance-claims-guidance",
+  "fileSearchMaxResults": 8,
+  "imageDetail": "high"
+}

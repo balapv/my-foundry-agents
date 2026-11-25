@@ -1,0 +1,226 @@
+{
+  "claimId": "CLM-10482",
+  "recordsAsOf": "2026-11-20T08:00:00Z",
+  "recordsAvailable": true,
+  "summary": {
+    "claimId": "CLM-10482",
+    "policyholder": "Jordan Lee",
+    "vehicle": "2024 Contoso Trailstar Touring AWD",
+    "vehicleColor": "Harbor Blue Metallic",
+    "lossDate": "2026-11-12",
+    "lossTime": "14:25",
+    "lossTimeZone": "America/Los_Angeles",
+    "lossLocation": "Harbor Point Shopping Center parking lot",
+    "claimType": "Collision",
+    "causeOfLoss": "Two-vehicle collision",
+    "claimStatus": "In Review",
+    "repairFacility": "Harborline Auto Body & Paint",
+    "estimateId": "EST-HL-26-3391",
+    "estimateTotal": 7850.0,
+    "collisionDeductible": 1000.0,
+    "policyId": "PAP-4471920"
+  },
+  "policy": {
+    "policyId": "PAP-4471920",
+    "productName": "Contoso Insurance Personal Auto Policy",
+    "policyStatus": "Active",
+    "termEffectiveDate": "2026-04-01",
+    "termExpirationDate": "2027-04-01",
+    "lossPayee": "Woodgrove Bank",
+    "vehicleCoverages": [
+      {
+        "coverageName": "Collision",
+        "deductible": 1000.0,
+        "limits": []
+      },
+      {
+        "coverageName": "Comprehensive (Other Than Collision)",
+        "deductible": 500.0,
+        "limits": []
+      },
+      {
+        "coverageName": "Rental Reimbursement",
+        "deductible": null,
+        "limits": [
+          {
+            "limitType": "Per day",
+            "amount": 40.0
+          },
+          {
+            "limitType": "Maximum per loss",
+            "amount": 1200.0
+          }
+        ]
+      },
+      {
+        "coverageName": "Roadside Assistance",
+        "deductible": null,
+        "limits": [
+          {
+            "limitType": "Per occurrence",
+            "amount": 100.0
+          }
+        ]
+      }
+    ],
+    "policyCoverages": [
+      {
+        "coverageName": "Bodily Injury Liability",
+        "deductible": null,
+        "limits": [
+          {
+            "limitType": "Per person",
+            "amount": 100000.0
+          },
+          {
+            "limitType": "Per accident",
+            "amount": 300000.0
+          }
+        ]
+      },
+      {
+        "coverageName": "Property Damage Liability",
+        "deductible": null,
+        "limits": [
+          {
+            "limitType": "Per accident",
+            "amount": 100000.0
+          }
+        ]
+      },
+      {
+        "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+        "deductible": null,
+        "limits": [
+          {
+            "limitType": "Per person",
+            "amount": 100000.0
+          },
+          {
+            "limitType": "Per accident",
+            "amount": 300000.0
+          }
+        ]
+      },
+      {
+        "coverageName": "Personal Injury Protection",
+        "deductible": null,
+        "limits": [
+          {
+            "limitType": "Per person",
+            "amount": 15000.0
+          }
+        ]
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "documentId": "DOC-10482-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (online submission)",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "kind": "pdf",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-01",
+      "pageCount": 2
+    },
+    {
+      "documentId": "DOC-10482-02",
+      "documentType": "Photograph",
+      "title": "Right rear corner, three-quarter view",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "kind": "photo",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-02",
+      "widthPx": 1536,
+      "heightPx": 1024
+    },
+    {
+      "documentId": "DOC-10482-03",
+      "documentType": "Photograph",
+      "title": "Right rear corner, close view",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "kind": "photo",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-03",
+      "widthPx": 1536,
+      "heightPx": 1024
+    },
+    {
+      "documentId": "DOC-10482-04",
+      "documentType": "Photograph",
+      "title": "Rear of vehicle",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "kind": "photo",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-04",
+      "widthPx": 1536,
+      "heightPx": 1024
+    },
+    {
+      "documentId": "DOC-10482-05",
+      "documentType": "Photograph",
+      "title": "Right side of vehicle",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "kind": "photo",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-05",
+      "widthPx": 1536,
+      "heightPx": 1024
+    },
+    {
+      "documentId": "DOC-10482-06",
+      "documentType": "Photograph",
+      "title": "Front and left side of vehicle",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-13T03:05:00Z",
+      "kind": "photo",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-06",
+      "widthPx": 1536,
+      "heightPx": 1024
+    },
+    {
+      "documentId": "DOC-10482-07",
+      "documentType": "Police report",
+      "title": "Maple Harbor Police Department traffic collision report MHPD-26-018734",
+      "source": "Police agency",
+      "receivedAt": "2026-11-17T16:40:00Z",
+      "kind": "pdf",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-07",
+      "pageCount": 2
+    },
+    {
+      "documentId": "DOC-10482-08",
+      "documentType": "Repair estimate",
+      "title": "Repair estimate EST-HL-26-3391",
+      "source": "Repair facility",
+      "receivedAt": "2026-11-17T18:22:00Z",
+      "kind": "pdf",
+      "url": "/api/claims/CLM-10482/evidence/DOC-10482-08",
+      "pageCount": 2
+    }
+  ],
+  "guidance": [
+    {
+      "guidanceId": "claims-handling-guidelines",
+      "title": "Auto Claims Handling Guidelines",
+      "url": "/api/guidance/claims-handling-guidelines"
+    },
+    {
+      "guidanceId": "auto-coverage-guidance",
+      "title": "Personal Auto Coverage Guidance",
+      "url": "/api/guidance/auto-coverage-guidance"
+    },
+    {
+      "guidanceId": "repair-estimate-review",
+      "title": "Repair Estimate Review Guidelines",
+      "url": "/api/guidance/repair-estimate-review"
+    },
+    {
+      "guidanceId": "claims-escalation-guidance",
+      "title": "Claims Escalation and Special Investigation Guidance",
+      "url": "/api/guidance/claims-escalation-guidance"
+    }
+  ]
+}

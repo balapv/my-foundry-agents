@@ -1,0 +1,96 @@
+{
+  "documentId": "DOC-10475-08",
+  "claimId": "CLM-10475",
+  "fileName": "police-report.pdf",
+  "issuer": "Willow Crossing Police Department",
+  "title": "Property Damage Report",
+  "subtitle": "Non-injury collision - unattended parked vehicle, other party not identified",
+  "header": [
+    ["Report number", "WCPD-26-035809"],
+    ["Date of collision", "11/06/2026"],
+    ["Time of collision", "Between approx. 1300 and 1340 hrs (per reporting party)"],
+    ["Reporting officer", "Ofc. D. Haverford #418"]
+  ],
+  "sections": [
+    {
+      "heading": "Incident",
+      "fields": [
+        ["Location", "Willow Crossing Marketplace parking lot, 2200 block of Marketplace Dr, Willow Crossing, UT"],
+        ["Property type", "Private property - retail parking lot"],
+        ["Reported / arrived / cleared", "11/06/2026 1352 hrs / 1415 hrs / 1440 hrs"],
+        ["Collision type", "Unattended parked vehicle struck by unknown vehicle"],
+        ["Vehicles involved", "2 (one not identified)"],
+        ["Injuries", "None"],
+        ["Lighting / weather / surface", "Daylight / clear / dry asphalt"],
+        ["Hit and run", "Yes - other vehicle left without providing information"]
+      ]
+    }
+  ],
+  "units": [
+    {
+      "unit": "Unit 1",
+      "fields": [
+        ["Vehicle", "2017 Fabrikam Ridgeback crew cab pickup, red"],
+        ["VIN", "0FBRB2PA7HF123631"],
+        ["Registered owner", "Fabrikam Motor Credit (lessor)"],
+        ["Reporting party", "Mateo Lindqvist, Willow Crossing, UT"],
+        ["Insurance", "Contoso Insurance, policy PAP-4657033"],
+        ["Movement", "Parked and unattended, nose-in stall, driver side facing the drive aisle"],
+        ["Area of impact", "Left side, rear of cab and forward bed side (clock position 8)"],
+        ["Damage observed", "Dent with horizontal scrapes on left rear door; scrape along left bed side extending rearward from the cab; gray paint transfer on both panels"],
+        ["Damage extent", "Minor"],
+        ["Removed from scene", "Driven"]
+      ]
+    },
+    {
+      "unit": "Unit 2",
+      "fields": [
+        ["Vehicle", "Unknown - gray paint transfer observed"],
+        ["Driver / owner", "Unknown"],
+        ["Movement", "Believed to have been traveling through the drive aisle"],
+        ["Area of impact", "Unknown"],
+        ["Damage observed", "Not available"],
+        ["Removed from scene", "Left scene"]
+      ]
+    }
+  ],
+  "diagram": {
+    "caption": "Scene diagram - not to scale. Unit 1 parked nose-in; Unit 2 path through the drive aisle is estimated. X marks area of impact.",
+    "width": 460,
+    "height": 190,
+    "shapes": [
+      {"kind": "line", "x1": 10, "y1": 95, "x2": 400, "y2": 95},
+      {"kind": "line", "x1": 120, "y1": 95, "x2": 120, "y2": 180, "dash": true},
+      {"kind": "line", "x1": 175, "y1": 95, "x2": 175, "y2": 180, "dash": true},
+      {"kind": "line", "x1": 230, "y1": 95, "x2": 230, "y2": 180, "dash": true},
+      {"kind": "line", "x1": 285, "y1": 95, "x2": 285, "y2": 180, "dash": true},
+      {"kind": "text", "x": 20, "y": 40, "text": "Drive aisle"},
+      {"kind": "text", "x": 300, "y": 170, "text": "Parking stalls"},
+      {"kind": "rect", "x": 182, "y": 102, "w": 40, "h": 72, "label": "1"},
+      {"kind": "arrow", "x1": 330, "y1": 70, "x2": 230, "y2": 70},
+      {"kind": "text", "x": 240, "y": 56, "text": "Unit 2 (est.)"},
+      {"kind": "marker", "x": 182, "y": 122},
+      {"kind": "north", "x": 425, "y": 115}
+    ]
+  },
+  "statements": [
+    ["Reporting party (Lindqvist)", "Stated he parked at approximately 1300 hrs, returned at approximately 1340 hrs and found the damage. No note was left on the vehicle."],
+    ["Store employee", "Stated she did not see the collision. Advised that the store's exterior camera does not cover this row of stalls."]
+  ],
+  "narrative": [
+    "On 11/06/2026 at 1352 hrs I was dispatched to the Willow Crossing Marketplace parking lot regarding a report of a parked vehicle that had been struck. I arrived at 1415 hrs and met with the reporting party, who stated he had parked his pickup nose-in at approximately 1300 hrs and found it damaged when he returned at approximately 1340 hrs.",
+    "I observed fresh damage to the left side of Unit 1. The left rear door had a dent with horizontal scrapes and the left bed side had a scrape extending rearward from the cab. Gray paint transfer was present on both panels. The height and direction of the scrapes are consistent with a vehicle traveling through the drive aisle.",
+    "No witnesses were located. A store employee advised that the exterior camera does not cover this row of stalls. No debris identifying the other vehicle was located.",
+    "The other driver could not be identified. The reporting party was provided with this report number. Case suspended pending further information."
+  ],
+  "findings": [
+    ["Primary collision factor (officer's opinion)", "Unit 2 - unsafe movement in parking lot; left scene without providing information"],
+    ["Citations issued", "None - other party not identified"],
+    ["Witnesses", "None identified"]
+  ],
+  "signature": [
+    ["Reporting officer", "Ofc. D. Haverford #418"],
+    ["Report date", "11/06/2026"],
+    ["Approved by", "Sgt. M. Okafor #207, 11/07/2026"]
+  ]
+}
