@@ -1,0 +1,324 @@
+{
+  "documentId": "DOC-10439-08",
+  "claimId": "CLM-10439",
+  "fileName": "police-report.pdf",
+  "issuer": "Maple Harbor Police Department",
+  "title": "Traffic Collision Report",
+  "subtitle": "Non-injury collision - signalized intersection",
+  "header": [
+    [
+      "Report number",
+      "MHPD-26-039369"
+    ],
+    [
+      "Date of collision",
+      "10/18/2026"
+    ],
+    [
+      "Time of collision",
+      "Approx. 1725 hrs"
+    ],
+    [
+      "Reporting officer",
+      "Ofc. R. Delgado #4532"
+    ]
+  ],
+  "sections": [
+    {
+      "heading": "Incident",
+      "fields": [
+        [
+          "Location",
+          "Intersection of Aspen Dr and Cascade Ln, Maple Harbor, OR"
+        ],
+        [
+          "Property type",
+          "Public roadway - signalized intersection"
+        ],
+        [
+          "Dispatched / arrived / cleared",
+          "1728 hrs / 1739 hrs / 1832 hrs"
+        ],
+        [
+          "Collision type",
+          "Broadside - left turn on protected arrow versus through vehicle"
+        ],
+        [
+          "Vehicles involved",
+          "2"
+        ],
+        [
+          "Injuries",
+          "None reported"
+        ],
+        [
+          "Lighting / weather / surface",
+          "Daylight / clear / dry asphalt"
+        ],
+        [
+          "Hit and run",
+          "No"
+        ]
+      ]
+    }
+  ],
+  "units": [
+    {
+      "unit": "Unit 1",
+      "fields": [
+        [
+          "Vehicle",
+          "2018 Fabrikam Coastal minivan, green"
+        ],
+        [
+          "VIN",
+          "0FBCS2MA4JF653975"
+        ],
+        [
+          "Driver / owner",
+          "Peyton Novak, Maple Harbor, OR"
+        ],
+        [
+          "Insurance",
+          "Contoso Insurance, policy PAP-4278298"
+        ],
+        [
+          "Movement",
+          "Northbound on Aspen Dr, turning left (west) onto Cascade Ln on green arrow"
+        ],
+        [
+          "Area of impact",
+          "Right front (clock position 1-2)"
+        ],
+        [
+          "Damage observed",
+          "Front bumper cover crushed and torn at right corner; grille broken; right headlamp assembly shattered; right front fender crushed inward; hood buckled at right front corner; components behind the grille pushed rearward"
+        ],
+        [
+          "Damage extent",
+          "Moderate"
+        ],
+        [
+          "Removed from scene",
+          "Driven"
+        ]
+      ]
+    },
+    {
+      "unit": "Unit 2",
+      "fields": [
+        [
+          "Vehicle",
+          "2022 Litware Pulse hatchback, midnight"
+        ],
+        [
+          "Driver / owner",
+          "Kai Pruitt, Maple Harbor, OR"
+        ],
+        [
+          "Insurance",
+          "Lamna Insurance Group"
+        ],
+        [
+          "Movement",
+          "Southbound on Aspen Dr, proceeding straight through intersection"
+        ],
+        [
+          "Area of impact",
+          "Front, left of center"
+        ],
+        [
+          "Damage observed",
+          "Front bumper cover and hood crushed left of center; left headlamp broken; green paint transfer on bumper"
+        ],
+        [
+          "Damage extent",
+          "Moderate"
+        ],
+        [
+          "Removed from scene",
+          "Towed - Harbor Towing"
+        ]
+      ]
+    }
+  ],
+  "diagram": {
+    "caption": "Scene diagram - not to scale. Unit 1 northbound turning left onto Cascade Ln; Unit 2 southbound through the intersection. X marks area of impact.",
+    "width": 460,
+    "height": 190,
+    "shapes": [
+      {
+        "kind": "line",
+        "x1": 190,
+        "y1": 10,
+        "x2": 190,
+        "y2": 70
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 10,
+        "x2": 290,
+        "y2": 70
+      },
+      {
+        "kind": "line",
+        "x1": 190,
+        "y1": 130,
+        "x2": 190,
+        "y2": 182
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 130,
+        "x2": 290,
+        "y2": 182
+      },
+      {
+        "kind": "line",
+        "x1": 10,
+        "y1": 70,
+        "x2": 190,
+        "y2": 70
+      },
+      {
+        "kind": "line",
+        "x1": 10,
+        "y1": 130,
+        "x2": 190,
+        "y2": 130
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 70,
+        "x2": 380,
+        "y2": 70
+      },
+      {
+        "kind": "line",
+        "x1": 290,
+        "y1": 130,
+        "x2": 380,
+        "y2": 130
+      },
+      {
+        "kind": "line",
+        "x1": 240,
+        "y1": 10,
+        "x2": 240,
+        "y2": 70,
+        "dash": true
+      },
+      {
+        "kind": "line",
+        "x1": 240,
+        "y1": 130,
+        "x2": 240,
+        "y2": 182,
+        "dash": true
+      },
+      {
+        "kind": "text",
+        "x": 296,
+        "y": 20,
+        "text": "Aspen Dr"
+      },
+      {
+        "kind": "text",
+        "x": 20,
+        "y": 96,
+        "text": "Cascade Ln"
+      },
+      {
+        "kind": "rect",
+        "x": 214,
+        "y": 84,
+        "w": 50,
+        "h": 30,
+        "label": "1"
+      },
+      {
+        "kind": "arrow",
+        "x1": 208,
+        "y1": 99,
+        "x2": 160,
+        "y2": 99
+      },
+      {
+        "kind": "rect",
+        "x": 200,
+        "y": 118,
+        "w": 32,
+        "h": 44,
+        "label": "2"
+      },
+      {
+        "kind": "arrow",
+        "x1": 180,
+        "y1": 176,
+        "x2": 180,
+        "y2": 140
+      },
+      {
+        "kind": "marker",
+        "x": 222,
+        "y": 116
+      },
+      {
+        "kind": "north",
+        "x": 425,
+        "y": 115
+      }
+    ]
+  },
+  "statements": [
+    [
+      "Driver 1 (Novak)",
+      "Stated they were turning left from northbound Aspen Dr onto Cascade Ln on a green arrow when a southbound hatchback entered the intersection and struck the right front of their minivan."
+    ],
+    [
+      "Driver 2 (Pruitt)",
+      "Stated they believed their light was yellow when they entered the intersection and could not stop in time."
+    ],
+    [
+      "Witness 1",
+      "Driver stopped westbound on Cascade Ln stated the southbound signal for Aspen Dr was red for several seconds before the hatchback entered the intersection."
+    ]
+  ],
+  "narrative": [
+    "On 10/18/2026 at approximately 1728 hrs I was dispatched to a reported non-injury collision at the intersection of Aspen Dr and Cascade Ln. I arrived at 1739 hrs. Both vehicles had come to rest in the intersection and both drivers were outside their vehicles. Neither driver reported any injury.",
+    "Unit 1 was facing northwest in the northbound left-turn path. Unit 2 was facing south in the southbound through lane. Statements and the final positions of the vehicles indicate that Unit 1 was turning left on a protected green arrow and that Unit 2 entered the intersection southbound and struck the right front of Unit 1 with its front.",
+    "I observed fresh damage to the right front of Unit 1. The front bumper cover was crushed and torn at the right corner, the grille was broken, the right headlamp assembly was shattered, the right front fender was crushed inward and the hood was buckled at the right front corner. Components behind the grille were visibly pushed rearward. I observed damage to the front of Unit 2, left of center, with green paint transfer on its bumper cover. Debris from both vehicles was in the intersection.",
+    "The signal timing at the intersection was operating normally when I checked it at 1805 hrs. One independent witness provided a statement. Unit 1 was driven from the scene. Unit 2 was towed by Harbor Towing. Driver 2 was cited for failure to obey a traffic control signal. Both drivers exchanged information in my presence and were provided with this report number."
+  ],
+  "findings": [
+    [
+      "Primary collision factor (officer's opinion)",
+      "Unit 2 - failure to obey traffic control signal"
+    ],
+    [
+      "Citations issued",
+      "Driver 2 - failure to obey traffic control signal"
+    ],
+    [
+      "Witnesses",
+      "One independent witness"
+    ]
+  ],
+  "signature": [
+    [
+      "Reporting officer",
+      "Ofc. R. Delgado #4532"
+    ],
+    [
+      "Report date",
+      "10/18/2026"
+    ],
+    [
+      "Approved by",
+      "Sgt. L. Kowalski #3081, 10/20/2026"
+    ]
+  ]
+}

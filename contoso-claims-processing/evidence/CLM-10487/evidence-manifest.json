@@ -1,0 +1,45 @@
+{
+  "claimId": "CLM-10487",
+  "synthetic": true,
+  "notice": "Synthetic demonstration evidence. Contoso Insurance is fictional; the documents and photographs in this folder are invented and do not describe a real person, vehicle or incident.",
+  "documents": [
+    {
+      "documentId": "DOC-10487-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (mobile app)",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-17T16:01:00Z",
+      "fileName": "claim-form.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 5291,
+      "sha256": "08a227478edc0e677cc6b22eb7a6a869f9d27b48b3294c9f2b0760f68b51f99f"
+    },
+    {
+      "documentId": "DOC-10487-02",
+      "documentType": "Photograph",
+      "title": "Photograph 1 of 2",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-17T16:01:00Z",
+      "fileName": "photos/photo-01.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 406461,
+      "sha256": "225af24bfdfffaae45319124c5fe3ef4a6534dcbb71700cb18523d72971ada01"
+    },
+    {
+      "documentId": "DOC-10487-03",
+      "documentType": "Photograph",
+      "title": "Photograph 2 of 2",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-17T16:01:00Z",
+      "fileName": "photos/photo-02.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 193499,
+      "sha256": "186912b4b866acfebbfbe1998772710c8ea84ec9ed0378eaa772ed0214a7cede"
+    }
+  ]
+}

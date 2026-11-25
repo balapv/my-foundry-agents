@@ -1,0 +1,245 @@
+{
+  "dataset": "Contoso Insurance synthetic claims data",
+  "synthetic": true,
+  "notice": "Synthetic demonstration data. Contoso Insurance is fictional; every customer, policy, vehicle, VIN, claim and address in this file is invented.",
+  "recordsAsOf": "2026-11-20T08:00:00Z",
+  "source": "Repair facility directory",
+  "repairFacilities": [
+    {
+      "repairFacilityId": "RF-101",
+      "name": "Brightwater Collision & Glass",
+      "services": [
+        "Collision repair",
+        "Auto glass"
+      ],
+      "networkStatus": "Contoso Direct Repair Network",
+      "networkJoinedDate": "2017-03-01",
+      "address": {
+        "street": "915 Cedar Ave",
+        "city": "Brightwater",
+        "state": "OR",
+        "postalCode": "97371"
+      },
+      "phone": "(503) 555-0101",
+      "laborRates": {
+        "bodyPerHour": 66.0,
+        "refinishPerHour": 66.0,
+        "mechanicalPerHour": 120.0,
+        "framePerHour": 82.0,
+        "paintMaterialsPerRefinishHour": 44.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-102",
+      "name": "Pine Hollow Auto Body",
+      "services": [
+        "Collision repair"
+      ],
+      "networkStatus": "Independent",
+      "networkJoinedDate": null,
+      "address": {
+        "street": "2210 Ridgecrest Dr",
+        "city": "Pine Hollow",
+        "state": "WA",
+        "postalCode": "98312"
+      },
+      "phone": "(360) 555-0102",
+      "laborRates": {
+        "bodyPerHour": 72.0,
+        "refinishPerHour": 72.0,
+        "mechanicalPerHour": 135.0,
+        "framePerHour": 90.0,
+        "paintMaterialsPerRefinishHour": 48.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-103",
+      "name": "Riverton Falls Collision Center",
+      "services": [
+        "Collision repair"
+      ],
+      "networkStatus": "Contoso Direct Repair Network",
+      "networkJoinedDate": "2019-06-15",
+      "address": {
+        "street": "48 Orchard Way",
+        "city": "Riverton Falls",
+        "state": "OR",
+        "postalCode": "97525"
+      },
+      "phone": "(541) 555-0103",
+      "laborRates": {
+        "bodyPerHour": 64.0,
+        "refinishPerHour": 64.0,
+        "mechanicalPerHour": 118.0,
+        "framePerHour": 80.0,
+        "paintMaterialsPerRefinishHour": 43.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-104",
+      "name": "Harborline Auto Body & Paint",
+      "services": [
+        "Collision repair",
+        "Refinish",
+        "ADAS calibration coordination"
+      ],
+      "networkStatus": "Contoso Direct Repair Network",
+      "networkJoinedDate": "2016-09-01",
+      "address": {
+        "street": "3140 Bayview Dr",
+        "city": "Maple Harbor",
+        "state": "OR",
+        "postalCode": "97497"
+      },
+      "phone": "(541) 555-0104",
+      "laborRates": {
+        "bodyPerHour": 68.0,
+        "refinishPerHour": 68.0,
+        "mechanicalPerHour": 125.0,
+        "framePerHour": 85.0,
+        "paintMaterialsPerRefinishHour": 46.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-105",
+      "name": "Eastgate Springs Body Works",
+      "services": [
+        "Collision repair"
+      ],
+      "networkStatus": "Contoso Direct Repair Network",
+      "networkJoinedDate": "2020-02-01",
+      "address": {
+        "street": "771 Aspen St",
+        "city": "Eastgate Springs",
+        "state": "ID",
+        "postalCode": "83668"
+      },
+      "phone": "(208) 555-0105",
+      "laborRates": {
+        "bodyPerHour": 60.0,
+        "refinishPerHour": 60.0,
+        "mechanicalPerHour": 110.0,
+        "framePerHour": 78.0,
+        "paintMaterialsPerRefinishHour": 40.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-106",
+      "name": "Sunvale Precision Collision",
+      "services": [
+        "Collision repair",
+        "Refinish"
+      ],
+      "networkStatus": "Contoso Direct Repair Network",
+      "networkJoinedDate": "2018-11-01",
+      "address": {
+        "street": "5600 Summit Ave",
+        "city": "Sunvale",
+        "state": "CA",
+        "postalCode": "95683"
+      },
+      "phone": "(530) 555-0106",
+      "laborRates": {
+        "bodyPerHour": 78.0,
+        "refinishPerHour": 78.0,
+        "mechanicalPerHour": 145.0,
+        "framePerHour": 98.0,
+        "paintMaterialsPerRefinishHour": 52.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-107",
+      "name": "Copper Mesa Auto Glass",
+      "services": [
+        "Auto glass"
+      ],
+      "networkStatus": "Contoso Direct Repair Network",
+      "networkJoinedDate": "2021-04-01",
+      "address": {
+        "street": "1302 Juniper Ln",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85290"
+      },
+      "phone": "(928) 555-0107",
+      "laborRates": {
+        "bodyPerHour": 70.0,
+        "refinishPerHour": 70.0,
+        "mechanicalPerHour": 120.0,
+        "framePerHour": null,
+        "paintMaterialsPerRefinishHour": null
+      }
+    },
+    {
+      "repairFacilityId": "RF-108",
+      "name": "Lakeshore Bluffs Collision",
+      "services": [
+        "Collision repair"
+      ],
+      "networkStatus": "Independent",
+      "networkJoinedDate": null,
+      "address": {
+        "street": "389 Lakeview Dr",
+        "city": "Lakeshore Bluffs",
+        "state": "CO",
+        "postalCode": "80553"
+      },
+      "phone": "(970) 555-0108",
+      "laborRates": {
+        "bodyPerHour": 70.0,
+        "refinishPerHour": 70.0,
+        "mechanicalPerHour": 130.0,
+        "framePerHour": 88.0,
+        "paintMaterialsPerRefinishHour": 47.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-109",
+      "name": "Granite Bend Glass & Body",
+      "services": [
+        "Collision repair",
+        "Auto glass"
+      ],
+      "networkStatus": "Contoso Direct Repair Network",
+      "networkJoinedDate": "2016-05-01",
+      "address": {
+        "street": "64 Elm Ct",
+        "city": "Granite Bend",
+        "state": "NV",
+        "postalCode": "89476"
+      },
+      "phone": "(775) 555-0109",
+      "laborRates": {
+        "bodyPerHour": 69.0,
+        "refinishPerHour": 69.0,
+        "mechanicalPerHour": 128.0,
+        "framePerHour": 86.0,
+        "paintMaterialsPerRefinishHour": 46.0
+      }
+    },
+    {
+      "repairFacilityId": "RF-110",
+      "name": "Willow Crossing Autoworks",
+      "services": [
+        "Collision repair",
+        "Mechanical repair"
+      ],
+      "networkStatus": "Independent",
+      "networkJoinedDate": null,
+      "address": {
+        "street": "1188 Willow Pl",
+        "city": "Willow Crossing",
+        "state": "UT",
+        "postalCode": "84062"
+      },
+      "phone": "(435) 555-0110",
+      "laborRates": {
+        "bodyPerHour": 62.0,
+        "refinishPerHour": 62.0,
+        "mechanicalPerHour": 115.0,
+        "framePerHour": 80.0,
+        "paintMaterialsPerRefinishHour": 42.0
+      }
+    }
+  ]
+}

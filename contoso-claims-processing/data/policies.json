@@ -1,0 +1,4776 @@
+{
+  "dataset": "Contoso Insurance synthetic claims data",
+  "synthetic": true,
+  "notice": "Synthetic demonstration data. Contoso Insurance is fictional; every customer, policy, vehicle, VIN, claim and address in this file is invented.",
+  "recordsAsOf": "2026-11-20T08:00:00Z",
+  "source": "Policy administration system",
+  "policies": [
+    {
+      "policyId": "PAP-3022868",
+      "customerId": "CUST-39296",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "AZ",
+      "inceptionDate": "2019-09-04",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-09-04",
+      "termExpirationDate": "2027-09-04",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 3090.17,
+      "drivers": [
+        {
+          "fullName": "Kendall Foster",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59467",
+          "addedDate": "2019-09-04",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vehicleId": "VEH-59457",
+          "addedDate": "2019-09-04",
+          "removedDate": null,
+          "lossPayee": "Northwind Auto Finance",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3071091",
+      "customerId": "CUST-36645",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2020-08-28",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-08-28",
+      "termExpirationDate": "2027-08-28",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1489.59,
+      "drivers": [
+        {
+          "fullName": "Avery Foster",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Noor Foster",
+          "relationship": "Household member",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-58904",
+          "addedDate": "2020-08-28",
+          "removedDate": null,
+          "lossPayee": "Northwind Auto Finance",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 100.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3153655",
+      "customerId": "CUST-13747",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "AZ",
+      "inceptionDate": "2018-11-12",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-11-12",
+      "termExpirationDate": "2027-11-12",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1452.19,
+      "drivers": [
+        {
+          "fullName": "Dakota Dawson",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        },
+        {
+          "fullName": "Logan Dawson",
+          "relationship": "Household member",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 1000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59642",
+          "addedDate": "2018-11-12",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 100.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3184341",
+      "customerId": "CUST-13747",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Cancelled",
+      "ratingState": "AZ",
+      "inceptionDate": "2017-09-25",
+      "termMonths": 6,
+      "termEffectiveDate": "2018-09-25",
+      "termExpirationDate": "2019-03-25",
+      "cancellation": {
+        "effectiveDate": "2018-11-12",
+        "reason": "Rewritten to new policy"
+      },
+      "paymentPlan": "Monthly",
+      "termPremium": 692.81,
+      "drivers": [
+        {
+          "fullName": "Dakota Dawson",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        },
+        {
+          "fullName": "Logan Dawson",
+          "relationship": "Household member",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 1000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59642",
+          "addedDate": "2017-09-25",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 100.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3291703",
+      "customerId": "CUST-27693",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "AZ",
+      "inceptionDate": "2019-09-08",
+      "termMonths": 12,
+      "termEffectiveDate": "2021-09-08",
+      "termExpirationDate": "2022-09-08",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1574.69,
+      "drivers": [
+        {
+          "fullName": "Quinn Ramirez",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        },
+        {
+          "fullName": "Taylor Ramirez",
+          "relationship": "Spouse/partner",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-55468",
+          "addedDate": "2019-09-08",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 30.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 900.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3527859",
+      "customerId": "CUST-13114",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2015-01-13",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-07-13",
+      "termExpirationDate": "2027-01-13",
+      "cancellation": null,
+      "paymentPlan": "Paid in full",
+      "termPremium": 1483.79,
+      "drivers": [
+        {
+          "fullName": "Kendall Walsh",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Devon Walsh",
+          "relationship": "Household member",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-57700",
+          "addedDate": "2015-01-13",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            }
+          ]
+        },
+        {
+          "vehicleId": "VEH-52669",
+          "addedDate": "2025-03-05",
+          "removedDate": null,
+          "lossPayee": "Proseware Financial",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 50.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1500.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "GAP",
+              "coverageName": "Loan/Lease Gap",
+              "deductible": null,
+              "limits": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3733318",
+      "customerId": "CUST-25185",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2022-06-13",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-06-13",
+      "termExpirationDate": "2026-12-13",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 698.4,
+      "drivers": [
+        {
+          "fullName": "Reese Turner",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Parker Turner",
+          "relationship": "Spouse/partner",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-58378",
+          "addedDate": "2022-06-13",
+          "removedDate": null,
+          "lossPayee": "Northwind Auto Finance",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3744991",
+      "customerId": "CUST-18120",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Cancelled",
+      "ratingState": "UT",
+      "inceptionDate": "2017-05-09",
+      "termMonths": 12,
+      "termEffectiveDate": "2020-05-09",
+      "termExpirationDate": "2021-05-09",
+      "cancellation": {
+        "effectiveDate": "2020-09-07",
+        "reason": "Rewritten to new policy"
+      },
+      "paymentPlan": "Monthly",
+      "termPremium": 767.56,
+      "drivers": [
+        {
+          "fullName": "Drew Baker",
+          "relationship": "Named insured",
+          "licenseState": "UT"
+        },
+        {
+          "fullName": "Rowan Baker",
+          "relationship": "Household member",
+          "licenseState": "UT"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 3000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-55767",
+          "addedDate": "2017-05-09",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": []
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3762378",
+      "customerId": "CUST-18065",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "ID",
+      "inceptionDate": "2019-07-23",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-07-23",
+      "termExpirationDate": "2027-07-23",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 2633.78,
+      "drivers": [
+        {
+          "fullName": "Finley Sullivan",
+          "relationship": "Named insured",
+          "licenseState": "ID"
+        },
+        {
+          "fullName": "Elliot Sullivan",
+          "relationship": "Spouse/partner",
+          "licenseState": "ID"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 1000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-55342",
+          "addedDate": "2019-07-23",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vehicleId": "VEH-54643",
+          "addedDate": "2026-04-28",
+          "removedDate": null,
+          "lossPayee": "Woodgrove Bank",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3768340",
+      "customerId": "CUST-14176",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2022-08-02",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-08-02",
+      "termExpirationDate": "2027-08-02",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1478.87,
+      "drivers": [
+        {
+          "fullName": "Elliot Bennett",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-53375",
+          "addedDate": "2022-08-02",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3822776",
+      "customerId": "CUST-37554",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "WA",
+      "inceptionDate": "2018-09-21",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-09-21",
+      "termExpirationDate": "2027-03-21",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 688.46,
+      "drivers": [
+        {
+          "fullName": "Sage Alvarez",
+          "relationship": "Named insured",
+          "licenseState": "WA"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-52511",
+          "addedDate": "2018-09-21",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3864006",
+      "customerId": "CUST-36247",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "CA",
+      "inceptionDate": "2022-05-17",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-05-17",
+      "termExpirationDate": "2027-05-17",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1751.89,
+      "drivers": [
+        {
+          "fullName": "Riley Walsh",
+          "relationship": "Named insured",
+          "licenseState": "CA"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 250000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-58623",
+          "addedDate": "2022-05-17",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3878060",
+      "customerId": "CUST-35138",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Cancelled",
+      "ratingState": "NV",
+      "inceptionDate": "2018-01-13",
+      "termMonths": 6,
+      "termEffectiveDate": "2019-01-13",
+      "termExpirationDate": "2019-07-13",
+      "cancellation": {
+        "effectiveDate": "2019-06-27",
+        "reason": "Non-payment of premium"
+      },
+      "paymentPlan": "Monthly",
+      "termPremium": 775.19,
+      "drivers": [
+        {
+          "fullName": "Parker Okafor",
+          "relationship": "Named insured",
+          "licenseState": "NV"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59231",
+          "addedDate": "2018-01-13",
+          "removedDate": null,
+          "lossPayee": "Proseware Financial",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 30.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 900.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3929408",
+      "customerId": "CUST-25813",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "UT",
+      "inceptionDate": "2024-03-13",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-03-13",
+      "termExpirationDate": "2026-09-13",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 703.26,
+      "drivers": [
+        {
+          "fullName": "Grace Young",
+          "relationship": "Named insured",
+          "licenseState": "UT"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 3000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-52819",
+          "addedDate": "2024-03-13",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 30.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 900.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-3974690",
+      "customerId": "CUST-39798",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2018-05-16",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-05-16",
+      "termExpirationDate": "2027-05-16",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1492.95,
+      "drivers": [
+        {
+          "fullName": "Cameron Fischer",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-55443",
+          "addedDate": "2018-05-16",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 30.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 900.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4095105",
+      "customerId": "CUST-26287",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Cancelled",
+      "ratingState": "AZ",
+      "inceptionDate": "2019-11-16",
+      "termMonths": 12,
+      "termEffectiveDate": "2025-11-16",
+      "termExpirationDate": "2026-11-16",
+      "cancellation": {
+        "effectiveDate": "2026-08-24",
+        "reason": "Non-payment of premium"
+      },
+      "paymentPlan": "Monthly",
+      "termPremium": 1369.98,
+      "drivers": [
+        {
+          "fullName": "Lena Morales",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-55266",
+          "addedDate": "2019-11-16",
+          "removedDate": null,
+          "lossPayee": "Northwind Auto Finance",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 50.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1500.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4132884",
+      "customerId": "CUST-27693",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "AZ",
+      "inceptionDate": "2022-09-08",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-09-08",
+      "termExpirationDate": "2027-03-08",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 708.05,
+      "drivers": [
+        {
+          "fullName": "Quinn Ramirez",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        },
+        {
+          "fullName": "Taylor Ramirez",
+          "relationship": "Spouse/partner",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-55468",
+          "addedDate": "2022-09-08",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 30.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 900.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4230367",
+      "customerId": "CUST-20967",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2018-03-19",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-03-19",
+      "termExpirationDate": "2027-03-19",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1640.82,
+      "drivers": [
+        {
+          "fullName": "Alex Mendez",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 250000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-57293",
+          "addedDate": "2018-03-19",
+          "removedDate": null,
+          "lossPayee": "Woodgrove Bank",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 50.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1500.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4232437",
+      "customerId": "CUST-18603",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "AZ",
+      "inceptionDate": "2018-10-10",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-10-10",
+      "termExpirationDate": "2027-04-10",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 818.82,
+      "drivers": [
+        {
+          "fullName": "Sage Rivera",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-52454",
+          "addedDate": "2018-10-10",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 30.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 900.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4254837",
+      "customerId": "CUST-21888",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2022-07-24",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-07-24",
+      "termExpirationDate": "2027-07-24",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1432.81,
+      "drivers": [
+        {
+          "fullName": "Reese Hart",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-54630",
+          "addedDate": "2022-07-24",
+          "removedDate": null,
+          "lossPayee": "Woodgrove Bank",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 100.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4278298",
+      "customerId": "CUST-34111",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2020-06-01",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-06-01",
+      "termExpirationDate": "2026-12-01",
+      "cancellation": null,
+      "paymentPlan": "Paid in full",
+      "termPremium": 684.89,
+      "drivers": [
+        {
+          "fullName": "Peyton Novak",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Blake Novak",
+          "relationship": "Household member",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-58620",
+          "addedDate": "2020-06-01",
+          "removedDate": null,
+          "lossPayee": "Proseware Financial",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4363836",
+      "customerId": "CUST-21658",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "AZ",
+      "inceptionDate": "2016-03-17",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-03-17",
+      "termExpirationDate": "2027-03-17",
+      "cancellation": null,
+      "paymentPlan": "Paid in full",
+      "termPremium": 1486.82,
+      "drivers": [
+        {
+          "fullName": "Daniel Quintero",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-56773",
+          "addedDate": "2016-03-17",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4388268",
+      "customerId": "CUST-14176",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "OR",
+      "inceptionDate": "2019-07-07",
+      "termMonths": 6,
+      "termEffectiveDate": "2022-01-07",
+      "termExpirationDate": "2022-07-07",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 786.77,
+      "drivers": [
+        {
+          "fullName": "Elliot Bennett",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-53375",
+          "addedDate": "2019-07-07",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4401742",
+      "customerId": "CUST-16866",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "AZ",
+      "inceptionDate": "2025-12-27",
+      "termMonths": 12,
+      "termEffectiveDate": "2025-12-27",
+      "termExpirationDate": "2026-12-27",
+      "cancellation": null,
+      "paymentPlan": "Paid in full",
+      "termPremium": 1464.41,
+      "drivers": [
+        {
+          "fullName": "Priya Jensen",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59131",
+          "addedDate": "2025-12-27",
+          "removedDate": null,
+          "lossPayee": "Woodgrove Bank",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4463299",
+      "customerId": "CUST-36645",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "OR",
+      "inceptionDate": "2017-08-28",
+      "termMonths": 6,
+      "termEffectiveDate": "2020-02-28",
+      "termExpirationDate": "2020-08-28",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 768.82,
+      "drivers": [
+        {
+          "fullName": "Avery Foster",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Noor Foster",
+          "relationship": "Household member",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-58904",
+          "addedDate": "2017-08-28",
+          "removedDate": null,
+          "lossPayee": "Northwind Auto Finance",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 100.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4471920",
+      "customerId": "CUST-24817",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2022-04-01",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-04-01",
+      "termExpirationDate": "2027-04-01",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1684.2,
+      "drivers": [
+        {
+          "fullName": "Jordan Lee",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-51946",
+          "addedDate": "2022-04-01",
+          "removedDate": "2024-05-18",
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vehicleId": "VEH-58213",
+          "addedDate": "2024-05-18",
+          "removedDate": null,
+          "lossPayee": "Woodgrove Bank",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4546497",
+      "customerId": "CUST-18120",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "UT",
+      "inceptionDate": "2020-09-07",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-09-07",
+      "termExpirationDate": "2027-09-07",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 2437.38,
+      "drivers": [
+        {
+          "fullName": "Drew Baker",
+          "relationship": "Named insured",
+          "licenseState": "UT"
+        },
+        {
+          "fullName": "Rowan Baker",
+          "relationship": "Household member",
+          "licenseState": "UT"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 3000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-55767",
+          "addedDate": "2020-09-07",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": []
+        },
+        {
+          "vehicleId": "VEH-54523",
+          "addedDate": "2024-01-08",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4607869",
+      "customerId": "CUST-17709",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2025-09-28",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-09-28",
+      "termExpirationDate": "2027-09-28",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1564.68,
+      "drivers": [
+        {
+          "fullName": "Rowan Ellis",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Omar Ellis",
+          "relationship": "Household member",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-50277",
+          "addedDate": "2025-09-28",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4620857",
+      "customerId": "CUST-38621",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "CA",
+      "inceptionDate": "2025-06-14",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-06-14",
+      "termExpirationDate": "2026-12-14",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 793.24,
+      "drivers": [
+        {
+          "fullName": "Lena Baker",
+          "relationship": "Named insured",
+          "licenseState": "CA"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 250000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-57593",
+          "addedDate": "2025-06-14",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4651251",
+      "customerId": "CUST-20384",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "CA",
+      "inceptionDate": "2016-03-17",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-09-17",
+      "termExpirationDate": "2027-03-17",
+      "cancellation": null,
+      "paymentPlan": "Paid in full",
+      "termPremium": 365.63,
+      "drivers": [
+        {
+          "fullName": "Skyler Varga",
+          "relationship": "Named insured",
+          "licenseState": "CA"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 1000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-57853",
+          "addedDate": "2016-03-17",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": []
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4657033",
+      "customerId": "CUST-24557",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "UT",
+      "inceptionDate": "2018-09-07",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-09-07",
+      "termExpirationDate": "2027-09-07",
+      "cancellation": null,
+      "paymentPlan": "Paid in full",
+      "termPremium": 1584.41,
+      "drivers": [
+        {
+          "fullName": "Mateo Lindqvist",
+          "relationship": "Named insured",
+          "licenseState": "UT"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 250000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 3000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59821",
+          "addedDate": "2018-09-07",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4697482",
+      "customerId": "CUST-39296",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "AZ",
+      "inceptionDate": "2016-05-23",
+      "termMonths": 12,
+      "termEffectiveDate": "2018-05-23",
+      "termExpirationDate": "2019-05-23",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 3073.3,
+      "drivers": [
+        {
+          "fullName": "Kendall Foster",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59467",
+          "addedDate": "2016-05-23",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "vehicleId": "VEH-59457",
+          "addedDate": "2017-11-12",
+          "removedDate": null,
+          "lossPayee": "Northwind Auto Finance",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4700525",
+      "customerId": "CUST-16223",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "OR",
+      "inceptionDate": "2017-07-03",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-07-03",
+      "termExpirationDate": "2027-07-03",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1472.66,
+      "drivers": [
+        {
+          "fullName": "Elliot Sullivan",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Skyler Sullivan",
+          "relationship": "Spouse/partner",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-51433",
+          "addedDate": "2017-07-03",
+          "removedDate": null,
+          "lossPayee": "Woodgrove Bank",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4709651",
+      "customerId": "CUST-29098",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "CA",
+      "inceptionDate": "2020-11-11",
+      "termMonths": 12,
+      "termEffectiveDate": "2026-11-11",
+      "termExpirationDate": "2027-11-11",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1529.85,
+      "drivers": [
+        {
+          "fullName": "Logan Bennett",
+          "relationship": "Named insured",
+          "licenseState": "CA"
+        },
+        {
+          "fullName": "Marisol Bennett",
+          "relationship": "Spouse/partner",
+          "licenseState": "CA"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 250000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-52406",
+          "addedDate": "2020-11-11",
+          "removedDate": null,
+          "lossPayee": "Woodgrove Bank",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 100.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4818268",
+      "customerId": "CUST-35138",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Active",
+      "ratingState": "NV",
+      "inceptionDate": "2019-08-28",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-08-28",
+      "termExpirationDate": "2027-02-28",
+      "cancellation": null,
+      "paymentPlan": "Paid in full",
+      "termPremium": 793.46,
+      "drivers": [
+        {
+          "fullName": "Parker Okafor",
+          "relationship": "Named insured",
+          "licenseState": "NV"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59231",
+          "addedDate": "2019-08-28",
+          "removedDate": null,
+          "lossPayee": "Proseware Financial",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 30.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 900.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4834624",
+      "customerId": "CUST-36247",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "CA",
+      "inceptionDate": "2016-05-17",
+      "termMonths": 12,
+      "termEffectiveDate": "2021-05-17",
+      "termExpirationDate": "2022-05-17",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 1607.79,
+      "drivers": [
+        {
+          "fullName": "Riley Walsh",
+          "relationship": "Named insured",
+          "licenseState": "CA"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 250000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 5000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-58623",
+          "addedDate": "2016-05-17",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4848444",
+      "customerId": "CUST-30305",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Cancelled",
+      "ratingState": "CO",
+      "inceptionDate": "2023-03-15",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-03-15",
+      "termExpirationDate": "2026-09-15",
+      "cancellation": {
+        "effectiveDate": "2026-08-31",
+        "reason": "Insured request"
+      },
+      "paymentPlan": "Monthly",
+      "termPremium": 710.17,
+      "drivers": [
+        {
+          "fullName": "Daniel Young",
+          "relationship": "Named insured",
+          "licenseState": "CO"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 1000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-51346",
+          "addedDate": "2023-03-15",
+          "removedDate": null,
+          "lossPayee": null,
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 250.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4963667",
+      "customerId": "CUST-24557",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "UT",
+      "inceptionDate": "2016-08-21",
+      "termMonths": 6,
+      "termEffectiveDate": "2018-02-21",
+      "termExpirationDate": "2018-08-21",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 861.5,
+      "drivers": [
+        {
+          "fullName": "Mateo Lindqvist",
+          "relationship": "Named insured",
+          "licenseState": "UT"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 250000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 250000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 500000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 3000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-59821",
+          "addedDate": "2016-08-21",
+          "removedDate": null,
+          "lossPayee": "Fabrikam Motor Credit",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "RENT",
+              "coverageName": "Rental Reimbursement",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per day",
+                  "amount": 40.0
+                },
+                {
+                  "limitType": "Maximum per loss",
+                  "amount": 1200.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4970609",
+      "customerId": "CUST-28678",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Expired",
+      "ratingState": "AZ",
+      "inceptionDate": "2023-02-18",
+      "termMonths": 6,
+      "termEffectiveDate": "2026-02-18",
+      "termExpirationDate": "2026-08-18",
+      "cancellation": null,
+      "paymentPlan": "Monthly",
+      "termPremium": 656.37,
+      "drivers": [
+        {
+          "fullName": "Ari Quintero",
+          "relationship": "Named insured",
+          "licenseState": "AZ"
+        },
+        {
+          "fullName": "Noor Quintero",
+          "relationship": "Household member",
+          "licenseState": "AZ"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 100000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 300000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "MED",
+          "coverageName": "Medical Payments",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 10000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-56463",
+          "addedDate": "2023-02-18",
+          "removedDate": null,
+          "lossPayee": "Proseware Financial",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "ROAD",
+              "coverageName": "Roadside Assistance",
+              "deductible": null,
+              "limits": [
+                {
+                  "limitType": "Per occurrence",
+                  "amount": 100.0
+                }
+              ]
+            },
+            {
+              "coverageCode": "GAP",
+              "coverageName": "Loan/Lease Gap",
+              "deductible": null,
+              "limits": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "policyId": "PAP-4970728",
+      "customerId": "CUST-34111",
+      "productName": "Contoso Insurance Personal Auto Policy",
+      "status": "Cancelled",
+      "ratingState": "OR",
+      "inceptionDate": "2018-03-05",
+      "termMonths": 12,
+      "termEffectiveDate": "2019-03-05",
+      "termExpirationDate": "2020-03-05",
+      "cancellation": {
+        "effectiveDate": "2020-01-27",
+        "reason": "Non-payment of premium"
+      },
+      "paymentPlan": "Monthly",
+      "termPremium": 1361.25,
+      "drivers": [
+        {
+          "fullName": "Peyton Novak",
+          "relationship": "Named insured",
+          "licenseState": "OR"
+        },
+        {
+          "fullName": "Blake Novak",
+          "relationship": "Household member",
+          "licenseState": "OR"
+        }
+      ],
+      "policyCoverages": [
+        {
+          "coverageCode": "BI",
+          "coverageName": "Bodily Injury Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PD",
+          "coverageName": "Property Damage Liability",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per accident",
+              "amount": 50000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "UMBI",
+          "coverageName": "Uninsured/Underinsured Motorist Bodily Injury",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 50000.0
+            },
+            {
+              "limitType": "Per accident",
+              "amount": 100000.0
+            }
+          ]
+        },
+        {
+          "coverageCode": "PIP",
+          "coverageName": "Personal Injury Protection",
+          "deductible": null,
+          "limits": [
+            {
+              "limitType": "Per person",
+              "amount": 15000.0
+            }
+          ]
+        }
+      ],
+      "vehicles": [
+        {
+          "vehicleId": "VEH-58620",
+          "addedDate": "2018-03-05",
+          "removedDate": null,
+          "lossPayee": "Proseware Financial",
+          "coverages": [
+            {
+              "coverageCode": "COLL",
+              "coverageName": "Collision",
+              "deductible": 1000.0,
+              "limits": []
+            },
+            {
+              "coverageCode": "COMP",
+              "coverageName": "Comprehensive (Other Than Collision)",
+              "deductible": 500.0,
+              "limits": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

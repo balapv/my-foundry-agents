@@ -1,0 +1,684 @@
+{
+  "dataset": "Contoso Insurance synthetic claims data",
+  "synthetic": true,
+  "notice": "Synthetic demonstration data. Contoso Insurance is fictional; every customer, policy, vehicle, VIN, claim and address in this file is invented.",
+  "recordsAsOf": "2026-11-20T08:00:00Z",
+  "source": "Customer master",
+  "customers": [
+    {
+      "customerId": "CUST-13114",
+      "firstName": "Kendall",
+      "lastName": "Walsh",
+      "fullName": "Kendall Walsh",
+      "customerSince": "2015-01-13",
+      "address": {
+        "street": "245 Cascade Ave",
+        "city": "Riverton Falls",
+        "state": "OR",
+        "postalCode": "97580"
+      },
+      "phone": "(541) 555-0149",
+      "email": "kendall.walsh@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-3527859"
+      ],
+      "vehicleIds": [
+        "VEH-57700",
+        "VEH-52669"
+      ]
+    },
+    {
+      "customerId": "CUST-13747",
+      "firstName": "Dakota",
+      "lastName": "Dawson",
+      "fullName": "Dakota Dawson",
+      "customerSince": "2017-09-25",
+      "address": {
+        "street": "4197 Orchard Dr",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85206"
+      },
+      "phone": "(928) 555-0189",
+      "email": "dakota.dawson@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-3184341",
+        "PAP-3153655"
+      ],
+      "vehicleIds": [
+        "VEH-59642"
+      ]
+    },
+    {
+      "customerId": "CUST-14176",
+      "firstName": "Elliot",
+      "lastName": "Bennett",
+      "fullName": "Elliot Bennett",
+      "customerSince": "2019-07-07",
+      "address": {
+        "street": "4654 Larch Way",
+        "city": "Brightwater",
+        "state": "OR",
+        "postalCode": "97372"
+      },
+      "phone": "(503) 555-0143",
+      "email": "elliot.bennett@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-4388268",
+        "PAP-3768340"
+      ],
+      "vehicleIds": [
+        "VEH-53375"
+      ]
+    },
+    {
+      "customerId": "CUST-16223",
+      "firstName": "Elliot",
+      "lastName": "Sullivan",
+      "fullName": "Elliot Sullivan",
+      "customerSince": "2017-07-03",
+      "address": {
+        "street": "4651 Birch Dr",
+        "city": "Brightwater",
+        "state": "OR",
+        "postalCode": "97320"
+      },
+      "phone": "(503) 555-0124",
+      "email": "elliot.sullivan@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4700525"
+      ],
+      "vehicleIds": [
+        "VEH-51433"
+      ]
+    },
+    {
+      "customerId": "CUST-16866",
+      "firstName": "Priya",
+      "lastName": "Jensen",
+      "fullName": "Priya Jensen",
+      "customerSince": "2025-12-27",
+      "address": {
+        "street": "500 Madrona Ct",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85269"
+      },
+      "phone": "(928) 555-0155",
+      "email": "priya.jensen@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4401742"
+      ],
+      "vehicleIds": [
+        "VEH-59131"
+      ]
+    },
+    {
+      "customerId": "CUST-17709",
+      "firstName": "Rowan",
+      "lastName": "Ellis",
+      "fullName": "Rowan Ellis",
+      "customerSince": "2025-09-28",
+      "address": {
+        "street": "1395 Aspen Way",
+        "city": "Maple Harbor",
+        "state": "OR",
+        "postalCode": "97475"
+      },
+      "phone": "(541) 555-0164",
+      "email": "rowan.ellis@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-4607869"
+      ],
+      "vehicleIds": [
+        "VEH-50277"
+      ]
+    },
+    {
+      "customerId": "CUST-18065",
+      "firstName": "Finley",
+      "lastName": "Sullivan",
+      "fullName": "Finley Sullivan",
+      "customerSince": "2019-07-23",
+      "address": {
+        "street": "8383 Harbor Ct",
+        "city": "Eastgate Springs",
+        "state": "ID",
+        "postalCode": "83699"
+      },
+      "phone": "(208) 555-0176",
+      "email": "finley.sullivan@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-3762378"
+      ],
+      "vehicleIds": [
+        "VEH-55342",
+        "VEH-54643"
+      ]
+    },
+    {
+      "customerId": "CUST-18120",
+      "firstName": "Drew",
+      "lastName": "Baker",
+      "fullName": "Drew Baker",
+      "customerSince": "2017-05-09",
+      "address": {
+        "street": "9798 Juniper Pl",
+        "city": "Willow Crossing",
+        "state": "UT",
+        "postalCode": "84074"
+      },
+      "phone": "(435) 555-0114",
+      "email": "drew.baker@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-3744991",
+        "PAP-4546497"
+      ],
+      "vehicleIds": [
+        "VEH-55767",
+        "VEH-54523"
+      ]
+    },
+    {
+      "customerId": "CUST-18603",
+      "firstName": "Sage",
+      "lastName": "Rivera",
+      "fullName": "Sage Rivera",
+      "customerSince": "2018-10-10",
+      "address": {
+        "street": "8398 Lakeview Ave",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85289"
+      },
+      "phone": "(928) 555-0183",
+      "email": "sage.rivera@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-4232437"
+      ],
+      "vehicleIds": [
+        "VEH-52454"
+      ]
+    },
+    {
+      "customerId": "CUST-20384",
+      "firstName": "Skyler",
+      "lastName": "Varga",
+      "fullName": "Skyler Varga",
+      "customerSince": "2016-03-17",
+      "address": {
+        "street": "6832 Ridgecrest Pl",
+        "city": "Sunvale",
+        "state": "CA",
+        "postalCode": "95619"
+      },
+      "phone": "(530) 555-0139",
+      "email": "skyler.varga@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-4651251"
+      ],
+      "vehicleIds": [
+        "VEH-57853"
+      ]
+    },
+    {
+      "customerId": "CUST-20967",
+      "firstName": "Alex",
+      "lastName": "Mendez",
+      "fullName": "Alex Mendez",
+      "customerSince": "2018-03-19",
+      "address": {
+        "street": "2575 Alder Way",
+        "city": "Brightwater",
+        "state": "OR",
+        "postalCode": "97381"
+      },
+      "phone": "(503) 555-0139",
+      "email": "alex.mendez@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4230367"
+      ],
+      "vehicleIds": [
+        "VEH-57293"
+      ]
+    },
+    {
+      "customerId": "CUST-21658",
+      "firstName": "Daniel",
+      "lastName": "Quintero",
+      "fullName": "Daniel Quintero",
+      "customerSince": "2016-03-17",
+      "address": {
+        "street": "7055 Cascade Way",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85203"
+      },
+      "phone": "(928) 555-0113",
+      "email": "daniel.quintero@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-4363836"
+      ],
+      "vehicleIds": [
+        "VEH-56773"
+      ]
+    },
+    {
+      "customerId": "CUST-21888",
+      "firstName": "Reese",
+      "lastName": "Hart",
+      "fullName": "Reese Hart",
+      "customerSince": "2022-07-24",
+      "address": {
+        "street": "7884 Juniper Dr",
+        "city": "Riverton Falls",
+        "state": "OR",
+        "postalCode": "97541"
+      },
+      "phone": "(541) 555-0100",
+      "email": "reese.hart@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4254837"
+      ],
+      "vehicleIds": [
+        "VEH-54630"
+      ]
+    },
+    {
+      "customerId": "CUST-24557",
+      "firstName": "Mateo",
+      "lastName": "Lindqvist",
+      "fullName": "Mateo Lindqvist",
+      "customerSince": "2016-08-21",
+      "address": {
+        "street": "8851 Alder Way",
+        "city": "Willow Crossing",
+        "state": "UT",
+        "postalCode": "84045"
+      },
+      "phone": "(435) 555-0157",
+      "email": "mateo.lindqvist@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4963667",
+        "PAP-4657033"
+      ],
+      "vehicleIds": [
+        "VEH-59821"
+      ]
+    },
+    {
+      "customerId": "CUST-24817",
+      "firstName": "Jordan",
+      "lastName": "Lee",
+      "fullName": "Jordan Lee",
+      "customerSince": "2022-04-01",
+      "address": {
+        "street": "418 Tamarack Ct",
+        "city": "Maple Harbor",
+        "state": "OR",
+        "postalCode": "97431"
+      },
+      "phone": "(541) 555-0148",
+      "email": "jordan.lee@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-4471920"
+      ],
+      "vehicleIds": [
+        "VEH-58213",
+        "VEH-51946"
+      ]
+    },
+    {
+      "customerId": "CUST-25185",
+      "firstName": "Reese",
+      "lastName": "Turner",
+      "fullName": "Reese Turner",
+      "customerSince": "2022-06-13",
+      "address": {
+        "street": "9076 Orchard Pl",
+        "city": "Brightwater",
+        "state": "OR",
+        "postalCode": "97399"
+      },
+      "phone": "(503) 555-0147",
+      "email": "reese.turner@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-3733318"
+      ],
+      "vehicleIds": [
+        "VEH-58378"
+      ]
+    },
+    {
+      "customerId": "CUST-25813",
+      "firstName": "Grace",
+      "lastName": "Young",
+      "fullName": "Grace Young",
+      "customerSince": "2024-03-13",
+      "address": {
+        "street": "7995 Bayview Dr",
+        "city": "Willow Crossing",
+        "state": "UT",
+        "postalCode": "84019"
+      },
+      "phone": "(435) 555-0117",
+      "email": "grace.young@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-3929408"
+      ],
+      "vehicleIds": [
+        "VEH-52819"
+      ]
+    },
+    {
+      "customerId": "CUST-26287",
+      "firstName": "Lena",
+      "lastName": "Morales",
+      "fullName": "Lena Morales",
+      "customerSince": "2019-11-16",
+      "address": {
+        "street": "9366 Lakeview Dr",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85294"
+      },
+      "phone": "(928) 555-0146",
+      "email": "lena.morales@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4095105"
+      ],
+      "vehicleIds": [
+        "VEH-55266"
+      ]
+    },
+    {
+      "customerId": "CUST-27693",
+      "firstName": "Quinn",
+      "lastName": "Ramirez",
+      "fullName": "Quinn Ramirez",
+      "customerSince": "2019-09-08",
+      "address": {
+        "street": "5885 Ridgecrest St",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85246"
+      },
+      "phone": "(928) 555-0192",
+      "email": "quinn.ramirez@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-3291703",
+        "PAP-4132884"
+      ],
+      "vehicleIds": [
+        "VEH-55468"
+      ]
+    },
+    {
+      "customerId": "CUST-28678",
+      "firstName": "Ari",
+      "lastName": "Quintero",
+      "fullName": "Ari Quintero",
+      "customerSince": "2023-02-18",
+      "address": {
+        "street": "5373 Larch Pl",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85240"
+      },
+      "phone": "(928) 555-0149",
+      "email": "ari.quintero@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-4970609"
+      ],
+      "vehicleIds": [
+        "VEH-56463"
+      ]
+    },
+    {
+      "customerId": "CUST-29098",
+      "firstName": "Logan",
+      "lastName": "Bennett",
+      "fullName": "Logan Bennett",
+      "customerSince": "2020-11-11",
+      "address": {
+        "street": "6971 Orchard Ave",
+        "city": "Sunvale",
+        "state": "CA",
+        "postalCode": "95689"
+      },
+      "phone": "(530) 555-0161",
+      "email": "logan.bennett@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-4709651"
+      ],
+      "vehicleIds": [
+        "VEH-52406"
+      ]
+    },
+    {
+      "customerId": "CUST-30305",
+      "firstName": "Daniel",
+      "lastName": "Young",
+      "fullName": "Daniel Young",
+      "customerSince": "2023-03-15",
+      "address": {
+        "street": "3843 Orchard Ct",
+        "city": "Lakeshore Bluffs",
+        "state": "CO",
+        "postalCode": "80571"
+      },
+      "phone": "(970) 555-0121",
+      "email": "daniel.young@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4848444"
+      ],
+      "vehicleIds": [
+        "VEH-51346"
+      ]
+    },
+    {
+      "customerId": "CUST-34111",
+      "firstName": "Peyton",
+      "lastName": "Novak",
+      "fullName": "Peyton Novak",
+      "customerSince": "2018-03-05",
+      "address": {
+        "street": "6020 Tamarack St",
+        "city": "Maple Harbor",
+        "state": "OR",
+        "postalCode": "97451"
+      },
+      "phone": "(541) 555-0163",
+      "email": "peyton.novak@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-4970728",
+        "PAP-4278298"
+      ],
+      "vehicleIds": [
+        "VEH-58620"
+      ]
+    },
+    {
+      "customerId": "CUST-35138",
+      "firstName": "Parker",
+      "lastName": "Okafor",
+      "fullName": "Parker Okafor",
+      "customerSince": "2018-01-13",
+      "address": {
+        "street": "4124 Willow Dr",
+        "city": "Granite Bend",
+        "state": "NV",
+        "postalCode": "89436"
+      },
+      "phone": "(775) 555-0113",
+      "email": "parker.okafor@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-3878060",
+        "PAP-4818268"
+      ],
+      "vehicleIds": [
+        "VEH-59231"
+      ]
+    },
+    {
+      "customerId": "CUST-36247",
+      "firstName": "Riley",
+      "lastName": "Walsh",
+      "fullName": "Riley Walsh",
+      "customerSince": "2016-05-17",
+      "address": {
+        "street": "9171 Madrona Dr",
+        "city": "Sunvale",
+        "state": "CA",
+        "postalCode": "95671"
+      },
+      "phone": "(530) 555-0110",
+      "email": "riley.walsh@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-4834624",
+        "PAP-3864006"
+      ],
+      "vehicleIds": [
+        "VEH-58623"
+      ]
+    },
+    {
+      "customerId": "CUST-36645",
+      "firstName": "Avery",
+      "lastName": "Foster",
+      "fullName": "Avery Foster",
+      "customerSince": "2017-08-28",
+      "address": {
+        "street": "1482 Juniper Ct",
+        "city": "Riverton Falls",
+        "state": "OR",
+        "postalCode": "97556"
+      },
+      "phone": "(541) 555-0160",
+      "email": "avery.foster@example.com",
+      "preferredContactMethod": "Text message",
+      "policyIds": [
+        "PAP-4463299",
+        "PAP-3071091"
+      ],
+      "vehicleIds": [
+        "VEH-58904"
+      ]
+    },
+    {
+      "customerId": "CUST-37554",
+      "firstName": "Sage",
+      "lastName": "Alvarez",
+      "fullName": "Sage Alvarez",
+      "customerSince": "2018-09-21",
+      "address": {
+        "street": "8023 Fir Ln",
+        "city": "Pine Hollow",
+        "state": "WA",
+        "postalCode": "98314"
+      },
+      "phone": "(360) 555-0114",
+      "email": "sage.alvarez@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-3822776"
+      ],
+      "vehicleIds": [
+        "VEH-52511"
+      ]
+    },
+    {
+      "customerId": "CUST-38621",
+      "firstName": "Lena",
+      "lastName": "Baker",
+      "fullName": "Lena Baker",
+      "customerSince": "2025-06-14",
+      "address": {
+        "street": "581 Cascade Pl",
+        "city": "Sunvale",
+        "state": "CA",
+        "postalCode": "95645"
+      },
+      "phone": "(530) 555-0172",
+      "email": "lena.baker@example.com",
+      "preferredContactMethod": "Email",
+      "policyIds": [
+        "PAP-4620857"
+      ],
+      "vehicleIds": [
+        "VEH-57593"
+      ]
+    },
+    {
+      "customerId": "CUST-39296",
+      "firstName": "Kendall",
+      "lastName": "Foster",
+      "fullName": "Kendall Foster",
+      "customerSince": "2016-05-23",
+      "address": {
+        "street": "8782 Bayview Way",
+        "city": "Copper Mesa",
+        "state": "AZ",
+        "postalCode": "85277"
+      },
+      "phone": "(928) 555-0157",
+      "email": "kendall.foster@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-4697482",
+        "PAP-3022868"
+      ],
+      "vehicleIds": [
+        "VEH-59467",
+        "VEH-59457"
+      ]
+    },
+    {
+      "customerId": "CUST-39798",
+      "firstName": "Cameron",
+      "lastName": "Fischer",
+      "fullName": "Cameron Fischer",
+      "customerSince": "2018-05-16",
+      "address": {
+        "street": "4790 Orchard Way",
+        "city": "Maple Harbor",
+        "state": "OR",
+        "postalCode": "97412"
+      },
+      "phone": "(541) 555-0112",
+      "email": "cameron.fischer@example.com",
+      "preferredContactMethod": "Phone",
+      "policyIds": [
+        "PAP-3974690"
+      ],
+      "vehicleIds": [
+        "VEH-55443"
+      ]
+    }
+  ]
+}

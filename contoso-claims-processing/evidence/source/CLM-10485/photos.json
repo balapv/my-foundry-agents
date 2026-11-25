@@ -1,0 +1,45 @@
+{
+  "claimId": "CLM-10485",
+  "synthetic": true,
+  "notice": "All photographs are AI-generated synthetic images of a fictional, unbadged vehicle. They do not depict a real vehicle, person, location, license plate or incident.",
+  "generation": {
+    "method": "AI image generation (GitHub Copilot image_generation tool)",
+    "generatedOn": "2026-11-25",
+    "outputSize": "1536x1024 PNG",
+    "promptRecord": "The prompt fields below are the verbatim prompts supplied to the image tool.",
+    "consistencyApproach": "Photograph 1 was generated from text only; photographs 2-3 were generated with photograph 1 supplied as a visual reference so the same vehicle, paint and street carry across the set. The set deliberately reproduces typical owner-taken phone photos in poor light (flash glare, blur, dawn underexposure).",
+    "importProcess": "build_evidence.py --import-photos converts each source PNG to a baseline JPEG (quality 88, 4:2:0 subsampling) with no EXIF or other embedded metadata. Pixels and dimensions are unchanged.",
+    "rejectedCandidates": [],
+    "manualReview": "Each image was inspected visually before import: the same dark green unbadged minivan at the same wet residential curb; low-light conditions with flash glare, blur or underexposure; a crack and scuff on the rear bumper are visible but the extent of any deformation cannot be judged; no people, no readable text, blank plates, no annotations or overlays."
+  },
+  "photos": [
+    {
+      "documentId": "DOC-10485-02",
+      "fileName": "photos/photo-01.jpg",
+      "title": "Photograph 1 of 3",
+      "sourceSha256": "9ad94f23ce157e96b1110a50c0a5ed15d688e88a843b33502b050c8fd39a5066",
+      "referenceImages": [],
+      "prompt": "Photorealistic amateur smartphone photo taken at night by a vehicle owner, with the phone's flash on. Subject: the rear of a 2018-era minivan painted dark evergreen green pearl metallic, with a power liftgate, vertical tail lamps and a body-color rear bumper, parked at the curb of a residential street after rain. NO brand badges, NO logos, NO emblems, NO lettering anywhere. View: rear three-quarter view from the vehicle's rear LEFT corner, about 2 meters away, slightly tilted framing. The wet bumper surface is covered with water droplets, and the camera flash creates a large bright white glare hotspot directly on the left rear corner of the bumper, washing out the paint detail there; the rest of the rear is in dark shadow with orange sodium streetlight reflections. A faint pale scuff and what may be a thin crack line are partly visible at the edge of the glare on the lower bumper; the gap between the bumper and the body at the left corner looks slightly uneven but it is hard to tell in this light. The rear license plate is a plain blank plate with no characters. Wet dark asphalt, a curb, puddles, no people, no readable text or house numbers. Slight motion blur and digital noise typical of a phone photo at night. No watermark, no annotations, no arrows, no text overlay."
+    },
+    {
+      "documentId": "DOC-10485-03",
+      "fileName": "photos/photo-02.jpg",
+      "title": "Photograph 2 of 3",
+      "sourceSha256": "e980a81c2376d056803918718945301289d6b88ca10fec0765c24cafc69b2970",
+      "referenceImages": [
+        "9ad94f23ce157e96b1110a50c0a5ed15d688e88a843b33502b050c8fd39a5066"
+      ],
+      "prompt": "Using the reference photo, create a new photorealistic amateur smartphone night photo with flash of the SAME dark evergreen green minivan on the same wet residential street. This photo is a CLOSE-UP from about 50 centimeters of the LEFT REAR corner of the rear bumper, taken quickly and slightly out of focus with visible motion blur. Water droplets cover the surface. The phone flash produces a harsh glare hotspot that washes out part of the bumper. A short thin crack line and a pale scuff are visible in the bumper paint, but the edges are blurry and the depth of any deformation cannot be judged. Part of the left tail lamp is at the top edge of the frame. Digital noise, dark surroundings. No brand badges, no logos, no lettering, no people, no readable text, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10485-04",
+      "fileName": "photos/photo-03.jpg",
+      "title": "Photograph 3 of 3",
+      "sourceSha256": "13a698be1e5b3a40c81f0f507441506207d061b823cf52f96a87101a0b0bf079",
+      "referenceImages": [
+        "9ad94f23ce157e96b1110a50c0a5ed15d688e88a843b33502b050c8fd39a5066"
+      ],
+      "prompt": "Using the reference photo, create a new photorealistic amateur smartphone photo of the SAME dark evergreen green minivan parked at the curb of the same residential street, taken at early-morning dawn in very dim blue-grey light after rain, WITHOUT flash. View: straight-on view of the whole rear of the minivan from about 5 meters away, slightly tilted. The scene is dark and underexposed with heavy digital noise; the wet bumper reflects the bright sky, so its surface is mostly mirror-like reflection; a bright streetlight behind the vehicle causes lens flare. Because of the low light and reflections, it is hard to tell whether the left corner of the rear bumper sits lower than the right corner. The rear license plate is a plain blank plate with no characters. No brand badges, no logos, no lettering, no people, no readable text, no house numbers, no annotations, no arrows, no text overlay, no watermark."
+    }
+  ]
+}

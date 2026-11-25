@@ -1,0 +1,14 @@
+# Development, data/evidence generation and test dependencies (Phase 1).
+# reportlab and Pillow are pinned exactly: generated PDFs are verified byte-for-byte.
+-r tools/requirements.txt
+# FastAPI TestClient transport (Starlette deprecates httpx for the test client).
+httpx2==2.16.2
+pytest==9.2.0
+reportlab==5.1.0
+pypdf==7.1.1
+pillow==13.0.0
+# Phase 2: Foundry agent creation, claim-review runs and evaluations.
+azure-ai-projects==2.11.0
+azure-identity==1.27.0
+openai==3.56.0
+python-dotenv==1.2.4

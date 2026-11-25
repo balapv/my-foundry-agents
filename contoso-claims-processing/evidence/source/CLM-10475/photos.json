@@ -1,0 +1,82 @@
+{
+  "claimId": "CLM-10475",
+  "synthetic": true,
+  "notice": "All photographs are AI-generated synthetic images of a fictional, unbadged vehicle. They do not depict a real vehicle, person, location, license plate or incident.",
+  "generation": {
+    "method": "AI image generation (GitHub Copilot image_generation tool)",
+    "generatedOn": "2026-11-25",
+    "outputSize": "1536x1024 PNG",
+    "promptRecord": "The prompt fields below are faithful summaries of the prompts supplied to the image tool; the verbatim prompt text was not retained for this claim. Source hashes are exact.",
+    "consistencyApproach": "Photograph 1 was generated with the rejected first candidate supplied as a visual reference and re-rendered for late-November conditions (bare trees, snow on distant peaks); photographs 2-6 were generated with photograph 1 supplied as a visual reference so the same vehicle, paint, wheels, damage and setting carry across the set.",
+    "importProcess": "build_evidence.py --import-photos converts each source PNG to a baseline JPEG (quality 88, 4:2:0 subsampling) with no EXIF or other embedded metadata. Pixels and dimensions are unchanged.",
+    "rejectedCandidates": [
+      {
+        "sourceSha256": "b21cac473c2e89d2e06b9e4c8372b8eb529722ac7d88fcd1198530f9a0c58129",
+        "reason": "Summer foliage in the background was inconsistent with a November date of loss. Used only as a visual reference for photograph 1; this candidate is not used."
+      }
+    ],
+    "manualReview": "Each image was inspected visually before import: the same ruby red unbadged crew-cab pickup in a high-desert parking lot on a sunny late-November day, with the same left rear door dent and left bed-side scrape (grey transfer) in every view that shows the left rear; no people, no readable text, blank plates, no annotations or overlays."
+  },
+  "photos": [
+    {
+      "documentId": "DOC-10475-02",
+      "fileName": "photos/photo-01.jpg",
+      "title": "Photograph 1 of 6",
+      "sourceSha256": "f11ae9a4a8361523a3ae5f8131dc3dbbcac8fa3432468a4bb2a707e137042a85",
+      "referenceImages": [
+        "b21cac473c2e89d2e06b9e4c8372b8eb529722ac7d88fcd1198530f9a0c58129"
+      ],
+      "prompt": "Using the reference photo, the same ruby red crew-cab pickup from the left rear three-quarter in a high-desert parking lot on a sunny late-November day with bare trees and snow on distant peaks: a dent in the left rear door and a long scrape with grey paint transfer along the left side of the bed. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10475-03",
+      "fileName": "photos/photo-02.jpg",
+      "title": "Photograph 2 of 6",
+      "sourceSha256": "b2ebb410469912ac15c9a6544af32156e4595779469c4bdb47862a26fac7e88a",
+      "referenceImages": [
+        "f11ae9a4a8361523a3ae5f8131dc3dbbcac8fa3432468a4bb2a707e137042a85"
+      ],
+      "prompt": "Using the reference photo, a close-up of the same pickup's left rear door dent and scrapes, with the scrape continuing onto the bed side. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10475-04",
+      "fileName": "photos/photo-03.jpg",
+      "title": "Photograph 3 of 6",
+      "sourceSha256": "0ae55136653fcadbe09f78cc0f82c9c68191a7757f1193804c0fd21ea2db7f6d",
+      "referenceImages": [
+        "f11ae9a4a8361523a3ae5f8131dc3dbbcac8fa3432468a4bb2a707e137042a85"
+      ],
+      "prompt": "Using the reference photo, a close-up of the same pickup's left bed side showing the scrape with grey transfer near the fuel door and rear wheel arch. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10475-05",
+      "fileName": "photos/photo-04.jpg",
+      "title": "Photograph 4 of 6",
+      "sourceSha256": "cc8438a11544f15eb6a88e0a7ac1f7e57ce354fa35e431ba4ccecb5c787a2ecc",
+      "referenceImages": [
+        "f11ae9a4a8361523a3ae5f8131dc3dbbcac8fa3432468a4bb2a707e137042a85"
+      ],
+      "prompt": "Using the reference photo, a full left-side profile of the same pickup in the same parking lot. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10475-06",
+      "fileName": "photos/photo-05.jpg",
+      "title": "Photograph 5 of 6",
+      "sourceSha256": "0c518a88003fa69534fcc6062c9e6bd0afb3234b5de18c55d93265107ea1605e",
+      "referenceImages": [
+        "f11ae9a4a8361523a3ae5f8131dc3dbbcac8fa3432468a4bb2a707e137042a85"
+      ],
+      "prompt": "Using the reference photo, a left front three-quarter overview of the same pickup in the same parking lot. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10475-07",
+      "fileName": "photos/photo-06.jpg",
+      "title": "Photograph 6 of 6",
+      "sourceSha256": "39d31df365f8e416893a024172736061b654e1d8a6895b699fd2f8ad5faf0c35",
+      "referenceImages": [
+        "f11ae9a4a8361523a3ae5f8131dc3dbbcac8fa3432468a4bb2a707e137042a85"
+      ],
+      "prompt": "Using the reference photo, a straight-on view of the rear of the same pickup showing the tailgate. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    }
+  ]
+}

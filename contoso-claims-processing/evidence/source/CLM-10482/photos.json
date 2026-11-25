@@ -1,0 +1,70 @@
+{
+  "claimId": "CLM-10482",
+  "synthetic": true,
+  "notice": "All photographs are AI-generated synthetic images of a fictional, unbadged vehicle. They do not depict a real vehicle, person, location, license plate or incident.",
+  "generation": {
+    "method": "AI image generation (GitHub Copilot image_generation tool)",
+    "generatedOn": "2026-11-25",
+    "outputSize": "1536x1024 PNG",
+    "consistencyApproach": "The first image was generated from text only. Every later image was generated with the first image (and, for the side view, also the rear overview) supplied as a visual reference so the same vehicle, paint, wheels, cladding, damage and parking-lot setting carry across all photographs.",
+    "importProcess": "build_evidence.py --import-photos converts each source PNG to a baseline JPEG (quality 88, 4:2:0 subsampling) with no EXIF or other embedded metadata. Pixels and dimensions are unchanged.",
+    "rejectedCandidates": [
+      {
+        "sourceSha256": "260f6b39e99b883673089ea9adbf8c0838460d8fcd99d9160baa80809de97c31",
+        "reason": "Right-side profile rendered with the vehicle facing the wrong way, which placed the visible damage at the front of the frame. Regenerated with explicit orientation; this candidate is not used."
+      }
+    ],
+    "manualReview": "Each image was inspected visually before import: same deep blue unbadged crossover SUV, black lower cladding and roof rails, silver five-spoke wheels, the same right rear corner collision damage in every view that shows that corner, overcast parking lot, no people, no readable text, blank license plates, no annotations or overlays."
+  },
+  "photos": [
+    {
+      "documentId": "DOC-10482-02",
+      "fileName": "photos/rear-right-01.jpg",
+      "title": "Right rear corner, three-quarter view",
+      "sourceSha256": "290d6b1b507cd06077b2cd478d1c5ffd82e4c8a1c63d04d696eda84daef2f60b",
+      "referenceImages": [],
+      "prompt": "Photorealistic insurance claim photograph taken with a smartphone at about chest height, as an adjuster would photograph collision damage. Subject: a modern mid-size five-door crossover SUV painted deep metallic blue, with black plastic lower body cladding, black roof rails, slim horizontal LED tail lamps that wrap around the rear corners, and silver five-spoke alloy wheels. The vehicle has NO brand badges, NO logos, NO emblems and NO lettering anywhere. View: rear three-quarter view from the vehicle's right rear corner, about 2 meters away, showing the right rear quarter panel, the right side of the rear bumper and the right tail lamp. Damage: fresh collision damage concentrated at the right rear corner - the right side of the rear bumper cover is pushed inward and cracked with scuffed paint, the right rear quarter panel behind the rear wheel has a deep creased dent with scraped paint and grey transfer marks, and the right tail lamp lens is cracked with a few small red plastic fragments on the ground. The rear license plate is a plain blank white plate with no characters. Setting: an outdoor shopping-center parking lot on an overcast day, dry grey asphalt with painted white stall lines, a few distant parked cars out of focus, no people, no readable signs or text anywhere. Natural, slightly flat overcast light, realistic colors, no watermark, no annotations, no arrows, no text overlay."
+    },
+    {
+      "documentId": "DOC-10482-03",
+      "fileName": "photos/rear-right-02.jpg",
+      "title": "Right rear corner, close view",
+      "sourceSha256": "9a88ecfa1ee03ed6c87eabed6970eb9ca7caf3be6db7991b5ddfe734cb789d92",
+      "referenceImages": [
+        "290d6b1b507cd06077b2cd478d1c5ffd82e4c8a1c63d04d696eda84daef2f60b"
+      ],
+      "prompt": "Using the reference photo, create a new photorealistic smartphone insurance claim photograph of the SAME deep metallic blue crossover SUV with the SAME collision damage, in the same overcast shopping-center parking lot. This photo is a CLOSER detail shot of the damaged right rear corner, taken from about 1 meter away and slightly lower, angled from the right side toward the rear: it shows the creased, torn and scraped right rear quarter panel behind the right rear wheel arch, the cracked right tail lamp lens, and the right corner of the dark grey rear bumper pushed inward and cracked, with grey paint transfer and scrape marks. Keep the identical paint color, black wheel-arch cladding, tail lamp shape and silver five-spoke wheel from the reference. No brand badges, no logos, no lettering, no people, no readable text, no license plate characters, no annotations, no arrows, no text overlay, no watermark. Natural flat overcast light."
+    },
+    {
+      "documentId": "DOC-10482-04",
+      "fileName": "photos/rear-overview.jpg",
+      "title": "Rear of vehicle",
+      "sourceSha256": "c3432f4e1d96724f5c856df5cc3001e4067f454a42672d8588597bf441065365",
+      "referenceImages": [
+        "290d6b1b507cd06077b2cd478d1c5ffd82e4c8a1c63d04d696eda84daef2f60b"
+      ],
+      "prompt": "Using the reference photo, create a new photorealistic smartphone insurance claim photograph of the SAME deep metallic blue crossover SUV with the SAME right rear corner collision damage, in the same overcast shopping-center parking lot. This photo is a STRAIGHT-ON REAR OVERVIEW taken from about 4 meters directly behind the vehicle, showing the whole rear of the SUV: liftgate, rear window, both tail lamps, full width of the rear bumper. The left tail lamp and left side of the bumper look normal; the right side (viewer's right) shows the pushed-in, cracked right corner of the rear bumper, the cracked right tail lamp and the dented right rear quarter panel visible at the corner. The rear license plate is a plain blank white plate with no characters. Same paint color, black roof rails, black lower cladding and silver five-spoke wheels as the reference. No brand badges, no logos, no lettering, no people, no readable text, no annotations, no arrows, no text overlay, no watermark. Natural flat overcast light."
+    },
+    {
+      "documentId": "DOC-10482-05",
+      "fileName": "photos/side-overview.jpg",
+      "title": "Right side of vehicle",
+      "sourceSha256": "b7ba93edb13bc9374f2cf3bd005c4aeaf522b116f05387a5e9de3e6c3a8f2b93",
+      "referenceImages": [
+        "290d6b1b507cd06077b2cd478d1c5ffd82e4c8a1c63d04d696eda84daef2f60b",
+        "c3432f4e1d96724f5c856df5cc3001e4067f454a42672d8588597bf441065365"
+      ],
+      "prompt": "Using the reference photos, create a new photorealistic smartphone insurance claim photograph of the SAME deep metallic blue crossover SUV with the SAME collision damage at its RIGHT REAR corner, in the same overcast shopping-center parking lot. This photo is a FULL PASSENGER-SIDE (vehicle's RIGHT side) PROFILE taken from about 6 meters away, perpendicular to the vehicle. Orientation is critical: the FRONT of the SUV points to the RIGHT edge of the frame and the REAR of the SUV is at the LEFT edge of the frame. The full right side is visible from rear bumper to front bumper: right rear quarter panel, both right doors, right side mirror, right front fender, roof rails, both silver five-spoke wheels. The visible damage is only at the LEFT side of the frame (the vehicle's rear): the creased, torn, scraped right rear quarter panel behind the rear wheel, the cracked right tail lamp at the corner, and the pushed-in right corner of the rear bumper - matching the reference photos. Same paint color, black wheel-arch and rocker cladding, chrome window trim. No brand badges, no logos, no lettering, no people, no readable text, no license plate characters, no annotations, no arrows, no text overlay, no watermark. Natural flat overcast light."
+    },
+    {
+      "documentId": "DOC-10482-06",
+      "fileName": "photos/front-overview.jpg",
+      "title": "Front and left side of vehicle",
+      "sourceSha256": "532fe7c922d93364c1c64cee68ba65206c9f96c3dad41648f4fd7a91e49e46b8",
+      "referenceImages": [
+        "290d6b1b507cd06077b2cd478d1c5ffd82e4c8a1c63d04d696eda84daef2f60b"
+      ],
+      "prompt": "Using the reference photo for the vehicle's paint color, wheels, cladding, roof rails and overall design, create a new photorealistic smartphone photograph of the SAME deep metallic blue crossover SUV in the same overcast shopping-center parking lot. This photo is a general FRONT THREE-QUARTER OVERVIEW taken from about 6 meters away at the vehicle's front LEFT (driver's side) corner, showing the front of the SUV and its left side: the front grille area, both slim horizontal LED headlamps seen from a distance, the front bumper, the left front fender, the left doors and the left wheels. This is a general vehicle overview, not a detail shot. The rear of the vehicle is farther away and its right rear corner is not visible from this angle. The front license plate area is a plain blank white plate with no characters. No brand badges, no logos, no emblems, no lettering, no people, no readable text, no annotations, no arrows, no text overlay, no watermark. Natural flat overcast light, same parking lot with painted white stall lines and distant out-of-focus parked cars."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "claimId": "CLM-10467",
+  "synthetic": true,
+  "notice": "All photographs are AI-generated synthetic images of a fictional, unbadged vehicle. They do not depict a real vehicle, person, location, license plate or incident.",
+  "generation": {
+    "method": "AI image generation (GitHub Copilot image_generation tool)",
+    "generatedOn": "2026-11-25",
+    "outputSize": "1536x1024 PNG",
+    "promptRecord": "The prompt fields below are faithful summaries of the prompts supplied to the image tool; the verbatim prompt text was not retained for this claim. Source hashes are exact.",
+    "consistencyApproach": "Photograph 1 was generated from text only; photographs 2-4 were generated with photograph 1 supplied as a visual reference so the same vehicle, paint, wheels, damage and setting carry across the set.",
+    "importProcess": "build_evidence.py --import-photos converts each source PNG to a baseline JPEG (quality 88, 4:2:0 subsampling) with no EXIF or other embedded metadata. Pixels and dimensions are unchanged.",
+    "rejectedCandidates": [],
+    "manualReview": "Each image was inspected visually before import: the same black unbadged three-row SUV at a wet residential curb on an overcast day, with the same right side sideswipe damage (red transfer on the right doors, hanging right mirror, gouged right front wheel) in every view that shows the right side; no people, no readable text, blank plates, no annotations or overlays."
+  },
+  "photos": [
+    {
+      "documentId": "DOC-10467-02",
+      "fileName": "photos/photo-01.jpg",
+      "title": "Photograph 1 of 4",
+      "sourceSha256": "d76e8e13c3f9a3b562bfe7247242d5cf135061297de7c284c78faf4c32663796",
+      "referenceImages": [],
+      "prompt": "Photorealistic smartphone insurance claim photo of a black three-row SUV with large 20-inch alloy wheels parked at a wet residential curb on an overcast day, viewed from the right front three-quarter. Fresh sideswipe damage along the right side: red paint transfer and scrapes across both right doors, the right side mirror hanging loose, and the lip of the right front wheel gouged. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10467-03",
+      "fileName": "photos/photo-02.jpg",
+      "title": "Photograph 2 of 4",
+      "sourceSha256": "87224b99814005e5c599d9e3fcdf4739b0b33f58b3b6ca127a80a56eb8fd2ed3",
+      "referenceImages": [
+        "d76e8e13c3f9a3b562bfe7247242d5cf135061297de7c284c78faf4c32663796"
+      ],
+      "prompt": "Using the reference photo, a close-up of the same SUV's right front 20-inch alloy wheel showing deep gouges in the rim lip with red paint transfer. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10467-04",
+      "fileName": "photos/photo-03.jpg",
+      "title": "Photograph 3 of 4",
+      "sourceSha256": "3045d1700d8090c58d3dbac722af399288d5bca41eea7c976a834750d6eec8e5",
+      "referenceImages": [
+        "d76e8e13c3f9a3b562bfe7247242d5cf135061297de7c284c78faf4c32663796"
+      ],
+      "prompt": "Using the reference photo, a closer view of the same SUV's right front door: the loose hanging side mirror, a dent and red scrapes in the door skin, and a scraped lower door molding. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    },
+    {
+      "documentId": "DOC-10467-05",
+      "fileName": "photos/photo-04.jpg",
+      "title": "Photograph 4 of 4",
+      "sourceSha256": "79fca2b1c54da58fb21ef2618a84ce4f0639db446919556729dcf591be037399",
+      "referenceImages": [
+        "d76e8e13c3f9a3b562bfe7247242d5cf135061297de7c284c78faf4c32663796"
+      ],
+      "prompt": "Using the reference photo, a full right-side profile of the same SUV at the same wet curb, showing the length of the right side. No brand badges, no logos, no emblems, no lettering, no people, no readable text, blank license plates, no annotations, no arrows, no text overlay, no watermark."
+    }
+  ]
+}

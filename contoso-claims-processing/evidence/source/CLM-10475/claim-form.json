@@ -1,0 +1,112 @@
+{
+  "documentId": "DOC-10475-01",
+  "claimId": "CLM-10475",
+  "fileName": "claim-form.pdf",
+  "issuer": "Contoso Insurance",
+  "title": "Auto Claim - First Notice of Loss",
+  "subtitle": "Submitted through the Contoso Insurance mobile app",
+  "header": [
+    ["Claim number", "CLM-10475"],
+    ["Submitted", "11/09/2026 11:01 AM MST"],
+    ["Channel", "Mobile app"],
+    ["Policy number", "PAP-4657033"]
+  ],
+  "sections": [
+    {
+      "heading": "Policyholder",
+      "fields": [
+        ["Name", "Mateo Lindqvist"],
+        ["Mailing address", "8851 Alder Way, Willow Crossing, UT 84045"],
+        ["Phone", "(435) 555-0157"],
+        ["Email", "mateo.lindqvist@example.com"],
+        ["Preferred contact", "Text message"]
+      ]
+    },
+    {
+      "heading": "Vehicle",
+      "fields": [
+        ["Year / make / model", "2017 Fabrikam Ridgeback Trail crew cab 4WD"],
+        ["VIN", "0FBRB2PA7HF123631"],
+        ["Color", "Ruby Red"],
+        ["Approximate mileage", "88,000"],
+        ["Lienholder / lessor", "Fabrikam Motor Credit (lease)"]
+      ]
+    },
+    {
+      "heading": "Driver at time of loss",
+      "fields": [
+        ["Driver", "Vehicle was parked and unattended"],
+        ["Purpose of trip", "Personal - shopping"]
+      ]
+    },
+    {
+      "heading": "Loss details",
+      "fields": [
+        ["Date of loss", "11/08/2026"],
+        ["Time of loss", "Approximately 1:40 PM"],
+        ["Location", "Willow Crossing Marketplace parking lot, Willow Crossing, UT"],
+        ["Type of loss", "Hit while parked"],
+        ["Weather / road", "Clear, dry"]
+      ]
+    },
+    {
+      "heading": "What happened (in your own words)",
+      "paragraph": "I parked my truck in the Willow Crossing Marketplace lot and went into the hardware store. When I came back out about 40 minutes later, the driver side rear door was dented and scraped and there was a long scrape along the side of the bed behind it. Whoever hit it did not leave a note and I did not see the other vehicle. I called the Willow Crossing police and an officer came out and gave me a report number. The truck drives fine and the rear door still opens and closes."
+    },
+    {
+      "heading": "Damage to your vehicle",
+      "fields": [
+        ["Damaged areas selected", "Left rear door; Left rear quarter panel"],
+        ["Damage description", "Dent and scrapes on the driver side rear door; scrape along the driver side of the bed behind the cab."],
+        ["Is the vehicle drivable?", "Yes"],
+        ["Did any airbags deploy?", "No"],
+        ["Did the vehicle have damage before this incident that has not been repaired?", "No"]
+      ]
+    },
+    {
+      "heading": "Other vehicle and driver",
+      "fields": [
+        ["Other party", "Unknown - no note left, not witnessed"]
+      ]
+    },
+    {
+      "heading": "Injuries",
+      "fields": [
+        ["Was anyone injured?", "No"]
+      ]
+    },
+    {
+      "heading": "Police",
+      "fields": [
+        ["Were the police contacted?", "Yes"],
+        ["Police agency", "Willow Crossing Police Department"],
+        ["Report number", "WCPD-26-035809"],
+        ["Officer", "Not recorded"]
+      ]
+    },
+    {
+      "heading": "Witnesses",
+      "fields": [
+        ["Were there any witnesses?", "No"]
+      ]
+    },
+    {
+      "heading": "Photos",
+      "fields": [
+        ["Photos uploaded with this report", "6"]
+      ]
+    },
+    {
+      "heading": "Repair and rental",
+      "fields": [
+        ["Preferred repair shop", "Willow Crossing Autoworks, Willow Crossing, UT"],
+        ["Rental vehicle needed?", "No"]
+      ]
+    }
+  ],
+  "declaration": "I confirm that the information in this report is true and complete to the best of my knowledge. I understand that Contoso Insurance will review this claim under the terms of my policy.",
+  "signature": [
+    ["Electronically signed by", "Mateo Lindqvist"],
+    ["Date and time", "11/09/2026 11:01 AM MST"]
+  ]
+}

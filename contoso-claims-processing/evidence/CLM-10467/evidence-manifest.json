@@ -1,0 +1,83 @@
+{
+  "claimId": "CLM-10467",
+  "synthetic": true,
+  "notice": "Synthetic demonstration evidence. Contoso Insurance is fictional; the documents and photographs in this folder are invented and do not describe a real person, vehicle or incident.",
+  "documents": [
+    {
+      "documentId": "DOC-10467-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (phone)",
+      "source": "Contoso Insurance",
+      "receivedAt": "2026-11-05T03:16:00Z",
+      "fileName": "claim-form.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 5917,
+      "sha256": "4499508558d7ba9454d3c1660c25b19d68090d269d26d9151cb7cca310b1c182"
+    },
+    {
+      "documentId": "DOC-10467-02",
+      "documentType": "Photograph",
+      "title": "Photograph 1 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-05T18:16:00Z",
+      "fileName": "photos/photo-01.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 464052,
+      "sha256": "f8d43e76372560c4925474476b1770f56c89211302dfaf57476b1eaac28946c1"
+    },
+    {
+      "documentId": "DOC-10467-03",
+      "documentType": "Photograph",
+      "title": "Photograph 2 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-05T18:16:00Z",
+      "fileName": "photos/photo-02.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 447874,
+      "sha256": "84071d2dd69cecb0165fec30cac31b49f5f11a2f27d5c01a1675616a74d9f258"
+    },
+    {
+      "documentId": "DOC-10467-04",
+      "documentType": "Photograph",
+      "title": "Photograph 3 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-05T18:16:00Z",
+      "fileName": "photos/photo-03.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 419472,
+      "sha256": "a25ff2793bd207ad32780349c74d08343cd35c7ce36e85cc74c2d00300dd7e93"
+    },
+    {
+      "documentId": "DOC-10467-05",
+      "documentType": "Photograph",
+      "title": "Photograph 4 of 4",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-05T18:16:00Z",
+      "fileName": "photos/photo-04.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 508890,
+      "sha256": "c1871d776b5a7955741f27330bc4cafba7a1fece41e54253ce9c1c703d86e0d1"
+    },
+    {
+      "documentId": "DOC-10467-06",
+      "documentType": "Repair estimate",
+      "title": "Repair estimate EST-BW-26-8514",
+      "source": "Repair facility",
+      "receivedAt": "2026-11-10T06:16:00Z",
+      "fileName": "repair-estimate.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 7949,
+      "sha256": "234df945b27e810aafa06df01a06f6fa9ea4b13737e4f5b4ed651e9bf1a6dedd"
+    }
+  ]
+}

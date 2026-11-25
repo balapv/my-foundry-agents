@@ -1,0 +1,70 @@
+{
+  "claimId": "CLM-10485",
+  "synthetic": true,
+  "notice": "Synthetic demonstration evidence. Contoso Insurance is fictional; the documents and photographs in this folder are invented and do not describe a real person, vehicle or incident.",
+  "documents": [
+    {
+      "documentId": "DOC-10485-01",
+      "documentType": "Claim form",
+      "title": "Auto claim - first notice of loss (agent)",
+      "source": "Contoso Insurance",
+      "receivedAt": "2026-11-13T17:05:00Z",
+      "fileName": "claim-form.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 5514,
+      "sha256": "c68b5851daced34990b86c8d41f7e0d3e70d3a0e5c3bbe27b90c39c117ebddf9"
+    },
+    {
+      "documentId": "DOC-10485-02",
+      "documentType": "Photograph",
+      "title": "Photograph 1 of 3",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-14T13:05:00Z",
+      "fileName": "photos/photo-01.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 316501,
+      "sha256": "474ba84b8d3a95e4e06cc352ac3cfa02ea0996280bbb44f495160026df8ee1f3"
+    },
+    {
+      "documentId": "DOC-10485-03",
+      "documentType": "Photograph",
+      "title": "Photograph 2 of 3",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-14T13:05:00Z",
+      "fileName": "photos/photo-02.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 268295,
+      "sha256": "29353ec976e601a42f029d1ae2800e4b480e99a5517ff9ccd58ddb9c1630789c"
+    },
+    {
+      "documentId": "DOC-10485-04",
+      "documentType": "Photograph",
+      "title": "Photograph 3 of 3",
+      "source": "Policyholder",
+      "receivedAt": "2026-11-14T13:05:00Z",
+      "fileName": "photos/photo-03.jpg",
+      "mediaType": "image/jpeg",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "bytes": 317936,
+      "sha256": "ad1f53b98c1a82f4f7000f4fe8a25be68f006e6c2f57be8e12f22e7cf8788d1c"
+    },
+    {
+      "documentId": "DOC-10485-05",
+      "documentType": "Repair estimate",
+      "title": "Repair estimate EST-RF-26-3897",
+      "source": "Repair facility",
+      "receivedAt": "2026-11-19T06:00:00Z",
+      "fileName": "repair-estimate.pdf",
+      "mediaType": "application/pdf",
+      "pageCount": 2,
+      "bytes": 7485,
+      "sha256": "9d8f5f92b9d3494947ac998ee644796622194c255ab560aac1a70b6e68051ce9"
+    }
+  ]
+}

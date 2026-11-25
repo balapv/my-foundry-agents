@@ -1,0 +1,114 @@
+{
+  "documentId": "DOC-10482-01",
+  "claimId": "CLM-10482",
+  "fileName": "claim-form.pdf",
+  "issuer": "Contoso Insurance",
+  "title": "Auto Claim - First Notice of Loss",
+  "subtitle": "Online claim submission",
+  "header": [
+    ["Claim number", "CLM-10482"],
+    ["Submitted", "11/12/2026 7:05 PM PST"],
+    ["Channel", "Online - customer self-service portal"],
+    ["Policy number", "PAP-4471920"]
+  ],
+  "sections": [
+    {
+      "heading": "Policyholder",
+      "fields": [
+        ["Name", "Jordan Lee"],
+        ["Mailing address", "418 Tamarack Ct, Maple Harbor, OR 97431"],
+        ["Phone", "(541) 555-0148"],
+        ["Email", "jordan.lee@example.com"],
+        ["Preferred contact", "Email"]
+      ]
+    },
+    {
+      "heading": "Vehicle",
+      "fields": [
+        ["Year / make / model", "2024 Contoso Trailstar Touring AWD"],
+        ["VIN", "0CTTS2UA9RM318057"],
+        ["Color", "Harbor Blue Metallic"],
+        ["Approximate mileage", "18,700"],
+        ["Lienholder / lessor", "Woodgrove Bank"]
+      ]
+    },
+    {
+      "heading": "Driver at time of loss",
+      "fields": [
+        ["Driver", "Jordan Lee (policyholder)"],
+        ["Purpose of trip", "Personal - shopping"]
+      ]
+    },
+    {
+      "heading": "Loss details",
+      "fields": [
+        ["Date of loss", "11/12/2026"],
+        ["Time of loss", "Approximately 2:25 PM"],
+        ["Location", "Harbor Point Shopping Center parking lot, 2200 block of Harbor Ave, Maple Harbor, OR"],
+        ["Type of loss", "Collision with another vehicle"],
+        ["Weather / road", "Cloudy, dry"]
+      ]
+    },
+    {
+      "heading": "What happened (in your own words)",
+      "paragraph": "I was driving slowly through the Harbor Point Shopping Center parking lot looking for a space. A gray pickup truck backed out of a parking space on my right and hit the back right corner of my SUV. The rear bumper is pushed in, the back right side panel is dented and scraped, and the right taillight is broken. Nobody was hurt. The other driver and I exchanged information, and a police officer came and took a report."
+    },
+    {
+      "heading": "Damage to your vehicle",
+      "fields": [
+        ["Damaged areas selected", "Rear bumper; Right rear quarter panel; Right tail lamp"],
+        ["Damage description", "Rear bumper pushed in at the right corner; right rear quarter panel dented and scraped; right tail lamp broken."],
+        ["Is the vehicle drivable?", "Yes"],
+        ["Did any airbags deploy?", "No"],
+        ["Did the vehicle have damage before this incident that has not been repaired?", "No"]
+      ]
+    },
+    {
+      "heading": "Other vehicle and driver",
+      "fields": [
+        ["Driver name", "Casey Morgan"],
+        ["Vehicle", "2021 Fabrikam Ridgeback pickup, gray"],
+        ["Insurance company", "Northwind Mutual Insurance"]
+      ]
+    },
+    {
+      "heading": "Injuries",
+      "fields": [
+        ["Was anyone injured?", "No"]
+      ]
+    },
+    {
+      "heading": "Police",
+      "fields": [
+        ["Were the police contacted?", "Yes"],
+        ["Police agency", "Maple Harbor Police Department"],
+        ["Report number", "MHPD-26-018734"],
+        ["Officer", "Ofc. T. Alvarez"]
+      ]
+    },
+    {
+      "heading": "Witnesses",
+      "fields": [
+        ["Were there any witnesses?", "No"]
+      ]
+    },
+    {
+      "heading": "Photos",
+      "fields": [
+        ["Photos uploaded with this report", "5"]
+      ]
+    },
+    {
+      "heading": "Repair and rental",
+      "fields": [
+        ["Preferred repair shop", "Harborline Auto Body & Paint, Maple Harbor, OR"],
+        ["Rental vehicle needed?", "Yes"]
+      ]
+    }
+  ],
+  "declaration": "I confirm that the information in this report is true and complete to the best of my knowledge. I understand that Contoso Insurance will review this claim under the terms of my policy.",
+  "signature": [
+    ["Electronically signed by", "Jordan Lee"],
+    ["Date and time", "11/12/2026 7:05 PM PST"]
+  ]
+}

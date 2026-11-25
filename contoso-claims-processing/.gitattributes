@@ -1,0 +1,13 @@
+# Generated data, evidence and OpenAPI files are verified byte-for-byte by
+# --check modes and tests; keep LF endings on every platform.
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+# Evidence files are hashed in evidence-manifest.json; never convert them.
+*.pdf binary
+*.jpg binary
+*.png binary
+# Vector diagrams are text.
+*.svg text eol=lf
+# Shell scripts must keep LF endings to run under bash.
+*.sh text eol=lf

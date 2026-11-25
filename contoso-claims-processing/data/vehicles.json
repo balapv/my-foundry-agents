@@ -1,0 +1,1035 @@
+{
+  "dataset": "Contoso Insurance synthetic claims data",
+  "synthetic": true,
+  "notice": "Synthetic demonstration data. Contoso Insurance is fictional; every customer, policy, vehicle, VIN, claim and address in this file is invented.",
+  "recordsAsOf": "2026-11-20T08:00:00Z",
+  "source": "Insured vehicle registry",
+  "vehicles": [
+    {
+      "vehicleId": "VEH-50277",
+      "vin": "0LWSL1SA7NL608337",
+      "year": 2022,
+      "make": "Litware",
+      "model": "Solace",
+      "trim": "Premium",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Evergreen Pearl",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-17709",
+      "acquiredDate": "2025-08-17",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Business",
+      "garaging": {
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Rear parking sensors",
+        "Lane-keeping assist"
+      ]
+    },
+    {
+      "vehicleId": "VEH-51346",
+      "vin": "0LWSL1SA5KL125604",
+      "year": 2019,
+      "make": "Litware",
+      "model": "Solace",
+      "trim": "Premium",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Graphite Gray Metallic",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-30305",
+      "acquiredDate": "2023-02-03",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Lakeshore Bluffs",
+        "state": "CO"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Blind-spot monitoring",
+        "Lane-keeping assist",
+        "Heated seats"
+      ]
+    },
+    {
+      "vehicleId": "VEH-51433",
+      "vin": "0ADHV1MA7JD754715",
+      "year": 2018,
+      "make": "Adatum",
+      "model": "Haven",
+      "trim": "Plus",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Evergreen Pearl",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-16223",
+      "acquiredDate": "2017-04-30",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Woodgrove Bank"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Sunroof"
+      ]
+    },
+    {
+      "vehicleId": "VEH-51946",
+      "vin": "0NWBZ1SA5HN260941",
+      "year": 2017,
+      "make": "Northwind",
+      "model": "Breeze",
+      "trim": "LE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Silver Mist Metallic",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-24817",
+      "acquiredDate": "2019-07-02",
+      "disposedDate": "2024-05-18",
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera"
+      ]
+    },
+    {
+      "vehicleId": "VEH-52406",
+      "vin": "0ADSD1PA7LD447293",
+      "year": 2020,
+      "make": "Adatum",
+      "model": "Strider",
+      "trim": "Work",
+      "bodyStyle": "Pickup, extended cab",
+      "exteriorColor": "Glacier White",
+      "drivetrain": "RWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-29098",
+      "acquiredDate": "2020-10-01",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Woodgrove Bank"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Adaptive cruise control"
+      ]
+    },
+    {
+      "vehicleId": "VEH-52454",
+      "vin": "0NWKS2UA0JN275795",
+      "year": 2018,
+      "make": "Northwind",
+      "model": "Kestrel",
+      "trim": "Limited",
+      "bodyStyle": "Sport utility vehicle, 4-door",
+      "exteriorColor": "Graphite Gray Metallic",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-18603",
+      "acquiredDate": "2018-10-01",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Business",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Blind-spot monitoring",
+        "Rear parking sensors",
+        "Heated seats"
+      ]
+    },
+    {
+      "vehicleId": "VEH-52511",
+      "vin": "0ADHV1MAXKD992348",
+      "year": 2019,
+      "make": "Adatum",
+      "model": "Haven",
+      "trim": "Plus",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Midnight Black",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-37554",
+      "acquiredDate": "2018-08-24",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Leased",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Pine Hollow",
+        "state": "WA"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Lane-keeping assist",
+        "Adaptive cruise control",
+        "Sunroof"
+      ]
+    },
+    {
+      "vehicleId": "VEH-52669",
+      "vin": "0LWPL2HA8NL870242",
+      "year": 2022,
+      "make": "Litware",
+      "model": "Pulse",
+      "trim": "Sport",
+      "bodyStyle": "Hatchback, 5-door",
+      "exteriorColor": "Midnight Black",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-13114",
+      "acquiredDate": "2025-03-05",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Proseware Financial"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Rear parking sensors",
+        "Adaptive cruise control",
+        "Heated seats"
+      ]
+    },
+    {
+      "vehicleId": "VEH-52819",
+      "vin": "0NWBZ1SA7SN283192",
+      "year": 2025,
+      "make": "Northwind",
+      "model": "Breeze",
+      "trim": "LE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Evergreen Pearl",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-25813",
+      "acquiredDate": "2024-02-15",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Sunroof"
+      ]
+    },
+    {
+      "vehicleId": "VEH-53375",
+      "vin": "0NWKS1UAXLN844570",
+      "year": 2020,
+      "make": "Northwind",
+      "model": "Kestrel",
+      "trim": "Sport",
+      "bodyStyle": "Sport utility vehicle, 4-door",
+      "exteriorColor": "Ruby Red",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-14176",
+      "acquiredDate": "2019-05-21",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Lane-keeping assist",
+        "Adaptive cruise control",
+        "Power liftgate"
+      ]
+    },
+    {
+      "vehicleId": "VEH-54523",
+      "vin": "0ADHV1MA2RD915130",
+      "year": 2024,
+      "make": "Adatum",
+      "model": "Haven",
+      "trim": "Plus",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Harbor Blue Metallic",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-18120",
+      "acquiredDate": "2024-01-08",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Rear parking sensors",
+        "Adaptive cruise control"
+      ]
+    },
+    {
+      "vehicleId": "VEH-54630",
+      "vin": "0NWKS2UA9PN387214",
+      "year": 2023,
+      "make": "Northwind",
+      "model": "Kestrel",
+      "trim": "Limited",
+      "bodyStyle": "Sport utility vehicle, 4-door",
+      "exteriorColor": "Midnight Black",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-21888",
+      "acquiredDate": "2022-07-21",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Woodgrove Bank"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Blind-spot monitoring",
+        "Sunroof",
+        "Power liftgate"
+      ]
+    },
+    {
+      "vehicleId": "VEH-54643",
+      "vin": "0NWBZ1SA2KN872022",
+      "year": 2019,
+      "make": "Northwind",
+      "model": "Breeze",
+      "trim": "LE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Midnight Black",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-18065",
+      "acquiredDate": "2026-04-28",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Woodgrove Bank"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Eastgate Springs",
+        "state": "ID"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Adaptive cruise control",
+        "Heated seats"
+      ]
+    },
+    {
+      "vehicleId": "VEH-55266",
+      "vin": "0CTTS3UA6KM518955",
+      "year": 2019,
+      "make": "Contoso",
+      "model": "Trailstar",
+      "trim": "Summit",
+      "bodyStyle": "Sport utility vehicle, 4-door",
+      "exteriorColor": "Graphite Gray Metallic",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-26287",
+      "acquiredDate": "2019-11-15",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Northwind Auto Finance"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Lane-keeping assist"
+      ]
+    },
+    {
+      "vehicleId": "VEH-55342",
+      "vin": "0NWBZ1SA3KN426445",
+      "year": 2019,
+      "make": "Northwind",
+      "model": "Breeze",
+      "trim": "LE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Ruby Red",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-18065",
+      "acquiredDate": "2019-05-20",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Eastgate Springs",
+        "state": "ID"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Lane-keeping assist"
+      ]
+    },
+    {
+      "vehicleId": "VEH-55443",
+      "vin": "0CTAR2SA9JM107385",
+      "year": 2018,
+      "make": "Contoso",
+      "model": "Aria",
+      "trim": "SE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Midnight Black",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-39798",
+      "acquiredDate": "2018-03-15",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Adaptive cruise control",
+        "Sunroof"
+      ]
+    },
+    {
+      "vehicleId": "VEH-55468",
+      "vin": "0ADHV1MAXLD991315",
+      "year": 2020,
+      "make": "Adatum",
+      "model": "Haven",
+      "trim": "Plus",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Silver Mist Metallic",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-27693",
+      "acquiredDate": "2019-08-12",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Adaptive cruise control",
+        "Power liftgate"
+      ]
+    },
+    {
+      "vehicleId": "VEH-55767",
+      "vin": "0FBCS1MA0HF346727",
+      "year": 2017,
+      "make": "Fabrikam",
+      "model": "Coastal",
+      "trim": "LX",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Graphite Gray Metallic",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-18120",
+      "acquiredDate": "2017-04-25",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-56463",
+      "vin": "0NWBZ2SAXPN968526",
+      "year": 2023,
+      "make": "Northwind",
+      "model": "Breeze",
+      "trim": "XLE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Harbor Blue Metallic",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-28678",
+      "acquiredDate": "2022-12-17",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Proseware Financial"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Blind-spot monitoring",
+        "Heated seats",
+        "Sunroof"
+      ]
+    },
+    {
+      "vehicleId": "VEH-56773",
+      "vin": "0ADHV1MA2HD989906",
+      "year": 2017,
+      "make": "Adatum",
+      "model": "Haven",
+      "trim": "Plus",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Sandstone Beige",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-21658",
+      "acquiredDate": "2016-03-17",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-57293",
+      "vin": "0CTAR2SA0JM806050",
+      "year": 2018,
+      "make": "Contoso",
+      "model": "Aria",
+      "trim": "SE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Glacier White",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-20967",
+      "acquiredDate": "2018-02-06",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Woodgrove Bank"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Blind-spot monitoring",
+        "Rear parking sensors",
+        "Adaptive cruise control"
+      ]
+    },
+    {
+      "vehicleId": "VEH-57593",
+      "vin": "0CTTS2UA6TM310926",
+      "year": 2026,
+      "make": "Contoso",
+      "model": "Trailstar",
+      "trim": "Touring",
+      "bodyStyle": "Sport utility vehicle, 4-door",
+      "exteriorColor": "Glacier White",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-38621",
+      "acquiredDate": "2025-04-28",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Rear parking sensors"
+      ]
+    },
+    {
+      "vehicleId": "VEH-57700",
+      "vin": "0ADSD1PAXFD518796",
+      "year": 2015,
+      "make": "Adatum",
+      "model": "Strider",
+      "trim": "Work",
+      "bodyStyle": "Pickup, extended cab",
+      "exteriorColor": "Harbor Blue Metallic",
+      "drivetrain": "RWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-13114",
+      "acquiredDate": "2014-11-12",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-57853",
+      "vin": "0ADHV1MA7HD732823",
+      "year": 2017,
+      "make": "Adatum",
+      "model": "Haven",
+      "trim": "Plus",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Silver Mist Metallic",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-20384",
+      "acquiredDate": "2016-02-15",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Owned",
+        "lienholder": null
+      },
+      "primaryUse": "Business",
+      "garaging": {
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-58213",
+      "vin": "0CTTS2UA9RM318057",
+      "year": 2024,
+      "make": "Contoso",
+      "model": "Trailstar",
+      "trim": "Touring",
+      "bodyStyle": "Sport utility vehicle, 4-door",
+      "exteriorColor": "Harbor Blue Metallic",
+      "drivetrain": "AWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-24817",
+      "acquiredDate": "2024-05-18",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Woodgrove Bank"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "equipment": [
+        "LED headlamps",
+        "LED tail lamps",
+        "Rear camera",
+        "Rear parking sensors",
+        "Blind-spot monitoring",
+        "Lane-keeping assist",
+        "Adaptive cruise control",
+        "Power liftgate",
+        "Roof rails"
+      ]
+    },
+    {
+      "vehicleId": "VEH-58378",
+      "vin": "0FBCS2MA8LF957085",
+      "year": 2020,
+      "make": "Fabrikam",
+      "model": "Coastal",
+      "trim": "Touring",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Evergreen Pearl",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-25185",
+      "acquiredDate": "2022-05-20",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Northwind Auto Finance"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Brightwater",
+        "state": "OR"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Lane-keeping assist",
+        "Sunroof"
+      ]
+    },
+    {
+      "vehicleId": "VEH-58620",
+      "vin": "0FBCS2MA4JF653975",
+      "year": 2018,
+      "make": "Fabrikam",
+      "model": "Coastal",
+      "trim": "Touring",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Evergreen Pearl",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-34111",
+      "acquiredDate": "2018-01-09",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Proseware Financial"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Maple Harbor",
+        "state": "OR"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Blind-spot monitoring",
+        "Rear parking sensors",
+        "Heated seats"
+      ]
+    },
+    {
+      "vehicleId": "VEH-58623",
+      "vin": "0ADSD2PA8GD600517",
+      "year": 2016,
+      "make": "Adatum",
+      "model": "Strider",
+      "trim": "Sport",
+      "bodyStyle": "Pickup, extended cab",
+      "exteriorColor": "Graphite Gray Metallic",
+      "drivetrain": "4WD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-36247",
+      "acquiredDate": "2016-05-10",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Business",
+      "garaging": {
+        "city": "Sunvale",
+        "state": "CA"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-58904",
+      "vin": "0FBCS1MA4JF342475",
+      "year": 2018,
+      "make": "Fabrikam",
+      "model": "Coastal",
+      "trim": "LX",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Midnight Black",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-36645",
+      "acquiredDate": "2017-08-20",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Northwind Auto Finance"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Riverton Falls",
+        "state": "OR"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Rear parking sensors"
+      ]
+    },
+    {
+      "vehicleId": "VEH-59131",
+      "vin": "0FBRB2PA1SF551587",
+      "year": 2025,
+      "make": "Fabrikam",
+      "model": "Ridgeback",
+      "trim": "Trail",
+      "bodyStyle": "Pickup, crew cab",
+      "exteriorColor": "Silver Mist Metallic",
+      "drivetrain": "4WD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-16866",
+      "acquiredDate": "2025-12-14",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Woodgrove Bank"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "LED headlamps",
+        "Rear camera",
+        "Rear parking sensors"
+      ]
+    },
+    {
+      "vehicleId": "VEH-59231",
+      "vin": "0LWPL2HAXHL291323",
+      "year": 2017,
+      "make": "Litware",
+      "model": "Pulse",
+      "trim": "Sport",
+      "bodyStyle": "Hatchback, 5-door",
+      "exteriorColor": "Evergreen Pearl",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-35138",
+      "acquiredDate": "2017-11-20",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Proseware Financial"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Granite Bend",
+        "state": "NV"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-59457",
+      "vin": "0NWBZ1SA5HN108299",
+      "year": 2017,
+      "make": "Northwind",
+      "model": "Breeze",
+      "trim": "LE",
+      "bodyStyle": "Sedan, 4-door",
+      "exteriorColor": "Evergreen Pearl",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-39296",
+      "acquiredDate": "2017-11-12",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Leased",
+        "lienholder": "Northwind Auto Finance"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-59467",
+      "vin": "0FBCS2MA7HF187145",
+      "year": 2017,
+      "make": "Fabrikam",
+      "model": "Coastal",
+      "trim": "Touring",
+      "bodyStyle": "Minivan",
+      "exteriorColor": "Silver Mist Metallic",
+      "drivetrain": "FWD",
+      "fuelType": "Hybrid",
+      "ownerCustomerId": "CUST-39296",
+      "acquiredDate": "2016-05-03",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Financed",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    },
+    {
+      "vehicleId": "VEH-59642",
+      "vin": "0CTTS1UAXJM327087",
+      "year": 2018,
+      "make": "Contoso",
+      "model": "Trailstar",
+      "trim": "Base",
+      "bodyStyle": "Sport utility vehicle, 4-door",
+      "exteriorColor": "Sandstone Beige",
+      "drivetrain": "FWD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-13747",
+      "acquiredDate": "2017-09-16",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Leased",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Commute",
+      "garaging": {
+        "city": "Copper Mesa",
+        "state": "AZ"
+      },
+      "equipment": [
+        "Halogen headlamps",
+        "Rear camera",
+        "Sunroof"
+      ]
+    },
+    {
+      "vehicleId": "VEH-59821",
+      "vin": "0FBRB2PA7HF123631",
+      "year": 2017,
+      "make": "Fabrikam",
+      "model": "Ridgeback",
+      "trim": "Trail",
+      "bodyStyle": "Pickup, crew cab",
+      "exteriorColor": "Ruby Red",
+      "drivetrain": "4WD",
+      "fuelType": "Gasoline",
+      "ownerCustomerId": "CUST-24557",
+      "acquiredDate": "2016-08-16",
+      "disposedDate": null,
+      "ownership": {
+        "type": "Leased",
+        "lienholder": "Fabrikam Motor Credit"
+      },
+      "primaryUse": "Pleasure",
+      "garaging": {
+        "city": "Willow Crossing",
+        "state": "UT"
+      },
+      "equipment": [
+        "Halogen headlamps"
+      ]
+    }
+  ]
+}

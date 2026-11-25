@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contoso Claims Review</title>
+  <link rel="icon" href="/ui/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/ui/styles.css">
+  <script type="module" src="/ui/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="/ui/icon.svg" alt="" width="28" height="28">
+      <span class="brand-name">Contoso Insurance</span>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="app-name">Claims Review</span>
+    </div>
+    <nav class="topbar-actions">
+      <span class="queue-label">Adjuster workspace</span>
+      <button type="button" class="ghost" data-action="about">About this workspace</button>
+    </nav>
+  </header>
+
+  <main class="workspace" id="workspace" aria-busy="true">
+    <section class="claim-header" id="claim-header"><div class="claim-title"><h1>Loading claim&hellip;</h1></div></section>
+    <div id="load-error" class="page-error" hidden></div>
+
+    <div class="columns">
+      <section class="panel area-summary" id="summary" aria-label="Claim summary"></section>
+      <section class="panel area-evidence" id="evidence" aria-label="Evidence"></section>
+      <section class="panel area-policy" id="policy" aria-label="Policy"></section>
+
+      <section class="panel agent-panel" id="agent" aria-label="Claims review agent">
+        <div class="agent-head">
+          <div>
+            <h2>Claims review agent</h2>
+            <p class="agent-sub">Reviews this claim&rsquo;s records, documents, photographs and company guidance. Recommendations support your decision; you make the decision.</p>
+          </div>
+          <button type="button" class="secondary" data-action="reset" id="reset-button">New review</button>
+        </div>
+
+        <div class="conversation" id="conversation" aria-live="polite"></div>
+
+        <div class="empty-state" id="empty-state">
+          <p class="empty-title">Start a review of this claim</p>
+          <p class="muted">The claim&rsquo;s documents and photographs are verified and sent to the agent with your first message. Follow-up questions continue the same review.</p>
+          <button type="button" class="prompt-chip" data-prompt id="hero-prompt"></button>
+        </div>
+
+        <form class="composer" id="composer" autocomplete="off">
+          <label class="visually-hidden" for="message">Message to the claims review agent</label>
+          <textarea id="message" name="message" rows="2" maxlength="4000" placeholder="Ask about this claim&hellip;"></textarea>
+          <button type="submit" class="primary" id="send-button">Send</button>
+        </form>
+        <p class="composer-hint">Enter to send &middot; Shift+Enter for a new line</p>
+      </section>
+    </div>
+  </main>
+
+  <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+    <header class="viewer-head">
+      <div>
+        <p class="viewer-kicker" id="viewer-kicker"></p>
+        <h2 id="viewer-title"></h2>
+        <p class="viewer-meta" id="viewer-meta"></p>
+      </div>
+      <div class="viewer-actions">
+        <a class="secondary button" id="viewer-open" target="_blank" rel="noopener">Open in new tab</a>
+        <button type="button" class="ghost" data-action="close-viewer" aria-label="Close">Close</button>
+      </div>
+    </header>
+    <div class="viewer-body" id="viewer-body"></div>
+    <footer class="viewer-nav" id="viewer-nav">
+      <button type="button" class="secondary" data-action="prev-photo">&larr; Previous</button>
+      <span id="viewer-position"></span>
+      <button type="button" class="secondary" data-action="next-photo">Next &rarr;</button>
+    </footer>
+  </dialog>
+
+  <dialog class="about" id="about" aria-labelledby="about-title">
+    <h2 id="about-title">About this workspace</h2>
+    <p id="about-text"></p>
+    <dl class="facts" id="about-facts"></dl>
+    <ul class="about-points">
+      <li>The agent is configured and inspected in the Microsoft Foundry portal (or created from code with the same definition).</li>
+      <li>This workspace invokes that same Foundry-managed agent through the Foundry SDK, attaching the claim&rsquo;s documents and photographs so it can review the complete claim.</li>
+      <li>The workspace presents claim facts and evidence. The review and recommendation come from the agent; decisions stay with the adjuster.</li>
+    </ul>
+    <div class="about-actions"><button class="primary" type="button" data-action="close-about">Close</button></div>
+  </dialog>
+</body>
+</html>
