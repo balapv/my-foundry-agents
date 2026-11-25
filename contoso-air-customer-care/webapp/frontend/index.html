@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Assistant | Contoso Air</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="16" fill="currentColor" opacity="0.15"/>
+        <path d="M27 14.5 18.5 13 13 5h-2.5l3 8L7 12.2 5 9H3l1.5 7L3 23h2l2-3.2 6.5-.8-3 8H13l5.5-8 8.5-1.5c1.1-.2 1.1-2.8 0-3z" fill="currentColor"/>
+      </svg>
+      <span class="brand-name">Contoso Air</span>
+    </div>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#" aria-disabled="true">Book</a>
+      <a href="#" aria-disabled="true">My trips</a>
+      <a href="#" class="active" aria-current="page">Travel Assistant</a>
+    </nav>
+    <div class="member" id="member" hidden></div>
+  </header>
+
+  <main class="page">
+    <h1>Travel Assistant</h1>
+
+    <div class="layout">
+      <aside class="trip-panel">
+        <p class="greeting" id="greeting">Welcome to Contoso Air.</p>
+        <section class="trip-card" id="trip-card" aria-labelledby="trip-title" hidden>
+          <h2 id="trip-title">Your upcoming trip</h2>
+          <div id="trip-body"></div>
+        </section>
+        <p class="trip-empty" id="trip-empty" hidden>We couldn't load your trip details right now. You can still chat with the Travel Assistant.</p>
+      </aside>
+
+      <section class="chat" aria-label="Chat with the Contoso Air Travel Assistant">
+        <div class="chat-toolbar">
+          <span class="chat-title">Chat with us</span>
+          <button type="button" class="link-button" id="new-chat">New conversation</button>
+        </div>
+        <div class="messages" id="messages" role="log" aria-live="polite">
+          <div class="message assistant intro">
+            <div class="bubble">Hi! I'm the Contoso Air Travel Assistant. I can check your reservation and flight status, explain your options if your plans change, and connect you with an agent when you need one.</div>
+          </div>
+        </div>
+        <div class="status" id="status" aria-live="polite" hidden>
+          <span class="spinner" aria-hidden="true"></span><span id="status-text"></span>
+        </div>
+        <div class="starters" id="starters"></div>
+        <form class="composer" id="composer">
+          <label for="input" class="visually-hidden">Message</label>
+          <textarea id="input" rows="2" maxlength="2000" placeholder="Ask about your trip..." required></textarea>
+          <button type="submit" id="send">Send</button>
+        </form>
+      </section>
+    </div>
+
+    <p class="footnote">Demo experience with synthetic data. Sign-in is simulated: every visitor is the sample customer configured on the server. The Travel Assistant is an agent built and managed in Microsoft Foundry; this page is one channel for it.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

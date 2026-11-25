@@ -1,0 +1,838 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Contoso Air Operations API",
+    "version": "1.1.0",
+    "description": "Read-only Contoso Air operational data for the Customer Care agent: the signed-in customer's reservations, authoritative flight status, and alternative flights with seat availability by cabin. The API returns facts only. It does not rank or recommend flights, decide eligibility, interpret policy, hold seats, or rebook. Times are local to the airport named in each field and paired with an IANA time-zone field. Errors are returned as HTTP 200 with an `error` object so the agent can explain them. All data is synthetic."
+  },
+  "servers": [
+    {
+      "url": "https://YOUR-TOOLS-API-HOST"
+    }
+  ],
+  "paths": {
+    "/customers/{customerId}/reservations": {
+      "get": {
+        "operationId": "get_customer_reservations",
+        "summary": "Get the signed-in customer's loyalty profile and upcoming reservations",
+        "description": "Call this first when the customer asks about their trip, booking, or a disrupted flight. Returns the customer's loyalty profile and all upcoming Confirmed reservations (passengers, cabin, fare, and flight segments), earliest travel first. Use the authenticated customer ID from the session context; do not ask the customer for a confirmation code first. Optionally pass confirmationCode to retrieve one specific reservation owned by this customer (any status). Returns facts only. Failures are returned with HTTP 200 and an `error` object instead of data (no other data fields), so that the agent can read and explain them. Possible error codes: CUSTOMER_NOT_FOUND, RESERVATION_NOT_FOUND, INVALID_REQUEST.",
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "required": true,
+            "description": "Authenticated customer ID from the session context, for example CUST-1007. Not a loyalty number.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "confirmationCode",
+            "in": "query",
+            "required": false,
+            "description": "Optional six-character confirmation code of one reservation owned by this customer. Omit it to list all upcoming reservations.",
+            "schema": {
+              "type": "string",
+              "minLength": 6,
+              "maxLength": 6
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Customer profile and reservations. If the customer has no upcoming confirmed reservations, `reservations` is empty, `reservationCount` is 0, and `message` explains this; that is not an error. On failure, contains only `error` (see the `error` property).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "currentDate": {
+                      "type": "string",
+                      "description": "Today's date in the airline system (YYYY-MM-DD). Use it to interpret relative dates such as 'tomorrow'.",
+                      "format": "date"
+                    },
+                    "customer": {
+                      "type": "object",
+                      "properties": {
+                        "customerId": {
+                          "type": "string",
+                          "description": "Customer ID."
+                        },
+                        "firstName": {
+                          "type": "string"
+                        },
+                        "lastName": {
+                          "type": "string"
+                        },
+                        "loyaltyNumber": {
+                          "type": "string",
+                          "description": "Contoso Air loyalty program number."
+                        },
+                        "loyaltyTier": {
+                          "type": "string",
+                          "description": "Loyalty tier, lowest to highest: Basic, Silver, Gold, Platinum.",
+                          "enum": [
+                            "Basic",
+                            "Silver",
+                            "Gold",
+                            "Platinum"
+                          ]
+                        },
+                        "homeAirport": {
+                          "type": "string",
+                          "description": "IATA code of the customer's home airport."
+                        }
+                      },
+                      "description": "The signed-in customer's profile."
+                    },
+                    "reservationCount": {
+                      "type": "integer",
+                      "description": "Number of reservations returned."
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "Present only when no reservations are returned; explains the empty result."
+                    },
+                    "reservations": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "confirmationCode": {
+                            "type": "string",
+                            "description": "Six-character booking reference (confirmation code) of this existing reservation."
+                          },
+                          "primaryCustomerId": {
+                            "type": "string",
+                            "description": "Customer ID of the person who owns the reservation."
+                          },
+                          "bookingDate": {
+                            "type": "string",
+                            "description": "Date the reservation was purchased (YYYY-MM-DD).",
+                            "format": "date"
+                          },
+                          "status": {
+                            "type": "string",
+                            "description": "Reservation status: Confirmed (active, with travel still to come), Completed (all travel finished), or Cancelled.",
+                            "enum": [
+                              "Confirmed",
+                              "Completed",
+                              "Cancelled"
+                            ]
+                          },
+                          "cabin": {
+                            "type": "string",
+                            "description": "Cabin purchased for every passenger on this reservation: First, Economy Plus, or Main Cabin.",
+                            "enum": [
+                              "First",
+                              "Economy Plus",
+                              "Main Cabin"
+                            ]
+                          },
+                          "fareType": {
+                            "type": "string",
+                            "description": "Fare family purchased.",
+                            "enum": [
+                              "Basic",
+                              "Standard",
+                              "Flexible"
+                            ]
+                          },
+                          "notes": {
+                            "type": "string",
+                            "description": "Optional free-text booking notes."
+                          },
+                          "passengers": {
+                            "type": "array",
+                            "description": "Every traveller on the reservation. The party size is the number of entries.",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "passengerId": {
+                                  "type": "string",
+                                  "description": "Passenger identifier within this reservation, for example P1."
+                                },
+                                "firstName": {
+                                  "type": "string"
+                                },
+                                "lastName": {
+                                  "type": "string"
+                                },
+                                "passengerType": {
+                                  "type": "string",
+                                  "description": "Adult or Child (under 18 at the time of travel).",
+                                  "enum": [
+                                    "Adult",
+                                    "Child"
+                                  ]
+                                },
+                                "loyaltyNumber": {
+                                  "type": "string",
+                                  "description": "The passenger's Contoso Air loyalty number, or null if the passenger is not a member.",
+                                  "nullable": true
+                                }
+                              }
+                            }
+                          },
+                          "segments": {
+                            "type": "array",
+                            "description": "Flight segments in travel order.",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "segmentId": {
+                                  "type": "string",
+                                  "description": "Segment identifier within this reservation, for example S1."
+                                },
+                                "flightNumber": {
+                                  "type": "string",
+                                  "description": "Contoso Air flight number, for example CT218."
+                                },
+                                "date": {
+                                  "type": "string",
+                                  "description": "Scheduled departure date at the origin airport (YYYY-MM-DD).",
+                                  "format": "date"
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "description": "Origin airport IATA code."
+                                },
+                                "destination": {
+                                  "type": "string",
+                                  "description": "Destination airport IATA code."
+                                },
+                                "scheduledDeparture": {
+                                  "type": "string",
+                                  "description": "Scheduled departure, local date and time at the origin airport (YYYY-MM-DDTHH:MM)."
+                                },
+                                "scheduledArrival": {
+                                  "type": "string",
+                                  "description": "Scheduled arrival, local date and time at the destination airport (YYYY-MM-DDTHH:MM)."
+                                },
+                                "cabin": {
+                                  "type": "string",
+                                  "description": "Cabin booked on this segment for every passenger in the reservation.",
+                                  "enum": [
+                                    "First",
+                                    "Economy Plus",
+                                    "Main Cabin"
+                                  ]
+                                },
+                                "segmentStatus": {
+                                  "type": "string",
+                                  "description": "Ticketing status of this segment in the reservation record: Confirmed (ticketed for an upcoming flight), Flown (already travelled), Cancelled (removed from the itinerary), or Reaccommodated (moved to another flight). This is not the flight's operating status; use get_flight_status for whether the flight is on time, delayed, or cancelled.",
+                                  "enum": [
+                                    "Confirmed",
+                                    "Flown",
+                                    "Cancelled",
+                                    "Reaccommodated"
+                                  ]
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string",
+                          "description": "Machine-readable error code. CUSTOMER_NOT_FOUND (no customer profile exists for customerId; HTTP 404); RESERVATION_NOT_FOUND (confirmationCode does not match a reservation owned by this customer; HTTP 404); INVALID_REQUEST (a parameter is missing or malformed, for example a confirmation code that is not six characters; HTTP 400).",
+                          "enum": [
+                            "CUSTOMER_NOT_FOUND",
+                            "RESERVATION_NOT_FOUND",
+                            "INVALID_REQUEST"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of the failure, safe to paraphrase to the customer."
+                        },
+                        "httpStatus": {
+                          "type": "integer",
+                          "description": "Equivalent HTTP status: 400 invalid input, 404 not found, 503 temporarily unavailable.",
+                          "enum": [
+                            400,
+                            404
+                          ]
+                        },
+                        "retryable": {
+                          "type": "boolean",
+                          "description": "True only when the failure is temporary and the same request may succeed later (SERVICE_UNAVAILABLE). False for invalid input and not-found results."
+                        }
+                      },
+                      "description": "Present only when the request could not be fulfilled; when present, no other data fields are returned. Do not guess, invent, or substitute the missing information.",
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/flight-status/{flightNumber}": {
+      "get": {
+        "operationId": "get_flight_status",
+        "summary": "Get the authoritative operational status of one flight on one date",
+        "description": "Call this to confirm whether a specific flight is on time, delayed, cancelled, or landed before telling the customer about it. It is the authoritative source for flight status; never infer status from the reservation. When the flight is disrupted, also returns the disruption type, category, responsibility, and reason as recorded by operations. Returns facts only. Failures are returned with HTTP 200 and an `error` object instead of data (no other data fields), so that the agent can read and explain them. Possible error codes: FLIGHT_NOT_FOUND, INVALID_DATE, INVALID_REQUEST, SERVICE_UNAVAILABLE.",
+        "parameters": [
+          {
+            "name": "flightNumber",
+            "in": "path",
+            "required": true,
+            "description": "Contoso Air flight number, for example CT218.",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": true,
+            "description": "Scheduled departure date at the origin airport, YYYY-MM-DD (use the segment `date` from the reservation).",
+            "schema": {
+              "type": "string",
+              "format": "date",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Current operational status of the flight. On failure, contains only `error` (see the `error` property).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "currentDate": {
+                      "type": "string",
+                      "description": "Today's date in the airline system (YYYY-MM-DD). Use it to interpret relative dates such as 'tomorrow'.",
+                      "format": "date"
+                    },
+                    "flightNumber": {
+                      "type": "string",
+                      "description": "Contoso Air flight number."
+                    },
+                    "date": {
+                      "type": "string",
+                      "description": "Scheduled departure date at the origin airport.",
+                      "format": "date"
+                    },
+                    "origin": {
+                      "type": "string",
+                      "description": "Origin airport IATA code."
+                    },
+                    "destination": {
+                      "type": "string",
+                      "description": "Destination airport IATA code."
+                    },
+                    "originCity": {
+                      "type": "string"
+                    },
+                    "destinationCity": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "description": "Operating status: On Time (operating as scheduled), Delayed (operating later than scheduled; see delayMinutes), Cancelled (will not operate), or Landed (already completed).",
+                      "enum": [
+                        "On Time",
+                        "Delayed",
+                        "Cancelled",
+                        "Landed"
+                      ]
+                    },
+                    "scheduledDeparture": {
+                      "type": "string",
+                      "description": "Scheduled departure, local time at the origin airport (YYYY-MM-DDTHH:MM); see departureTimeZone."
+                    },
+                    "estimatedDeparture": {
+                      "type": "string",
+                      "description": "Current estimated departure, local time at the origin airport, or null when the flight is cancelled.",
+                      "nullable": true
+                    },
+                    "scheduledArrival": {
+                      "type": "string",
+                      "description": "Scheduled arrival, local time at the destination airport (YYYY-MM-DDTHH:MM); see arrivalTimeZone."
+                    },
+                    "estimatedArrival": {
+                      "type": "string",
+                      "description": "Current estimated arrival, local time at the destination airport, or null when the flight is cancelled.",
+                      "nullable": true
+                    },
+                    "departureTimeZone": {
+                      "type": "string",
+                      "description": "IANA time zone of the origin airport, for example America/Los_Angeles."
+                    },
+                    "arrivalTimeZone": {
+                      "type": "string",
+                      "description": "IANA time zone of the destination airport, for example America/New_York."
+                    },
+                    "delayMinutes": {
+                      "type": "integer",
+                      "description": "Minutes between scheduled and estimated departure. 0 when on time; 0 for a cancelled flight (a cancellation is not a delay).",
+                      "minimum": 0
+                    },
+                    "isCancelled": {
+                      "type": "boolean",
+                      "description": "True when the flight will not operate."
+                    },
+                    "disruption": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "description": "Kind of disruption.",
+                          "enum": [
+                            "Cancellation",
+                            "Delay"
+                          ]
+                        },
+                        "category": {
+                          "type": "string",
+                          "description": "Controllable: the cause was within Contoso Air's control (for example crew or maintenance). Uncontrollable: the cause was outside its control (for example weather or air traffic control).",
+                          "enum": [
+                            "Controllable",
+                            "Uncontrollable"
+                          ]
+                        },
+                        "responsibility": {
+                          "type": "string",
+                          "description": "Who or what caused the disruption, as recorded by operations: Carrier (Contoso Air), Weather, or Air traffic control.",
+                          "enum": [
+                            "Carrier",
+                            "Weather",
+                            "Air traffic control"
+                          ]
+                        },
+                        "reasonCode": {
+                          "type": "string",
+                          "description": "Operational reason code: OPS (operational/aircraft rotation), MX (maintenance), CRW (crew), WX (weather), ATC (air traffic control).",
+                          "enum": [
+                            "OPS",
+                            "MX",
+                            "CRW",
+                            "WX",
+                            "ATC"
+                          ]
+                        },
+                        "reason": {
+                          "type": "string",
+                          "description": "Plain-language reason, suitable to share with the customer."
+                        }
+                      },
+                      "description": "Disruption details, or null when the flight is operating normally. Records facts only; it does not state what the customer is entitled to.",
+                      "nullable": true
+                    },
+                    "lastUpdated": {
+                      "type": "string",
+                      "description": "When operations last updated this status, local time at the origin airport (YYYY-MM-DDTHH:MM). Never later than the current time."
+                    },
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string",
+                          "description": "Machine-readable error code. FLIGHT_NOT_FOUND (Contoso Air does not operate this flight number, or it is not scheduled on this date; HTTP 404); INVALID_DATE (date is formatted correctly but is not a real calendar date; HTTP 400); INVALID_REQUEST (a parameter is missing or malformed, for example a date not in YYYY-MM-DD format; HTTP 400); SERVICE_UNAVAILABLE (the flight status system is temporarily unavailable; retryable, HTTP 503).",
+                          "enum": [
+                            "FLIGHT_NOT_FOUND",
+                            "INVALID_DATE",
+                            "INVALID_REQUEST",
+                            "SERVICE_UNAVAILABLE"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of the failure, safe to paraphrase to the customer."
+                        },
+                        "httpStatus": {
+                          "type": "integer",
+                          "description": "Equivalent HTTP status: 400 invalid input, 404 not found, 503 temporarily unavailable.",
+                          "enum": [
+                            400,
+                            404,
+                            503
+                          ]
+                        },
+                        "retryable": {
+                          "type": "boolean",
+                          "description": "True only when the failure is temporary and the same request may succeed later (SERVICE_UNAVAILABLE). False for invalid input and not-found results."
+                        }
+                      },
+                      "description": "Present only when the request could not be fulfilled; when present, no other data fields are returned. Do not guess, invent, or substitute the missing information.",
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/flight-search/alternatives": {
+      "get": {
+        "operationId": "search_alternative_flights",
+        "summary": "List Contoso Air flights between two airports on a date with seat availability by cabin",
+        "description": "Call this to find other Contoso Air flights for a customer, for example after get_flight_status shows their flight is cancelled. Returns every nonstop flight and one-stop connection (45-300 minute layover, same day) from origin to destination on travelDate that is not cancelled, has not already departed, and has at least one seat for sale, with seat availability per cabin. Options are listed in chronological order of departure; the list is NOT ranked, recommended, or filtered for the customer. Options are not removed because they lack seats for the whole party or in the preferred cabin: compare cabinAvailability with the party size and booked cabin yourself. No seats are held or booked. Failures are returned with HTTP 200 and an `error` object instead of data (no other data fields), so that the agent can read and explain them. Possible error codes: UNKNOWN_AIRPORT, INVALID_ROUTE, INVALID_CABIN, INVALID_DATE, DATE_IN_PAST, INVALID_REQUEST.",
+        "parameters": [
+          {
+            "name": "origin",
+            "in": "query",
+            "required": true,
+            "description": "Three-letter IATA code of the departure airport, for example SEA.",
+            "schema": {
+              "type": "string",
+              "minLength": 3,
+              "maxLength": 3
+            }
+          },
+          {
+            "name": "destination",
+            "in": "query",
+            "required": true,
+            "description": "Three-letter IATA code of the arrival airport, for example JFK.",
+            "schema": {
+              "type": "string",
+              "minLength": 3,
+              "maxLength": 3
+            }
+          },
+          {
+            "name": "travelDate",
+            "in": "query",
+            "required": true,
+            "description": "Departure date to search, YYYY-MM-DD. Must be today or later.",
+            "schema": {
+              "type": "string",
+              "format": "date",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+            }
+          },
+          {
+            "name": "passengerCount",
+            "in": "query",
+            "required": false,
+            "description": "Number of travellers in the party (1-9, default 1). Context only: it is echoed in `search` and does not filter or reorder results.",
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9,
+              "default": 1
+            }
+          },
+          {
+            "name": "preferredCabin",
+            "in": "query",
+            "required": false,
+            "description": "Cabin the customer is booked in or prefers. Context only: it is echoed in `search` and does not filter or reorder results; availability for every cabin is always returned.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "First",
+                "Economy Plus",
+                "Main Cabin"
+              ]
+            }
+          },
+          {
+            "name": "preferNonstop",
+            "in": "query",
+            "required": false,
+            "description": "Whether the customer said they prefer nonstop flights. Context only: it is echoed in `search` and does not filter or reorder results; connections are always included.",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Alternative flights. If nothing qualifies, `options` is empty, `resultCount` is 0, and `message` explains this; that is not an error. On failure, contains only `error` (see the `error` property).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "currentDate": {
+                      "type": "string",
+                      "description": "Today's date in the airline system (YYYY-MM-DD). Use it to interpret relative dates such as 'tomorrow'.",
+                      "format": "date"
+                    },
+                    "search": {
+                      "type": "object",
+                      "properties": {
+                        "origin": {
+                          "type": "string"
+                        },
+                        "destination": {
+                          "type": "string"
+                        },
+                        "travelDate": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "passengerCount": {
+                          "type": "integer"
+                        },
+                        "preferredCabin": {
+                          "type": "string",
+                          "description": "First, Economy Plus, Main Cabin, or null when not supplied.",
+                          "nullable": true
+                        },
+                        "preferNonstop": {
+                          "type": "boolean",
+                          "nullable": true
+                        }
+                      },
+                      "description": "Echo of the search inputs, normalised (airport codes upper-cased)."
+                    },
+                    "resultCount": {
+                      "type": "integer",
+                      "description": "Number of options returned."
+                    },
+                    "options": {
+                      "type": "array",
+                      "description": "Options in chronological order of departure (then arrival). Order is not a recommendation.",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "optionId": {
+                            "type": "string",
+                            "description": "Identifier of this result within this search response only (OPT-1, OPT-2, ... in the order listed). It is NOT a reservation, confirmation code, or booking reference, no seats are held for it, and it is not valid in any other request or later search."
+                          },
+                          "type": {
+                            "type": "string",
+                            "description": "Nonstop (one flight) or Connection (two flights with a change of plane at connectionAirport).",
+                            "enum": [
+                              "Nonstop",
+                              "Connection"
+                            ]
+                          },
+                          "stops": {
+                            "type": "integer",
+                            "description": "Number of intermediate stops: 0 for Nonstop, 1 for Connection.",
+                            "enum": [
+                              0,
+                              1
+                            ]
+                          },
+                          "flightNumbers": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            },
+                            "description": "Flight numbers in travel order."
+                          },
+                          "origin": {
+                            "type": "string",
+                            "description": "Origin airport IATA code of the first leg."
+                          },
+                          "destination": {
+                            "type": "string",
+                            "description": "Destination airport IATA code of the final leg."
+                          },
+                          "departureLocal": {
+                            "type": "string",
+                            "description": "Departure of the first leg, local time at the origin airport (YYYY-MM-DDTHH:MM); see departureTimeZone."
+                          },
+                          "departureTimeZone": {
+                            "type": "string",
+                            "description": "IANA time zone of the origin airport."
+                          },
+                          "arrivalLocal": {
+                            "type": "string",
+                            "description": "Arrival of the final leg, local time at the destination airport (YYYY-MM-DDTHH:MM); see arrivalTimeZone."
+                          },
+                          "arrivalTimeZone": {
+                            "type": "string",
+                            "description": "IANA time zone of the destination airport."
+                          },
+                          "totalTravelMinutes": {
+                            "type": "integer",
+                            "description": "Elapsed minutes from first-leg departure to final-leg arrival, already adjusted for time zones and including any layover.",
+                            "minimum": 1
+                          },
+                          "cabinAvailability": {
+                            "type": "object",
+                            "properties": {
+                              "First": {
+                                "type": "integer",
+                                "description": "Seats available in First for this whole option.",
+                                "minimum": 0
+                              },
+                              "Economy Plus": {
+                                "type": "integer",
+                                "description": "Seats available in Economy Plus for this whole option.",
+                                "minimum": 0
+                              },
+                              "Main Cabin": {
+                                "type": "integer",
+                                "description": "Seats available in Main Cabin for this whole option.",
+                                "minimum": 0
+                              }
+                            },
+                            "required": [
+                              "First",
+                              "Economy Plus",
+                              "Main Cabin"
+                            ],
+                            "description": "Seats available per cabin for the whole option. For a Connection, each value is the number of passengers who can travel in that same cabin on EVERY leg (the minimum across legs). Compare these values with the party size and the booked cabin."
+                          },
+                          "totalSeatsAvailable": {
+                            "type": "integer",
+                            "description": "Sum of the cabinAvailability values for this option. These seats may be spread across cabins; it does not mean the whole party can sit in one cabin.",
+                            "minimum": 1
+                          },
+                          "connectionAirport": {
+                            "type": "string",
+                            "description": "Connections only: IATA code of the airport where passengers change planes. Absent for Nonstop options."
+                          },
+                          "layoverMinutes": {
+                            "type": "integer",
+                            "description": "Connections only: minutes on the ground at connectionAirport between the first leg's arrival and the second leg's departure. Absent for Nonstop options.",
+                            "minimum": 0
+                          },
+                          "segments": {
+                            "type": "array",
+                            "description": "Individual flights (legs) in travel order, with each leg's own status and availability.",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "flightNumber": {
+                                  "type": "string",
+                                  "description": "Contoso Air flight number of this leg."
+                                },
+                                "date": {
+                                  "type": "string",
+                                  "description": "Departure date of this leg at its origin airport.",
+                                  "format": "date"
+                                },
+                                "origin": {
+                                  "type": "string",
+                                  "description": "Leg origin airport IATA code."
+                                },
+                                "destination": {
+                                  "type": "string",
+                                  "description": "Leg destination airport IATA code."
+                                },
+                                "departureLocal": {
+                                  "type": "string",
+                                  "description": "Leg departure, local time at the leg origin (YYYY-MM-DDTHH:MM); see departureTimeZone."
+                                },
+                                "departureTimeZone": {
+                                  "type": "string",
+                                  "description": "IANA time zone of the leg origin."
+                                },
+                                "arrivalLocal": {
+                                  "type": "string",
+                                  "description": "Leg arrival, local time at the leg destination (YYYY-MM-DDTHH:MM); see arrivalTimeZone."
+                                },
+                                "arrivalTimeZone": {
+                                  "type": "string",
+                                  "description": "IANA time zone of the leg destination."
+                                },
+                                "aircraft": {
+                                  "type": "string",
+                                  "description": "Aircraft type."
+                                },
+                                "status": {
+                                  "type": "string",
+                                  "description": "Current operating status of this leg. Cancelled flights are never returned, so this is On Time or Delayed.",
+                                  "enum": [
+                                    "On Time",
+                                    "Delayed"
+                                  ]
+                                },
+                                "cabinAvailability": {
+                                  "type": "object",
+                                  "properties": {
+                                    "First": {
+                                      "type": "integer",
+                                      "description": "Seats available in First on this leg.",
+                                      "minimum": 0
+                                    },
+                                    "Economy Plus": {
+                                      "type": "integer",
+                                      "description": "Seats available in Economy Plus on this leg.",
+                                      "minimum": 0
+                                    },
+                                    "Main Cabin": {
+                                      "type": "integer",
+                                      "description": "Seats available in Main Cabin on this leg.",
+                                      "minimum": 0
+                                    }
+                                  },
+                                  "required": [
+                                    "First",
+                                    "Economy Plus",
+                                    "Main Cabin"
+                                  ]
+                                },
+                                "totalSeatsAvailable": {
+                                  "type": "integer",
+                                  "description": "Sum of cabinAvailability on this leg (seats across all cabins).",
+                                  "minimum": 1
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "note": {
+                      "type": "string",
+                      "description": "Reminder that the list is chronological, unranked, unfiltered by party size or cabin, and that no seats are held."
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "Present only when no options are returned; explains the empty result."
+                    },
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string",
+                          "description": "Machine-readable error code. UNKNOWN_AIRPORT (origin or destination is not an airport Contoso Air serves; HTTP 400); INVALID_ROUTE (origin and destination are the same airport; HTTP 400); INVALID_CABIN (preferredCabin is not First, Economy Plus, or Main Cabin; HTTP 400); INVALID_DATE (travelDate is formatted correctly but is not a real calendar date; HTTP 400); DATE_IN_PAST (travelDate is before today; HTTP 400); INVALID_REQUEST (a parameter is missing or malformed, for example passengerCount outside 1-9 or a date not in YYYY-MM-DD format; HTTP 400).",
+                          "enum": [
+                            "UNKNOWN_AIRPORT",
+                            "INVALID_ROUTE",
+                            "INVALID_CABIN",
+                            "INVALID_DATE",
+                            "DATE_IN_PAST",
+                            "INVALID_REQUEST"
+                          ]
+                        },
+                        "message": {
+                          "type": "string",
+                          "description": "Human-readable explanation of the failure, safe to paraphrase to the customer."
+                        },
+                        "httpStatus": {
+                          "type": "integer",
+                          "description": "Equivalent HTTP status: 400 invalid input, 404 not found, 503 temporarily unavailable.",
+                          "enum": [
+                            400
+                          ]
+                        },
+                        "retryable": {
+                          "type": "boolean",
+                          "description": "True only when the failure is temporary and the same request may succeed later (SERVICE_UNAVAILABLE). False for invalid input and not-found results."
+                        }
+                      },
+                      "description": "Present only when the request could not be fulfilled; when present, no other data fields are returned. Do not guess, invent, or substitute the missing information.",
+                      "nullable": true
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -139,6 +139,8 @@ Do not expose the operational reason unless it is relevant to the question.
 
 The search tool returns several valid alternatives so that the agent must choose rather than simply repeat one result.
 
+The search returns facts only. Options are listed in chronological departure order, so CT226 is **not** the first result. The API does not mark any option as eligible, preferred or recommended: rebooking eligibility comes from the policy knowledge, applied by the agent.
+
 ## Option A: Recommended
 
 **CT226**
@@ -146,10 +148,9 @@ The search tool returns several valid alternatives so that the agent must choose
 - SEA → JFK
 - Departure: 9:20 AM
 - Nonstop
-- Available seats: 4+
-- Economy Plus seats: available
+- Available seats: 16 (First 1, Economy Plus 6, Main Cabin 9)
+- Economy Plus seats: enough for all four
 - Same-day travel
-- Eligible for disruption rebooking
 
 ## Option B
 
@@ -159,9 +160,9 @@ SEA → ORD → JFK
 
 - Departure: 7:10 AM
 - One connection
-- Available seats: 6
+- Available seats: 6 (Economy Plus 2, Main Cabin 4, counted end to end across both legs)
+- All four together only in Main Cabin
 - Same-day arrival
-- Eligible for disruption rebooking
 
 ## Option C
 
@@ -170,7 +171,7 @@ SEA → ORD → JFK
 - SEA → JFK
 - Departure: 3:45 PM
 - Nonstop
-- Available seats: 3
+- Available seats: 3 (Economy Plus 1, Main Cabin 2)
 - Cannot accommodate all four passengers together
 
 The expected recommendation is **CT226**.
@@ -345,6 +346,8 @@ Include:
 
 Keep the initial tool surface deliberately small.
 
+As implemented, the three tools are three operations of **one** service, the Contoso Air Operations API (`tools/`). It has one OpenAPI specification (`tools/openapi.json`), which is added to the agent as **one OpenAPI tool**. The operations are read-only and return facts only: no ranking, recommendations, eligibility or policy. Failures are returned as an `error` object with HTTP 200, so the agent can explain them; see `tools/README.md`.
+
 ## Tool 1: get_customer_reservations
 
 Purpose:
@@ -403,7 +406,7 @@ Return:
 
 Purpose:
 
-Find flights eligible for reaccommodation.
+Find candidate alternative flights for reaccommodation. Whether a candidate is suitable or eligible is decided by the agent, using policy knowledge.
 
 Input should support:
 
@@ -428,6 +431,13 @@ Example:
 ```
 
 Return multiple options rather than preselecting the best answer.
+
+As implemented:
+
+- Options are in chronological departure order.
+- `passengerCount`, `preferredCabin` and `preferNonstop` are context only. They are echoed back and never filter or reorder options.
+- Each option reports seat availability by cabin. For a connection, this is the minimum across all legs.
+- `optionId` identifies a search result, not a booking.
 
 The **agent**, not the API, should make the recommendation.
 
@@ -599,7 +609,7 @@ Guide the user through:
 4. Give the agent a meaningful name.
 5. Add the supplied agent instructions.
 6. Add the four knowledge documents.
-7. Configure the three tools.
+7. Configure the Contoso Air Operations API as one OpenAPI tool (three operations).
 8. Add useful starter prompts.
 9. Test the hero scenario.
 10. Inspect tool activity and traces.
@@ -674,11 +684,13 @@ Show:
 - Input box
 - Agent responses
 
-Optional status messages:
+Optional status messages (as implemented):
 
-- Checking your reservation
-- Checking flight status
-- Finding alternatives
+- Checking your trip…
+- Checking flight status…
+- Checking Contoso Air policies…
+- Finding alternative flights…
+- Reviewing your options…
 
 Avoid exposing raw tool traces in the customer-facing interface.
 
@@ -867,6 +879,8 @@ contoso-air-customer-care/
 │   └── config.example.json
 │
 ├── knowledge/
+│   ├── source/                      # *.md policy sources (source of truth)
+│   ├── build_pdfs.py                # generates the PDFs below
 │   ├── flight-disruption-policy.pdf
 │   ├── loyalty-benefits.pdf
 │   ├── meal-hotel-assistance.pdf
@@ -880,10 +894,13 @@ contoso-air-customer-care/
 │   ├── README.md
 │   └── generate_data.py
 │
-├── tools/
-│   ├── reservation_api/
-│   ├── flight_status_api/
-│   └── flight_search_api/
+├── tools/                           # ONE service: Contoso Air Operations API (FastAPI)
+│   ├── main.py                      # app + routers for the three operations
+│   ├── openapi.json                 # ONE OpenAPI spec, three operations
+│   ├── common/
+│   ├── reservation_api/             # get_customer_reservations router
+│   ├── flight_status_api/           # get_flight_status router
+│   └── flight_search_api/           # search_alternative_flights router
 │
 ├── webapp/
 │   ├── frontend/
@@ -891,22 +908,27 @@ contoso-air-customer-care/
 │   └── README.md
 │
 ├── evaluation/
-│   ├── test_cases.json
-│   ├── expected_behaviors.md
+│   ├── test_cases.json              # cases, judge criteria and expected behaviors
 │   └── run_evaluation.py
 │
 ├── demo/
 │   ├── demo-script.md
 │   ├── architecture.md
 │   ├── setup-checklist.md
-│   └── troubleshooting.md
+│   ├── troubleshooting.md
+│   ├── fallback-transcript.md
+│   └── assets/                      # architecture visual + screenshots
 │
 ├── scripts/
-│   ├── setup.ps1
-│   ├── setup.sh
-│   ├── validate.py
-│   └── reset_demo.py
+│   ├── setup.ps1 / setup.sh         # prerequisites + readiness checks
+│   ├── validate_demo.py             # "is the demo ready right now?"
+│   ├── reset_demo.py                # safe local reset before presenting
+│   ├── cleanup.ps1 / cleanup.sh     # local cleanup; Azure cleanup is opt-in
+│   ├── deploy_tools.py              # deploys the Operations API
+│   └── validate_webapp.py           # live web hero + follow-up check
 │
+├── docs/                            # this spec + Foundry UI setup guide
+├── tests/                           # offline pytest suite
 ├── .env.example
 └── LICENSE
 ```
@@ -977,10 +999,8 @@ Agent has access to:
 
 - Instructions
 - Model
-- Airline policy knowledge
-- Reservation tool
-- Flight-status tool
-- Flight-search tool
+- Airline policy knowledge (file search)
+- Contoso Air Operations API: one OpenAPI tool with three operations (reservations, flight status, alternative-flight search)
 
 ↓
 

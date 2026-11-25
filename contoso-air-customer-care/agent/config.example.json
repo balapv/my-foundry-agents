@@ -1,0 +1,31 @@
+{
+  "$comment": "Behavioral configuration shared by agent/create_agent.py and the Foundry UI guide. Copy to agent/config.json to customize. Environment-specific values (endpoints, model deployment, tools URL) belong in .env, never here.",
+  "agentName": "contoso-air-customer-care",
+  "displayName": "Contoso Air Customer Care",
+  "description": "Contoso Air Customer Care: helps travelers resolve flight disruptions using reservation, flight-status and flight-search tools grounded in Contoso Air policy.",
+  "instructionsFile": "instructions.md",
+  "knowledge": {
+    "vectorStoreName": "contoso-air-policies",
+    "files": [
+      "knowledge/flight-disruption-policy.pdf",
+      "knowledge/loyalty-benefits.pdf",
+      "knowledge/meal-hotel-assistance.pdf",
+      "knowledge/customer-service-escalation.pdf"
+    ],
+    "maxNumResults": 8
+  },
+  "tools": [
+    {
+      "name": "contoso_air_operations",
+      "specFile": "tools/openapi.json",
+      "description": "Contoso Air Operations API (read-only facts): the signed-in customer's reservations, authoritative flight status, and alternative flights with seat availability by cabin. Returns data only; it does not recommend, rebook, or apply policy."
+    }
+  ],
+  "starterPrompts": [
+    "My flight was cancelled. What are my options?",
+    "Can you check my upcoming trip?",
+    "What benefits do I receive during a cancellation?",
+    "Can my family stay together if we're rebooked?"
+  ],
+  "heroPrompt": "My flight tomorrow was cancelled. I'm traveling with my wife and two children. Can you help me figure out what to do?"
+}

@@ -1,0 +1,5 @@
+# Generated PDFs are hashed byte-for-byte (agent/create_agent.py, scripts/validate_demo.py); never convert line endings.
+*.pdf binary
+*.png binary
+# Shell scripts must keep LF endings to run under bash.
+*.sh text eol=lf
