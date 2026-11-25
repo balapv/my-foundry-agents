@@ -99,6 +99,20 @@ The first run creates `.env` and stops so you can fill it in. It is git-ignored;
 
 Run the setup script again after editing `.env`.
 
+The script creates `.venv` but can't activate it in your terminal. Before running any `python ...` command in this
+README, activate it once per terminal session:
+
+```powershell
+.\.venv\Scripts\Activate.ps1     # Windows PowerShell
+```
+
+```bash
+source .venv/bin/activate        # macOS / Linux
+```
+
+If PowerShell blocks the script, run `Set-ExecutionPolicy -Scope Process Bypass` first, or call
+`.\.venv\Scripts\python.exe` directly instead of `python`.
+
 <details>
 <summary>Manual setup without the script</summary>
 
