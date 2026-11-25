@@ -1,0 +1,5 @@
+# Voice agent local state and run artifacts (environment-specific; never commit)
+.voice-state.json
+agent/config.json
+results/
+openapi.toolbox.json

@@ -17,6 +17,23 @@ publishing it, from other experiences.
 > are synthetic. This sample is for demonstration only. Sign-in in the included web app is simulated, and the
 > sample does not connect to any real airline reservation system.
 
+## Two demos: voice first, text as the fallback
+
+**The same grounded business capabilities can power different user experiences — including real-time voice.**
+
+| | Demo | Where | Status |
+| --- | --- | --- | --- |
+| **Primary** | **Demo 1B: Voice.** Alex *calls* Contoso Air and talks to a Foundry voice-based prompt agent, interrupting it naturally | [voice/](voice/README.md) | Validated; present this one |
+| **Fallback / reference** | **Demo 1A: Text.** The same scenario as a text agent in the Foundry playground and the Contoso Air web app | this README | Validated; kept ready if audio, browser or voice service problems occur |
+
+Both demos reuse the same **synthetic airline data**, **company policies** (`knowledge/`) and **Operations API**
+(`tools/`). Each has its own Foundry agent definition, optimized for its interaction mode: concise, spoken,
+interruptible turns for voice; richer formatted answers for text. Present one demo, not both. Demo 1A is not
+deprecated; it's the recovery path, and the rest of this README describes it.
+
+To present the voice demo, start with [voice/README.md](voice/README.md) and the
+[voice demo script](voice/demo/demo-script.md).
+
 ## What you'll build
 
 - **The Foundry agent owns the reasoning.** It decides which tools to call, applies policy, weighs alternatives
@@ -261,7 +278,15 @@ not claim a completed booking. The LLM-judge and cloud evaluation steps are opti
 
 ## Run the demo
 
-The [demo/](demo/) folder is the presenter package:
+**Present the voice demo (Demo 1B).** Its presenter package is in [voice/demo/](voice/demo/): the
+[demo script](voice/demo/demo-script.md), [setup checklist](voice/demo/setup-checklist.md),
+[troubleshooting](voice/demo/troubleshooting.md) and [validation record](voice/demo/validation-record.md).
+
+```powershell
+python voice/scripts/validate_voice_demo.py   # ends with VOICE DEMO READY; --live adds one scripted voice call
+```
+
+Keep Demo 1A ready as the fallback. The [demo/](demo/) folder is its presenter package:
 
 | File | Use it for |
 | --- | --- |
@@ -301,6 +326,7 @@ python scripts/reset_demo.py             # clear local caches between runs; chan
 | `evaluation/` | Scenario test cases and the evaluation runner |
 | `scripts/` | Setup, deployment, validation, reset and cleanup |
 | `demo/` | Presenter package, architecture and screenshots |
+| `voice/` | Demo 1B: the voice agent, its evaluation scenarios, tests and presenter package |
 | `docs/` | Foundry portal setup guide and the implementation specification |
 | `tests/` | Offline unit tests |
 

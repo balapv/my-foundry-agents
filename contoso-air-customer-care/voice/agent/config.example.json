@@ -1,0 +1,60 @@
+{
+  "$comment": "Behavioral configuration for the Demo 1B voice agent, shared by voice/agent/create_agent.py and the Foundry portal steps in voice/README.md. Copy to voice/agent/config.json to customize. Environment-specific values (project endpoint, tools API URL) stay in the shared .env, never here.",
+  "agentName": "contoso-air-customer-care-voice",
+  "displayName": "Contoso Air Customer Care (Voice)",
+  "description": "Contoso Air Customer Care voice agent: helps signed-in travelers resolve flight disruptions in a live spoken conversation, using reservation, flight-status and flight-search facts grounded in Contoso Air policy.",
+  "instructionsFile": "instructions.md",
+  "model": {
+    "modelType": "managed",
+    "model": "gpt-realtime-2.1",
+    "$comment": "Managed realtime models need no deployment. To use a deployment in the project's Foundry resource instead, set modelType to self_deployed and model to the deployment name, or set FOUNDRY_VOICE_MODEL_TYPE and FOUNDRY_VOICE_MODEL in .env."
+  },
+  "voice": {
+    "name": "en-US-AvaNeural",
+    "type": "azure-standard",
+    "locale": "en-US"
+  },
+  "turnDetection": {
+    "type": "azure_semantic_vad",
+    "interruptResponse": true,
+    "createResponse": true,
+    "removeFillerWords": true
+  },
+  "noiseReduction": "azure_deep_noise_suppression",
+  "transcription": {
+    "model": "azure-speech",
+    "language": "en-US",
+    "phraseList": ["Contoso Air", "Economy Plus", "Contoso Rewards", "nonstop", "rebook", "layover"]
+  },
+  "interimResponse": {
+    "triggers": ["latency"],
+    "latencyThresholdMs": 3500,
+    "texts": [
+      "Thanks for waiting. I'm still checking.",
+      "I'm still working on that for you."
+    ]
+  },
+  "greeting": "Hi, you've reached Contoso Air Customer Care. How can I help with your trip today?",
+  "structuredInputs": {
+    "customer_id": {
+      "description": "Signed-in Contoso Air customer ID, supplied by the trusted application when it opens the voice session. Authentication is simulated in this demo.",
+      "defaultValue": "CUST-1007"
+    }
+  },
+  "toolbox": {
+    "name": "contoso-air-customer-care-voice-tools",
+    "description": "Contoso Air Customer Care voice tools: the shared Contoso Air Operations API (read-only facts) and File Search over the shared Contoso Air policy knowledge.",
+    "responseScheduling": "when_idle",
+    "fileSearch": {
+      "name": "contoso_air_policies",
+      "description": "Approved Contoso Air policies: Flight Disruption and Rebooking Policy, Contoso Air Loyalty Benefits, Meal and Hotel Assistance Policy, and Customer Service Escalation Guide.",
+      "maxNumResults": 8
+    },
+    "openapi": {
+      "name": "contoso_air_operations",
+      "specFile": "tools/openapi.json",
+      "description": "Contoso Air Operations API (read-only facts): the signed-in customer's reservations, authoritative flight status, and alternative flights with seat availability by cabin. Returns data only; it does not recommend, rebook, or apply policy."
+    }
+  },
+  "storeConversations": true
+}
