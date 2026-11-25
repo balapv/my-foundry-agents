@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">Contoso Air Customer Care voice agent architecture</title>
+  <desc id="desc">Configure the voice agent in the Foundry portal or with code. Both produce the same Microsoft Foundry voice-based prompt agent, whose realtime model, voice and turn detection are part of the agent definition. It is grounded in Contoso Air policy knowledge and connected through one toolbox to the synthetic Contoso Air Operations API for reservations, flight status and flight alternatives. The caller has a natural, interruptible voice conversation with the agent.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="660" fill="#ffffff"/>
+
+  <text x="500" y="38" text-anchor="middle" font-size="22" font-weight="600" fill="#1f2328">Contoso Air Customer Care: a grounded voice agent in Microsoft Foundry</text>
+
+  <!-- build -->
+  <rect x="230" y="62" width="220" height="64" rx="10" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="340" y="90" text-anchor="middle" font-size="17" font-weight="600" fill="#1f2328">Foundry portal</text>
+  <text x="340" y="112" text-anchor="middle" font-size="14" fill="#57606a">build / configure</text>
+  <rect x="550" y="62" width="220" height="64" rx="10" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="660" y="90" text-anchor="middle" font-size="17" font-weight="600" fill="#1f2328">Code</text>
+  <text x="660" y="112" text-anchor="middle" font-size="14" fill="#57606a">voice/agent/create_agent.py</text>
+  <text x="500" y="99" text-anchor="middle" font-size="15" font-weight="600" fill="#57606a">OR</text>
+  <line x1="340" y1="126" x2="340" y2="176" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="660" y1="126" x2="660" y2="176" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="500" y="158" text-anchor="middle" font-size="13" fill="#57606a">same voice agent</text>
+
+  <!-- Foundry agent -->
+  <rect x="120" y="180" width="760" height="300" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <text x="500" y="208" text-anchor="middle" font-size="14" font-weight="600" fill="#0969da">MICROSOFT FOUNDRY</text>
+  <text x="500" y="236" text-anchor="middle" font-size="19" font-weight="700" fill="#0a3069">Voice-based prompt agent</text>
+  <text x="500" y="260" text-anchor="middle" font-size="14" fill="#0a3069">contoso-air-customer-care-voice · realtime speech model · voice · turn detection with barge-in</text>
+  <text x="500" y="280" text-anchor="middle" font-size="14" fill="#0a3069">customer-service instructions · signed-in customer context · versioned</text>
+
+  <line x1="335" y1="290" x2="335" y2="316" stroke="#0969da" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="665" y1="290" x2="665" y2="316" stroke="#0969da" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="160" y="318" width="350" height="116" rx="10" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="335" y="352" text-anchor="middle" font-size="16" font-weight="600" fill="#1f2328">Policy knowledge</text>
+  <text x="335" y="377" text-anchor="middle" font-size="13" fill="#57606a">File Search over four Contoso Air</text>
+  <text x="335" y="397" text-anchor="middle" font-size="13" fill="#57606a">policy documents: disruptions, rebooking,</text>
+  <text x="335" y="417" text-anchor="middle" font-size="13" fill="#57606a">loyalty, families</text>
+  <rect x="530" y="318" width="310" height="116" rx="10" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="685" y="352" text-anchor="middle" font-size="16" font-weight="600" fill="#1f2328">Operations API</text>
+  <text x="685" y="377" text-anchor="middle" font-size="13" fill="#57606a">Reservation · Status · Flight alternatives</text>
+  <text x="685" y="397" text-anchor="middle" font-size="13" fill="#57606a">read-only, synthetic data</text>
+  <text x="685" y="417" text-anchor="middle" font-size="13" fill="#57606a">no real airline system</text>
+  <text x="500" y="463" text-anchor="middle" font-size="13" font-style="italic" fill="#0a3069">one toolbox · built, managed, evaluated and observed in Microsoft Foundry</text>
+
+  <!-- conversation -->
+  <line x1="500" y1="535" x2="500" y2="482" stroke="#57606a" stroke-width="1.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="512" y="514" font-size="13" fill="#57606a">speech in, speech out</text>
+  <rect x="270" y="538" width="460" height="72" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="500" y="568" text-anchor="middle" font-size="17" font-weight="600" fill="#1f2328">Natural voice conversation</text>
+  <text x="500" y="592" text-anchor="middle" font-size="13" fill="#1a7f37">the customer just talks · and can interrupt at any time</text>
+
+  <text x="500" y="642" text-anchor="middle" font-size="12" fill="#8c959f">Contoso Air is fictional. All customers, flights and policies are synthetic. The same knowledge and API also power the text agent (Demo 1A).</text>
+</svg>

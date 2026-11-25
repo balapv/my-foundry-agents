@@ -1,0 +1,12 @@
+# Demo 1B voice agent — extra dependencies on top of the shared ../requirements.txt
+#   pip install -r requirements.txt -r voice/requirements.txt
+-r ../requirements.txt
+
+# Realtime voice session client (adds websockets and aiohttp)
+azure-ai-projects[voice]>=2.11.0,<3
+
+# Synthesized caller speech for voice/agent/run_session.py (Entra sign-in, no keys)
+azure-cognitiveservices-speech>=1.43
+
+# Microphone and speaker audio for voice/agent/live_mic.py (real-microphone barge-in check)
+sounddevice>=0.5
