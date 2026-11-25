@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="title desc">
+  <title id="title">Contoso Air Customer Care architecture</title>
+  <desc id="desc">Build the agent in the Foundry portal or with code. Both produce the same Foundry prompt agent, grounded in policy knowledge and connected to the Contoso Air Operations API. The Foundry playground and the Contoso Air web app use the same agent; Teams and Microsoft 365 Copilot are publishable channels not included in this sample.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="620" fill="#ffffff"/>
+
+  <text x="500" y="38" text-anchor="middle" font-size="22" font-weight="600" fill="#1f2328">Contoso Air Customer Care: build once, use anywhere</text>
+
+  <!-- build -->
+  <rect x="230" y="66" width="220" height="70" rx="10" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="340" y="96" text-anchor="middle" font-size="17" font-weight="600" fill="#1f2328">Foundry portal</text>
+  <text x="340" y="120" text-anchor="middle" font-size="14" fill="#57606a">build visually</text>
+  <rect x="550" y="66" width="220" height="70" rx="10" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="660" y="96" text-anchor="middle" font-size="17" font-weight="600" fill="#1f2328">Code</text>
+  <text x="660" y="120" text-anchor="middle" font-size="14" fill="#57606a">agent/create_agent.py</text>
+  <text x="500" y="106" text-anchor="middle" font-size="15" font-weight="600" fill="#57606a">OR</text>
+  <line x1="340" y1="136" x2="340" y2="192" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="660" y1="136" x2="660" y2="192" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="500" y="172" text-anchor="middle" font-size="13" fill="#57606a">build / configure</text>
+
+  <!-- agent -->
+  <rect x="150" y="195" width="700" height="225" rx="14" fill="#ddf4ff" stroke="#0969da" stroke-width="2"/>
+  <text x="500" y="228" text-anchor="middle" font-size="19" font-weight="700" fill="#0a3069">SAME Foundry prompt agent</text>
+  <text x="500" y="252" text-anchor="middle" font-size="14" fill="#0a3069">Contoso Air Customer Care · model + customer-service instructions · versioned</text>
+  <rect x="190" y="272" width="290" height="96" rx="10" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="335" y="304" text-anchor="middle" font-size="16" font-weight="600" fill="#1f2328">Policy knowledge</text>
+  <text x="335" y="328" text-anchor="middle" font-size="13" fill="#57606a">File Search over four</text>
+  <text x="335" y="348" text-anchor="middle" font-size="13" fill="#57606a">Contoso Air policy documents</text>
+  <rect x="520" y="272" width="290" height="96" rx="10" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+  <text x="665" y="304" text-anchor="middle" font-size="16" font-weight="600" fill="#1f2328">Contoso Air Operations API</text>
+  <text x="665" y="328" text-anchor="middle" font-size="13" fill="#57606a">one OpenAPI tool: reservations,</text>
+  <text x="665" y="348" text-anchor="middle" font-size="13" fill="#57606a">flight status, alternative flights</text>
+  <text x="500" y="402" text-anchor="middle" font-size="13" font-style="italic" fill="#0a3069">built, managed, evaluated and observed in Microsoft Foundry</text>
+
+  <!-- channels -->
+  <line x1="230" y1="420" x2="230" y2="477" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="500" y1="420" x2="500" y2="477" stroke="#57606a" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="770" y1="420" x2="770" y2="477" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <text x="365" y="455" text-anchor="middle" font-size="13" fill="#57606a">same agent, many experiences</text>
+
+  <rect x="100" y="480" width="260" height="76" rx="10" fill="#f6f8fa" stroke="#57606a" stroke-width="1.5"/>
+  <text x="230" y="512" text-anchor="middle" font-size="16" font-weight="600" fill="#1f2328">Foundry playground</text>
+  <text x="230" y="536" text-anchor="middle" font-size="13" fill="#57606a">test and observe</text>
+  <rect x="370" y="480" width="260" height="76" rx="10" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.5"/>
+  <text x="500" y="512" text-anchor="middle" font-size="16" font-weight="600" fill="#1f2328">Contoso Air web app</text>
+  <text x="500" y="536" text-anchor="middle" font-size="13" fill="#1a7f37">implemented in this sample</text>
+  <rect x="640" y="480" width="260" height="76" rx="10" fill="#ffffff" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="770" y="512" text-anchor="middle" font-size="16" font-weight="600" fill="#57606a">Teams / Microsoft 365 Copilot</text>
+  <text x="770" y="536" text-anchor="middle" font-size="13" fill="#57606a">publishable · not included</text>
+
+  <text x="500" y="598" text-anchor="middle" font-size="12" fill="#8c959f">Contoso Air is fictional. All customers, flights and policies are synthetic.</text>
+</svg>

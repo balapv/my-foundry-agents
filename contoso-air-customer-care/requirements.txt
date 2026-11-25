@@ -1,0 +1,22 @@
+# Contoso Air Customer Care sample — all components (Python 3.10+)
+
+# Microsoft Foundry (new Foundry projects API) + Responses API client
+azure-ai-projects>=2.11.0,<3
+azure-identity>=1.25.0
+openai>=2.8.0
+
+# Mock airline tools API and sample web app backend
+fastapi>=0.115.0
+uvicorn>=0.30.0
+httpx>=0.27.0
+tzdata>=2024.1
+
+# Configuration
+python-dotenv>=1.0.0
+
+# Knowledge asset build (Markdown -> PDF)
+reportlab>=4.2.0
+pypdf>=5.0.0
+
+# Tests
+pytest>=8.0.0

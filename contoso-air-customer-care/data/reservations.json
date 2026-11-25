@@ -1,0 +1,2467 @@
+{
+  "metadata": {
+    "description": "Synthetic, fictional data for the Contoso Air Customer Care demo.",
+    "generator": "data/generate_data.py",
+    "seed": 20260514,
+    "anchorDate": "2026-05-14",
+    "dateNote": "Dates are relative to anchorDate (the dataset's 'today'). The tools API rebases them so anchorDate maps to the real current date.",
+    "count": 60
+  },
+  "reservations": [
+    {
+      "confirmationCode": "CT8K2P",
+      "primaryCustomerId": "CUST-1007",
+      "bookingDate": "2026-04-03",
+      "status": "Confirmed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Alex",
+          "lastName": "Johnson",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8475921"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jamie",
+          "lastName": "Johnson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Taylor",
+          "lastName": "Johnson",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Jordan",
+          "lastName": "Johnson",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT218",
+          "date": "2026-05-15",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-15T10:30",
+          "scheduledArrival": "2026-05-15T18:50",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "NM6M8Y",
+      "primaryCustomerId": "CUST-1007",
+      "bookingDate": "2026-04-14",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Alex",
+          "lastName": "Johnson",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8475921"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT204",
+          "date": "2026-05-03",
+          "origin": "SEA",
+          "destination": "DEN",
+          "scheduledDeparture": "2026-05-03T07:45",
+          "scheduledArrival": "2026-05-03T11:25",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT207",
+          "date": "2026-05-07",
+          "origin": "DEN",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-07T11:30",
+          "scheduledArrival": "2026-05-07T13:25",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "AEYBH6",
+      "primaryCustomerId": "CUST-1012",
+      "bookingDate": "2026-03-20",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Priya",
+          "lastName": "Raman",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6455240"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Arjun",
+          "lastName": "Raman",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Anika",
+          "lastName": "Raman",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Dev",
+          "lastName": "Raman",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT540",
+          "date": "2026-05-15",
+          "origin": "SFO",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-15T08:05",
+          "scheduledArrival": "2026-05-15T16:40",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "6LCHPV",
+      "primaryCustomerId": "CUST-1015",
+      "bookingDate": "2026-04-24",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Marcus",
+          "lastName": "Reed",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6365119"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Dana",
+          "lastName": "Reed",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT610",
+          "date": "2026-05-16",
+          "origin": "LAX",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-16T07:00",
+          "scheduledArrival": "2026-05-16T13:05",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "Y87YFZ",
+      "primaryCustomerId": "CUST-1018",
+      "bookingDate": "2026-04-11",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Elena",
+          "lastName": "Petrova",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA3082850"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Mila",
+          "lastName": "Petrova",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Ivan",
+          "lastName": "Petrova",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT580",
+          "date": "2026-05-17",
+          "origin": "PDX",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-17T07:30",
+          "scheduledArrival": "2026-05-17T16:00",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "N8LBM3",
+      "primaryCustomerId": "CUST-1019",
+      "bookingDate": "2026-03-30",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Jordan",
+          "lastName": "Blake",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA5651891"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT102",
+          "date": "2026-05-04",
+          "origin": "SEA",
+          "destination": "SFO",
+          "scheduledDeparture": "2026-05-04T06:00",
+          "scheduledArrival": "2026-05-04T08:05",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT105",
+          "date": "2026-05-08",
+          "origin": "SFO",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-08T09:10",
+          "scheduledArrival": "2026-05-08T11:20",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "CGN438",
+      "primaryCustomerId": "CUST-1019",
+      "bookingDate": "2026-04-30",
+      "status": "Cancelled",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Jordan",
+          "lastName": "Blake",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA5651891"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT118",
+          "date": "2026-05-19",
+          "origin": "SEA",
+          "destination": "LAX",
+          "scheduledDeparture": "2026-05-19T08:15",
+          "scheduledArrival": "2026-05-19T11:00",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer; travel credit issued."
+    },
+    {
+      "confirmationCode": "4RFLR6",
+      "primaryCustomerId": "CUST-1021",
+      "bookingDate": "2026-05-02",
+      "status": "Confirmed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Samuel",
+          "lastName": "Wright",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6194622"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT655",
+          "date": "2026-05-15",
+          "origin": "DFW",
+          "destination": "ATL",
+          "scheduledDeparture": "2026-05-15T11:40",
+          "scheduledArrival": "2026-05-15T14:45",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "A77765",
+      "primaryCustomerId": "CUST-1024",
+      "bookingDate": "2026-04-18",
+      "status": "Confirmed",
+      "cabin": "First",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Fatima",
+          "lastName": "Rahman",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8609938"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Karim",
+          "lastName": "Rahman",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT472",
+          "date": "2026-05-16",
+          "origin": "ORD",
+          "destination": "MIA",
+          "scheduledDeparture": "2026-05-16T09:55",
+          "scheduledArrival": "2026-05-16T14:00",
+          "cabin": "First",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Segment marked cancelled by schedule-change process; awaiting reaccommodation."
+    },
+    {
+      "confirmationCode": "XZCX24",
+      "primaryCustomerId": "CUST-1001",
+      "bookingDate": "2026-04-01",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Maya",
+          "lastName": "Patel",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA9544356"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT218",
+          "date": "2026-05-15",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-15T10:30",
+          "scheduledArrival": "2026-05-15T18:50",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "6CYJ3E",
+      "primaryCustomerId": "CUST-1002",
+      "bookingDate": "2026-03-16",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Daniel",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7243484"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Avery",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT218",
+          "date": "2026-05-15",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-15T10:30",
+          "scheduledArrival": "2026-05-15T18:50",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "7RGQEA",
+      "primaryCustomerId": "CUST-1001",
+      "bookingDate": "2026-02-10",
+      "status": "Completed",
+      "cabin": "First",
+      "fareType": "Flexible",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Maya",
+          "lastName": "Patel",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA9544356"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT207",
+          "date": "2026-05-06",
+          "origin": "DEN",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-06T11:30",
+          "scheduledArrival": "2026-05-06T13:25",
+          "cabin": "First",
+          "segmentStatus": "Reaccommodated"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "2MRVMJ",
+      "primaryCustomerId": "CUST-1002",
+      "bookingDate": "2026-03-15",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Daniel",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7243484"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Riley",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Lily",
+          "lastName": "Okafor",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Noor",
+          "lastName": "Okafor",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P5",
+          "firstName": "Leo",
+          "lastName": "Okafor",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT760",
+          "date": "2026-05-15",
+          "origin": "DFW",
+          "destination": "LAX",
+          "scheduledDeparture": "2026-05-15T15:10",
+          "scheduledArrival": "2026-05-15T16:30",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "CXKRX3",
+      "primaryCustomerId": "CUST-1003",
+      "bookingDate": "2026-04-27",
+      "status": "Cancelled",
+      "cabin": "Main Cabin",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Sofia",
+          "lastName": "Rossi",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6800787"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT226",
+          "date": "2026-05-09",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-09T09:20",
+          "scheduledArrival": "2026-05-09T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer."
+    },
+    {
+      "confirmationCode": "8U3U6H",
+      "primaryCustomerId": "CUST-1004",
+      "bookingDate": "2026-04-25",
+      "status": "Confirmed",
+      "cabin": "First",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Liam",
+          "lastName": "Nguyen",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA1397283"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Hayden",
+          "lastName": "Nguyen",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Drew",
+          "lastName": "Nguyen",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT226",
+          "date": "2026-05-21",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-21T09:20",
+          "scheduledArrival": "2026-05-21T17:45",
+          "cabin": "First",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "5ST7DG",
+      "primaryCustomerId": "CUST-1005",
+      "bookingDate": "2026-02-24",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Flexible",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Hannah",
+          "lastName": "Kim",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6036300"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT372",
+          "date": "2026-05-10",
+          "origin": "PDX",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-10T08:15",
+          "scheduledArrival": "2026-05-10T14:10",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "KYC7QR",
+      "primaryCustomerId": "CUST-1006",
+      "bookingDate": "2026-02-06",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Mateo",
+          "lastName": "Hernandez",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA3997296"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jamie",
+          "lastName": "Hernandez",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Riley",
+          "lastName": "Hernandez",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT102",
+          "date": "2026-05-04",
+          "origin": "SEA",
+          "destination": "SFO",
+          "scheduledDeparture": "2026-05-04T06:00",
+          "scheduledArrival": "2026-05-04T08:05",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT105",
+          "date": "2026-05-06",
+          "origin": "SFO",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-06T09:10",
+          "scheduledArrival": "2026-05-06T11:20",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "PE8L9J",
+      "primaryCustomerId": "CUST-1008",
+      "bookingDate": "2026-03-29",
+      "status": "Completed",
+      "cabin": "First",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Grace",
+          "lastName": "Thompson",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA4892201"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Quinn",
+          "lastName": "Thompson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT121",
+          "date": "2026-05-11",
+          "origin": "LAX",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-11T12:40",
+          "scheduledArrival": "2026-05-11T15:30",
+          "cabin": "First",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "M2ZYX2",
+      "primaryCustomerId": "CUST-1009",
+      "bookingDate": "2026-04-08",
+      "status": "Completed",
+      "cabin": "First",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Omar",
+          "lastName": "Haddad",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6048970"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Hayden",
+          "lastName": "Haddad",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Sam",
+          "lastName": "Haddad",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Drew",
+          "lastName": "Haddad",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P5",
+          "firstName": "Quinn",
+          "lastName": "Haddad",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT226",
+          "date": "2026-05-07",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-07T09:20",
+          "scheduledArrival": "2026-05-07T17:45",
+          "cabin": "First",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "8KDU4M",
+      "primaryCustomerId": "CUST-1010",
+      "bookingDate": "2026-03-06",
+      "status": "Confirmed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Chloe",
+          "lastName": "Martin",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA2616584"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT614",
+          "date": "2026-05-21",
+          "origin": "LAX",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-21T10:40",
+          "scheduledArrival": "2026-05-21T16:45",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "2JV4UG",
+      "primaryCustomerId": "CUST-1011",
+      "bookingDate": "2026-03-23",
+      "status": "Completed",
+      "cabin": "First",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Ethan",
+          "lastName": "Brooks",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7178445"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT204",
+          "date": "2026-05-03",
+          "origin": "SEA",
+          "destination": "DEN",
+          "scheduledDeparture": "2026-05-03T07:45",
+          "scheduledArrival": "2026-05-03T11:25",
+          "cabin": "First",
+          "segmentStatus": "Flown"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT207",
+          "date": "2026-05-07",
+          "origin": "DEN",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-07T11:30",
+          "scheduledArrival": "2026-05-07T13:25",
+          "cabin": "First",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "LQ4JTN",
+      "primaryCustomerId": "CUST-1013",
+      "bookingDate": "2026-03-26",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Flexible",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Lucas",
+          "lastName": "Silva",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA2102642"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Sam",
+          "lastName": "Silva",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Jamie",
+          "lastName": "Silva",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT372",
+          "date": "2026-05-10",
+          "origin": "PDX",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-10T08:15",
+          "scheduledArrival": "2026-05-10T14:10",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "LM5ALZ",
+      "primaryCustomerId": "CUST-1014",
+      "bookingDate": "2026-02-20",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Emily",
+          "lastName": "Carter",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7173279"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Hayden",
+          "lastName": "Carter",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT204",
+          "date": "2026-05-03",
+          "origin": "SEA",
+          "destination": "DEN",
+          "scheduledDeparture": "2026-05-03T07:45",
+          "scheduledArrival": "2026-05-03T11:25",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT207",
+          "date": "2026-05-06",
+          "origin": "DEN",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-06T11:30",
+          "scheduledArrival": "2026-05-06T13:25",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Reaccommodated"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "5HUJTH",
+      "primaryCustomerId": "CUST-1016",
+      "bookingDate": "2026-04-01",
+      "status": "Cancelled",
+      "cabin": "Main Cabin",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Aisha",
+          "lastName": "Bello",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA3052165"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Robin",
+          "lastName": "Bello",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Theo",
+          "lastName": "Bello",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Ruby",
+          "lastName": "Bello",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P5",
+          "firstName": "Mia",
+          "lastName": "Bello",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT105",
+          "date": "2026-05-06",
+          "origin": "SFO",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-06T09:10",
+          "scheduledArrival": "2026-05-06T11:20",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer."
+    },
+    {
+      "confirmationCode": "DTL6ZS",
+      "primaryCustomerId": "CUST-1017",
+      "bookingDate": "2026-03-22",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Noah",
+          "lastName": "Fischer",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6324447"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Quinn",
+          "lastName": "Fischer",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT472",
+          "date": "2026-05-20",
+          "origin": "ORD",
+          "destination": "MIA",
+          "scheduledDeparture": "2026-05-20T09:55",
+          "scheduledArrival": "2026-05-20T14:00",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "G98PHW",
+      "primaryCustomerId": "CUST-1020",
+      "bookingDate": "2026-04-19",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Isabella",
+          "lastName": "Moreno",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8118775"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Chris",
+          "lastName": "Moreno",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT232",
+          "date": "2026-05-13",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-13T15:45",
+          "scheduledArrival": "2026-05-14T00:10",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "FR8BWC",
+      "primaryCustomerId": "CUST-1022",
+      "bookingDate": "2026-04-05",
+      "status": "Completed",
+      "cabin": "First",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Mei",
+          "lastName": "Chen",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8354442"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Morgan",
+          "lastName": "Chen",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Quinn",
+          "lastName": "Chen",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT915",
+          "date": "2026-05-08",
+          "origin": "BOS",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-08T07:05",
+          "scheduledArrival": "2026-05-08T08:50",
+          "cabin": "First",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "P9CQGE",
+      "primaryCustomerId": "CUST-1023",
+      "bookingDate": "2026-03-28",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Ryan",
+          "lastName": "O'Connell",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7119131"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jesse",
+          "lastName": "O'Connell",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT207",
+          "date": "2026-05-07",
+          "origin": "DEN",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-07T11:30",
+          "scheduledArrival": "2026-05-07T13:25",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "C25W2L",
+      "primaryCustomerId": "CUST-1025",
+      "bookingDate": "2026-02-24",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Benjamin",
+          "lastName": "Clarke",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8427429"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Casey",
+          "lastName": "Clarke",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT544",
+          "date": "2026-05-12",
+          "origin": "SFO",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-12T12:30",
+          "scheduledArrival": "2026-05-12T21:05",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "M6WF4R",
+      "primaryCustomerId": "CUST-1026",
+      "bookingDate": "2026-05-02",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Zoe",
+          "lastName": "Anderson",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA1573474"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jamie",
+          "lastName": "Anderson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Quinn",
+          "lastName": "Anderson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Morgan",
+          "lastName": "Anderson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT352",
+          "date": "2026-05-18",
+          "origin": "SFO",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-18T06:45",
+          "scheduledArrival": "2026-05-18T12:55",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "3DXNX7",
+      "primaryCustomerId": "CUST-1027",
+      "bookingDate": "2026-02-27",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Kenji",
+          "lastName": "Watanabe",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8908771"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT226",
+          "date": "2026-05-05",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-05T09:20",
+          "scheduledArrival": "2026-05-05T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "B642N4",
+      "primaryCustomerId": "CUST-1028",
+      "bookingDate": "2026-02-23",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Olivia",
+          "lastName": "Grant",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7483031"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Quinn",
+          "lastName": "Grant",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT920",
+          "date": "2026-05-14",
+          "origin": "JFK",
+          "destination": "MIA",
+          "scheduledDeparture": "2026-05-14T08:40",
+          "scheduledArrival": "2026-05-14T11:50",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "24SUP8",
+      "primaryCustomerId": "CUST-1029",
+      "bookingDate": "2026-04-27",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Tomas",
+          "lastName": "Novak",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7373071"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT126",
+          "date": "2026-05-15",
+          "origin": "SEA",
+          "destination": "LAX",
+          "scheduledDeparture": "2026-05-15T13:35",
+          "scheduledArrival": "2026-05-15T16:20",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "PK4YYR",
+      "primaryCustomerId": "CUST-1030",
+      "bookingDate": "2026-04-15",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Ava",
+          "lastName": "Sullivan",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA1205324"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Robin",
+          "lastName": "Sullivan",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT144",
+          "date": "2026-05-14",
+          "origin": "SEA",
+          "destination": "DFW",
+          "scheduledDeparture": "2026-05-14T11:55",
+          "scheduledArrival": "2026-05-14T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "RLDK2N",
+      "primaryCustomerId": "CUST-1001",
+      "bookingDate": "2026-03-14",
+      "status": "Confirmed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Maya",
+          "lastName": "Patel",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA9544356"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT218",
+          "date": "2026-05-17",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-17T10:30",
+          "scheduledArrival": "2026-05-17T18:50",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT219",
+          "date": "2026-05-19",
+          "origin": "JFK",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-19T17:55",
+          "scheduledArrival": "2026-05-19T21:20",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "S6M7W3",
+      "primaryCustomerId": "CUST-1002",
+      "bookingDate": "2026-03-20",
+      "status": "Cancelled",
+      "cabin": "Main Cabin",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Daniel",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7243484"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT544",
+          "date": "2026-05-03",
+          "origin": "SFO",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-03T12:30",
+          "scheduledArrival": "2026-05-03T21:05",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer."
+    },
+    {
+      "confirmationCode": "5NE3P2",
+      "primaryCustomerId": "CUST-1003",
+      "bookingDate": "2026-03-12",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Sofia",
+          "lastName": "Rossi",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6800787"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Sam",
+          "lastName": "Rossi",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT614",
+          "date": "2026-05-05",
+          "origin": "LAX",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-05T10:40",
+          "scheduledArrival": "2026-05-05T16:45",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "56ZARN",
+      "primaryCustomerId": "CUST-1004",
+      "bookingDate": "2026-04-20",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Liam",
+          "lastName": "Nguyen",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA1397283"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Robin",
+          "lastName": "Nguyen",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Nora",
+          "lastName": "Nguyen",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Mia",
+          "lastName": "Nguyen",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P5",
+          "firstName": "Ivy",
+          "lastName": "Nguyen",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT820",
+          "date": "2026-05-03",
+          "origin": "DEN",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-03T13:30",
+          "scheduledArrival": "2026-05-03T17:00",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "VVD9YC",
+      "primaryCustomerId": "CUST-1005",
+      "bookingDate": "2026-04-21",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Hannah",
+          "lastName": "Kim",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6036300"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Casey",
+          "lastName": "Kim",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT760",
+          "date": "2026-05-13",
+          "origin": "DFW",
+          "destination": "LAX",
+          "scheduledDeparture": "2026-05-13T15:10",
+          "scheduledArrival": "2026-05-13T16:30",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "LHDY3P",
+      "primaryCustomerId": "CUST-1006",
+      "bookingDate": "2026-04-18",
+      "status": "Cancelled",
+      "cabin": "Main Cabin",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Mateo",
+          "lastName": "Hernandez",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA3997296"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jamie",
+          "lastName": "Hernandez",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Avery",
+          "lastName": "Hernandez",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT204",
+          "date": "2026-05-15",
+          "origin": "SEA",
+          "destination": "DEN",
+          "scheduledDeparture": "2026-05-15T07:45",
+          "scheduledArrival": "2026-05-15T11:25",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer."
+    },
+    {
+      "confirmationCode": "53G97H",
+      "primaryCustomerId": "CUST-1008",
+      "bookingDate": "2026-03-27",
+      "status": "Cancelled",
+      "cabin": "Economy Plus",
+      "fareType": "Flexible",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Grace",
+          "lastName": "Thompson",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA4892201"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Morgan",
+          "lastName": "Thompson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT584",
+          "date": "2026-05-18",
+          "origin": "PDX",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-18T13:10",
+          "scheduledArrival": "2026-05-18T21:40",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer."
+    },
+    {
+      "confirmationCode": "4ZFQBY",
+      "primaryCustomerId": "CUST-1009",
+      "bookingDate": "2026-03-17",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Omar",
+          "lastName": "Haddad",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6048970"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT144",
+          "date": "2026-05-08",
+          "origin": "SEA",
+          "destination": "DFW",
+          "scheduledDeparture": "2026-05-08T11:55",
+          "scheduledArrival": "2026-05-08T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "F5WZTW",
+      "primaryCustomerId": "CUST-1010",
+      "bookingDate": "2026-02-17",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Chloe",
+          "lastName": "Martin",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA2616584"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jamie",
+          "lastName": "Martin",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Finn",
+          "lastName": "Martin",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Ella",
+          "lastName": "Martin",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P5",
+          "firstName": "Noor",
+          "lastName": "Martin",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT219",
+          "date": "2026-05-17",
+          "origin": "JFK",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-17T17:55",
+          "scheduledArrival": "2026-05-17T21:20",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT226",
+          "date": "2026-05-21",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-21T09:20",
+          "scheduledArrival": "2026-05-21T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "JVHX3W",
+      "primaryCustomerId": "CUST-1011",
+      "bookingDate": "2026-03-18",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Ethan",
+          "lastName": "Brooks",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7178445"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Hayden",
+          "lastName": "Brooks",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Lily",
+          "lastName": "Brooks",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Ruby",
+          "lastName": "Brooks",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT130",
+          "date": "2026-05-03",
+          "origin": "PDX",
+          "destination": "SFO",
+          "scheduledDeparture": "2026-05-03T07:20",
+          "scheduledArrival": "2026-05-03T09:10",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "82R223",
+      "primaryCustomerId": "CUST-1013",
+      "bookingDate": "2026-03-26",
+      "status": "Confirmed",
+      "cabin": "First",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Lucas",
+          "lastName": "Silva",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA2102642"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Robin",
+          "lastName": "Silva",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT584",
+          "date": "2026-05-18",
+          "origin": "PDX",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-18T13:10",
+          "scheduledArrival": "2026-05-18T21:40",
+          "cabin": "First",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "Y8QU39",
+      "primaryCustomerId": "CUST-1014",
+      "bookingDate": "2026-05-02",
+      "status": "Confirmed",
+      "cabin": "First",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Emily",
+          "lastName": "Carter",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7173279"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT126",
+          "date": "2026-05-13",
+          "origin": "SEA",
+          "destination": "LAX",
+          "scheduledDeparture": "2026-05-13T13:35",
+          "scheduledArrival": "2026-05-13T16:20",
+          "cabin": "First",
+          "segmentStatus": "Flown"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT121",
+          "date": "2026-05-19",
+          "origin": "LAX",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-19T12:40",
+          "scheduledArrival": "2026-05-19T15:30",
+          "cabin": "First",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "WJ8KH4",
+      "primaryCustomerId": "CUST-1016",
+      "bookingDate": "2026-02-14",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Aisha",
+          "lastName": "Bello",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA3052165"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT352",
+          "date": "2026-05-10",
+          "origin": "SFO",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-10T06:45",
+          "scheduledArrival": "2026-05-10T12:55",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "7NE7PX",
+      "primaryCustomerId": "CUST-1017",
+      "bookingDate": "2026-02-16",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Noah",
+          "lastName": "Fischer",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6324447"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT207",
+          "date": "2026-05-05",
+          "origin": "DEN",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-05T11:30",
+          "scheduledArrival": "2026-05-05T13:25",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "LRJ6RC",
+      "primaryCustomerId": "CUST-1020",
+      "bookingDate": "2026-02-20",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Isabella",
+          "lastName": "Moreno",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8118775"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Riley",
+          "lastName": "Moreno",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Robin",
+          "lastName": "Moreno",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Chris",
+          "lastName": "Moreno",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT915",
+          "date": "2026-05-10",
+          "origin": "BOS",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-10T07:05",
+          "scheduledArrival": "2026-05-10T08:50",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "Z4WDSP",
+      "primaryCustomerId": "CUST-1022",
+      "bookingDate": "2026-02-24",
+      "status": "Cancelled",
+      "cabin": "Economy Plus",
+      "fareType": "Flexible",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Mei",
+          "lastName": "Chen",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8354442"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Morgan",
+          "lastName": "Chen",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT442",
+          "date": "2026-05-10",
+          "origin": "ORD",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-10T15:05",
+          "scheduledArrival": "2026-05-10T18:20",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer."
+    },
+    {
+      "confirmationCode": "VLKP2Y",
+      "primaryCustomerId": "CUST-1023",
+      "bookingDate": "2026-03-15",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Ryan",
+          "lastName": "O'Connell",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7119131"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jesse",
+          "lastName": "O'Connell",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT144",
+          "date": "2026-05-10",
+          "origin": "SEA",
+          "destination": "DFW",
+          "scheduledDeparture": "2026-05-10T11:55",
+          "scheduledArrival": "2026-05-10T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "RRCV9B",
+      "primaryCustomerId": "CUST-1025",
+      "bookingDate": "2026-04-18",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Benjamin",
+          "lastName": "Clarke",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8427429"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jamie",
+          "lastName": "Clarke",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT990",
+          "date": "2026-05-12",
+          "origin": "BOS",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-12T17:30",
+          "scheduledArrival": "2026-05-12T21:00",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "TW4ZSK",
+      "primaryCustomerId": "CUST-1026",
+      "bookingDate": "2026-02-20",
+      "status": "Confirmed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Zoe",
+          "lastName": "Anderson",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA1573474"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Drew",
+          "lastName": "Anderson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Avery",
+          "lastName": "Anderson",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT466",
+          "date": "2026-05-12",
+          "origin": "ORD",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-12T15:20",
+          "scheduledArrival": "2026-05-12T18:40",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT915",
+          "date": "2026-05-20",
+          "origin": "BOS",
+          "destination": "ORD",
+          "scheduledDeparture": "2026-05-20T07:05",
+          "scheduledArrival": "2026-05-20T08:50",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "X9LEG8",
+      "primaryCustomerId": "CUST-1027",
+      "bookingDate": "2026-05-04",
+      "status": "Confirmed",
+      "cabin": "Economy Plus",
+      "fareType": "Flexible",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Kenji",
+          "lastName": "Watanabe",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA8908771"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT218",
+          "date": "2026-05-17",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-17T10:30",
+          "scheduledArrival": "2026-05-17T18:50",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT219",
+          "date": "2026-05-19",
+          "origin": "JFK",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-19T17:55",
+          "scheduledArrival": "2026-05-19T21:20",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "7E9G2T",
+      "primaryCustomerId": "CUST-1028",
+      "bookingDate": "2026-02-08",
+      "status": "Completed",
+      "cabin": "Main Cabin",
+      "fareType": "Basic",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Olivia",
+          "lastName": "Grant",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7483031"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Drew",
+          "lastName": "Grant",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT460",
+          "date": "2026-05-06",
+          "origin": "ORD",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-06T14:05",
+          "scheduledArrival": "2026-05-06T17:25",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "WPKX8P",
+      "primaryCustomerId": "CUST-1029",
+      "bookingDate": "2026-03-28",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Tomas",
+          "lastName": "Novak",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7373071"
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT144",
+          "date": "2026-05-15",
+          "origin": "SEA",
+          "destination": "DFW",
+          "scheduledDeparture": "2026-05-15T11:55",
+          "scheduledArrival": "2026-05-15T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "BJJ9WY",
+      "primaryCustomerId": "CUST-1030",
+      "bookingDate": "2026-03-04",
+      "status": "Completed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Ava",
+          "lastName": "Sullivan",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA1205324"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Riley",
+          "lastName": "Sullivan",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT540",
+          "date": "2026-05-09",
+          "origin": "SFO",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-09T08:05",
+          "scheduledArrival": "2026-05-09T16:40",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Flown"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "S6WKV3",
+      "primaryCustomerId": "CUST-1001",
+      "bookingDate": "2026-02-19",
+      "status": "Confirmed",
+      "cabin": "Economy Plus",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Maya",
+          "lastName": "Patel",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA9544356"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Drew",
+          "lastName": "Patel",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Ella",
+          "lastName": "Patel",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P4",
+          "firstName": "Ruby",
+          "lastName": "Patel",
+          "passengerType": "Child",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT126",
+          "date": "2026-05-17",
+          "origin": "SEA",
+          "destination": "LAX",
+          "scheduledDeparture": "2026-05-17T13:35",
+          "scheduledArrival": "2026-05-17T16:20",
+          "cabin": "Economy Plus",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    },
+    {
+      "confirmationCode": "C427YW",
+      "primaryCustomerId": "CUST-1002",
+      "bookingDate": "2026-03-11",
+      "status": "Cancelled",
+      "cabin": "Main Cabin",
+      "fareType": "Standard",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Daniel",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA7243484"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Chris",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        },
+        {
+          "passengerId": "P3",
+          "firstName": "Jamie",
+          "lastName": "Okafor",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT544",
+          "date": "2026-05-10",
+          "origin": "SFO",
+          "destination": "BOS",
+          "scheduledDeparture": "2026-05-10T12:30",
+          "scheduledArrival": "2026-05-10T21:05",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Cancelled"
+        }
+      ],
+      "notes": "Cancelled by customer."
+    },
+    {
+      "confirmationCode": "4692MU",
+      "primaryCustomerId": "CUST-1003",
+      "bookingDate": "2026-04-01",
+      "status": "Confirmed",
+      "cabin": "Main Cabin",
+      "fareType": "Flexible",
+      "passengers": [
+        {
+          "passengerId": "P1",
+          "firstName": "Sofia",
+          "lastName": "Rossi",
+          "passengerType": "Adult",
+          "loyaltyNumber": "CA6800787"
+        },
+        {
+          "passengerId": "P2",
+          "firstName": "Jesse",
+          "lastName": "Rossi",
+          "passengerType": "Adult",
+          "loyaltyNumber": null
+        }
+      ],
+      "segments": [
+        {
+          "segmentId": "S1",
+          "flightNumber": "CT219",
+          "date": "2026-05-19",
+          "origin": "JFK",
+          "destination": "SEA",
+          "scheduledDeparture": "2026-05-19T17:55",
+          "scheduledArrival": "2026-05-19T21:20",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        },
+        {
+          "segmentId": "S2",
+          "flightNumber": "CT226",
+          "date": "2026-05-21",
+          "origin": "SEA",
+          "destination": "JFK",
+          "scheduledDeparture": "2026-05-21T09:20",
+          "scheduledArrival": "2026-05-21T17:45",
+          "cabin": "Main Cabin",
+          "segmentStatus": "Confirmed"
+        }
+      ]
+    }
+  ]
+}

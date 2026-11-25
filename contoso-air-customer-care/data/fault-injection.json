@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "description": "Deterministic simulated outages used by evaluation scenario D3.",
+    "generator": "data/generate_data.py",
+    "seed": 20260514,
+    "anchorDate": "2026-05-14",
+    "dateNote": "Dates are relative to anchorDate (the dataset's 'today'). The tools API rebases them so anchorDate maps to the real current date."
+  },
+  "faults": [
+    {
+      "endpoint": "flight-status",
+      "flightNumber": "CT655",
+      "date": "2026-05-15",
+      "httpStatus": 503,
+      "message": "The flight status service is temporarily unavailable. Please try again later."
+    }
+  ]
+}
